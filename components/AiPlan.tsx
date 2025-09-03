@@ -1,15 +1,18 @@
 // components/AiPlan.tsx
 export default function AiPlan({
   title,
+  summary,
   bullets
 }: {
   title: string;
+  summary: string;
   bullets: string[];
 }) {
   return (
     <section aria-labelledby="aiplan-title" className="bg-gray-50">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="aiplan-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-3">
           {bullets.map((b) => (
             <li key={b} className="rounded-xl border bg-white p-6">

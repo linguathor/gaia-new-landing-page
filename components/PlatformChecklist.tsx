@@ -1,15 +1,18 @@
 // components/PlatformChecklist.tsx
 export default function PlatformChecklist({
   title,
+  summary,
   checklist
 }: {
   title: string;
+  summary: string;
   checklist: string[];
 }) {
   return (
     <section aria-labelledby="platform-title" className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="platform-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
         <ul className="mt-6 grid gap-2 sm:grid-cols-2">
           {checklist.map((c) => (
             <li key={c} className="flex items-start gap-2 text-gray-800">

@@ -77,25 +77,25 @@ export default function GermanAIAcademyPage() {
       <Header />
       <main role="main">
         <Hero hero={academy.hero} />
-        <Outcomes title={academy.outcomes.title} items={academy.outcomes.items as any} />
-        <LearningLoop title={academy.learningLoop.title} steps={academy.learningLoop.steps as any} />
-        <CallProgram title={academy.calls.title} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
-        <Interactivity title={academy.interactivity.title} bullets={academy.interactivity.bullets as any} />
-        <Materials title={academy.materials.title} bullets={academy.materials.bullets as any} />
-        <TandemExplainer title={academy.tandem.title} text={academy.tandem.text} status={academy.tandem.status} />
-        <ProgressMeter title={academy.progress.title} bullets={academy.progress.bullets as any} detailsHref={academy.progress.detailsHref} />
-        <Diagnostics title={academy.diagnostics.title} bullets={academy.diagnostics.bullets as any} />
+        <Outcomes title={academy.outcomes.title} summary={academy.outcomes.summary} items={academy.outcomes.items as any} />
+        <LearningLoop title={academy.learningLoop.title} summary={academy.learningLoop.summary} steps={academy.learningLoop.steps as any} />
+        <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
+        <Interactivity title={academy.interactivity.title} summary={academy.interactivity.summary} bullets={academy.interactivity.bullets as any} />
+        <Materials title={academy.materials.title} summary={academy.materials.summary} bullets={academy.materials.bullets as any} />
+        <TandemExplainer title={academy.tandem.title} summary={academy.tandem.summary} text={academy.tandem.text} status={academy.tandem.status} />
+        <ProgressMeter title={academy.progress.title} summary={academy.progress.summary} bullets={academy.progress.bullets as any} detailsHref={academy.progress.detailsHref} />
+        <Diagnostics title={academy.diagnostics.title} summary={academy.diagnostics.summary} bullets={academy.diagnostics.bullets as any} />
         <AccountabilityOptin />
-        <AiPlan title={academy.aiPlan.title} bullets={academy.aiPlan.bullets as any} />
-        <PlatformChecklist title={academy.ux.title} checklist={academy.ux.checklist as any} />
-        <Community title={academy.community.title} bullets={academy.community.bullets as any} />
-        <Fit title={academy.fit.title} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
-        <Cohort title={academy.cohort.title} start={academy.cohort.start} seats={academy.cohort.seats} cta={academy.cohort.cta} />
-        <Instructors title={academy.instructors.title} people={academy.instructors.people as any} />
+        <AiPlan title={academy.aiPlan.title} summary={academy.aiPlan.summary} bullets={academy.aiPlan.bullets as any} />
+        <PlatformChecklist title={academy.ux.title} summary={academy.ux.summary} checklist={academy.ux.checklist as any} />
+        <Community title={academy.community.title} summary={academy.community.summary} bullets={academy.community.bullets as any} />
+        <Fit title={academy.fit.title} summary={academy.fit.summary} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
+        <Cohort title={academy.cohort.title} summary={academy.cohort.summary} start={academy.cohort.start} seats={academy.cohort.seats} cta={academy.cohort.cta} />
+        <Instructors title={academy.instructors.title} summary={academy.instructors.summary} people={academy.instructors.people as any} />
         <Pricing pricing={academy.pricing} />
         <Guarantee guarantee={academy.guarantee} />
         <TestimonialsFaces title={academy.testimonials.title} items={academy.testimonials.items as any} />
-        <FAQ faq={academy.faq} />
+        <FAQ faq={academy.faq} faqExtra={academy.faqExtra} />
       </main>
       <StickyCta href="https://YOUR_COPECART_LINK_PREMIUM" label="Jetzt Premium starten" />
       <Footer />

@@ -1,9 +1,11 @@
 // components/Interactivity.tsx
 export default function Interactivity({
   title,
+  summary,
   bullets
 }: {
   title: string;
+  summary: string;
   bullets: string[];
 }) {
   return (
@@ -12,6 +14,7 @@ export default function Interactivity({
         <h2 id="interactivity-title" className="text-2xl font-bold sm:text-3xl">
           {title}
         </h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
         <div className="mt-6 rounded-xl border bg-white p-6">
           <ul className="space-y-2">
             {bullets.map((b) => (

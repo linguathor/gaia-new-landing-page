@@ -3,11 +3,13 @@ import Link from "next/link";
 
 export default function ProgressMeter({
   title,
+  summary,
   bullets,
   detailsHref,
   progress = 75
 }: {
   title: string;
+  summary: string;
   bullets: string[];
   detailsHref?: string;
   progress?: number; // 0..100
@@ -17,6 +19,7 @@ export default function ProgressMeter({
     <section aria-labelledby="progress-title" className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="progress-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
 
         <div className="mt-6 max-w-3xl">
           <div className="h-3 w-full rounded-full bg-gray-200" aria-hidden />

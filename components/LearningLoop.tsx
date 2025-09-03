@@ -3,15 +3,18 @@ type Step = { title: string; text: string };
 
 export default function LearningLoop({
   title,
+  summary,
   steps
 }: {
   title: string;
+  summary: string;
   steps: Step[];
 }) {
   return (
     <section aria-labelledby="loop-title" className="bg-gray-50">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="loop-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
 
         <div className="mt-8 grid items-start gap-6 lg:grid-cols-3">
           {steps.map((s, i) => (

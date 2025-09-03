@@ -1,10 +1,12 @@
 // components/Fit.tsx
 export default function Fit({
   title,
+  summary,
   forList,
   notForList
 }: {
   title: string;
+  summary: string;
   forList: string[];
   notForList: string[];
 }) {
@@ -12,6 +14,7 @@ export default function Fit({
     <section aria-labelledby="fit-title" className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="fit-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
 
         <div className="mt-6 grid gap-6 sm:grid-cols-2">
           <div className="rounded-xl border bg-gray-50 p-6">

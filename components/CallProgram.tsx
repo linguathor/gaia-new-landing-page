@@ -3,10 +3,12 @@ type CallItem = { name: string; desc: string };
 
 export default function CallProgram({
   title,
+  summary,
   items,
   deliverables
 }: {
   title: string;
+  summary: string;
   items: CallItem[];
   deliverables: string[];
 }) {
@@ -14,6 +16,7 @@ export default function CallProgram({
     <section aria-labelledby="calls-title" className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="calls-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
 
         <ul className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((c) => (

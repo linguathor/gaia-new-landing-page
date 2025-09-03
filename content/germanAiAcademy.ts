@@ -26,6 +26,7 @@ export const academy = {
 
   outcomes: {
     title: "Ergebnisse in 4 Monaten",
+    summary: "Mehr aktive Wörter. Szenarien meistern. Spontan sprechen.",
     items: [
       { label: "+1000 aktive Wörter", sub: "gezielt für Arbeit und Alltag" },
       { label: "8–12 Gesprächsszenarien", sub: "sicher meistern" },
@@ -35,6 +36,7 @@ export const academy = {
 
   learningLoop: {
     title: "Der Lern-Loop",
+    summary: "Call → kurze Aufgabe → KI-Anwendung. Jede Woche.",
     steps: [
       { title: "Input im Live-Call", text: "Vokabeln, Strukturen, Beispiele." },
       { title: "Wochenaufgabe", text: "kurz, klar, umsetzbar." },
@@ -44,6 +46,7 @@ export const academy = {
 
   calls: {
     title: "4 Live-Calls pro Monat",
+    summary: "FAQ, zwei Diskussionen, ein Hör-Dialog – plus Materialien.",
     items: [
       { name: "FAQ-Call", desc: "Fragen klären. Hürden abbauen." },
       { name: "Diskussion A", desc: "Vorbereitetes Thema. Coaching-Feedback." },
@@ -55,16 +58,19 @@ export const academy = {
 
   interactivity: {
     title: "So bleibt es interaktiv",
+    summary: "Hot-Seat-Coaching, Live-Umfragen, Q&A – jeder kommt dran.",
     bullets: ["Hot-Seat-Coaching", "Live-Umfragen und Quiz", "Hochvotete Q&A"]
   },
 
   materials: {
     title: "Materialien nach jedem Call",
+    summary: "PDF-Handout, Karteikarten, Aufgaben – sofort verfügbar.",
     bullets: ["PDF-Handout", "Digitale Karteikarten (Anki/Quizlet)", "Aufgaben mit Lösung"]
   },
 
   tandem: {
     title: "Tandem-Spaces",
+    summary: "Geführte Tandems mit KI-Feedback. Kurze Slots, hohe Aktivität.",
     text: "Geführte Tandems mit klaren Aufgaben und KI-Feedback. Kurze Slots. Hohe Aktivität.",
     status: "Beta" as const
     // demoHref: "/videos/tandem-demo.mp4" // optional
@@ -72,6 +78,7 @@ export const academy = {
 
   progress: {
     title: "Fortschritt und Garantie",
+    summary: "Vorher/Nachher-Check. Kostenlose Verlängerung bei Zielverfehlung.",
     bullets: [
       "Vorher-/Nachher-Check mit klaren Kriterien",
       "Kostenlose Verlängerung, wenn Ziele nicht erreicht"
@@ -81,6 +88,7 @@ export const academy = {
 
   diagnostics: {
     title: "Wie wir Fortschritt messen",
+    summary: "Einstufungstest, Abschlusstest, Szenarien als Zielkorridor.",
     bullets: [
       "Einstufungstest → individueller Plan",
       "Abschlusstest mit Szenarien",
@@ -96,11 +104,13 @@ export const academy = {
 
   aiPlan: {
     title: "Dein KI-Lernplan (Premium)",
+    summary: "Aus Test und Zielen. Automatische Anpassungen. Ohne 1-h Setup.",
     bullets: ["Plan aus Test und Zielen", "Automatische Anpassungen", "Ohne 1-h Coaching-Setup"]
   },
 
   ux: {
     title: "Auf der Plattform",
+    summary: "Start-Pfad, Filter, KI-Chat, Offline-Modus – einfach zu nutzen.",
     checklist: [
       "Start-hier Pfad",
       "Filter nach Fertigkeiten und Themen",
@@ -112,17 +122,20 @@ export const academy = {
 
   community: {
     title: "Community",
+    summary: "B2/C1-Gruppen, Tandems, Aufgaben – kein reiner Chat.",
     bullets: ["B2- und C1-Gruppen", "Tandems und Aufgaben", "Kein reiner Chat"]
   },
 
   fit: {
     title: "Passt das zu dir?",
+    summary: "Für B2+ mit Eigeninitiative. Nicht für A1/A2 oder passive Lerner.",
     for: ["B2+ Niveau", "Eigeninitiative", "Zeit: 5–8 Stunden pro Woche"],
     notFor: ["A1/A2", "Nur passives Lernen", "Keine Zeit für kurze Aufgaben"]
   },
 
   cohort: {
     title: "Nächster Start und Plätze",
+    summary: "Oktober 2025. Begrenzte Plätze – Warteliste empfohlen.",
     start: "Oktober 2025",
     seats: "Begrenzte Plätze. Warteliste empfohlen.",
     cta: { label: "Warteliste", href: "/warteliste" }
@@ -130,6 +143,7 @@ export const academy = {
 
   instructors: {
     title: "Deine Coaches",
+    summary: "Flemming (Sprechen/Aussprache) und David (Wortschatz/Struktur).",
     people: [
       { name: "Flemming", role: "Coach. Fokus: Sprechen und Aussprache.", img: "/images/flemming.jpg" },
       { name: "David", role: "Coach. Fokus: Wortschatz und Struktur.", img: "/images/david.jpg" }

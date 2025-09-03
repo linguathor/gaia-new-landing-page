@@ -1,15 +1,18 @@
 // components/Materials.tsx
 export default function Materials({
   title,
+  summary,
   bullets
 }: {
   title: string;
+  summary: string;
   bullets: string[];
 }) {
   return (
     <section aria-labelledby="materials-title" className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="materials-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-3">
           {bullets.map((b) => (
             <li key={b} className="rounded-xl border bg-gray-50 p-6">

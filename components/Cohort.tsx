@@ -3,11 +3,13 @@ import Link from "next/link";
 
 export default function Cohort({
   title,
+  summary,
   start,
   seats,
   cta
 }: {
   title: string;
+  summary: string;
   start: string; // "Oktober" (display); for JSON-LD use ISO in page head
   seats: string;
   cta: { label: string; href: string };
@@ -16,6 +18,7 @@ export default function Cohort({
     <section aria-labelledby="cohort-title" className="bg-gray-50">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="cohort-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
 
         <div className="mt-6 grid gap-6 sm:grid-cols-[1fr_auto]">
           <div className="rounded-xl border bg-white p-6">

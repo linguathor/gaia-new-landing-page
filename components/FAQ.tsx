@@ -4,9 +4,15 @@ interface FAQProps {
     items: readonly { q: string; a: string }[];
     image?: { src: string; alt: string; width: number; height: number };
   };
+  faqExtra?: {
+    items: readonly { q: string; a: string }[];
+  };
 }
 
-export default function FAQ({ faq }: FAQProps) {
+export default function FAQ({ faq, faqExtra }: FAQProps) {
+  // Merge main FAQ and extra FAQ items, limit to 8 items for landing page
+  const allItems = [...faq.items, ...(faqExtra?.items || [])].slice(0, 8);
+
   return (
     <section className="py-16 px-4 bg-white" aria-labelledby="faq-title">
       <div className="max-w-screen-xl mx-auto">
@@ -14,7 +20,7 @@ export default function FAQ({ faq }: FAQProps) {
           {faq.title}
         </h2>
         <div className="space-y-4">
-          {faq.items.map((item, index) => (
+          {allItems.map((item, index) => (
             <details key={index} className="bg-gray-50 p-6 rounded-lg">
               <summary className="font-semibold text-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500">
                 {item.q}

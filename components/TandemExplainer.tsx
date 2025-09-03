@@ -3,11 +3,13 @@ import Link from "next/link";
 
 export default function TandemExplainer({
   title,
+  summary,
   text,
   status,
   demoHref
 }: {
   title: string;
+  summary: string;
   text: string;
   status?: "Beta" | "Live";
   demoHref?: string;
@@ -25,6 +27,7 @@ export default function TandemExplainer({
             </span>
           ) : null}
         </div>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
         <p className="mt-3 max-w-3xl text-gray-700">{text}</p>
         {demoHref ? (
           <div className="mt-6">

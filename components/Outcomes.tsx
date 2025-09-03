@@ -3,9 +3,11 @@ type Item = { label: string; sub?: string };
 
 export default function Outcomes({
   title,
+  summary,
   items
 }: {
   title: string;
+  summary: string;
   items: Item[];
 }) {
   return (
@@ -14,6 +16,7 @@ export default function Outcomes({
         <h2 id="outcomes-title" className="text-2xl font-bold sm:text-3xl">
           {title}
         </h2>
+        <p className="mt-2 text-lg text-gray-600">{summary}</p>
         <ul className="mt-6 grid gap-4 sm:grid-cols-3">
           {items.map((it) => (
             <li
