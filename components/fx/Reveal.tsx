@@ -7,7 +7,7 @@ export function FadeIn({ children, delay = 0 }: { children: React.ReactNode; del
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.25 }}
-      transition={{ duration: 0.5, ease: "easeOut", delay }}
+      transition={{ duration: 0.5, delay }}
     >
       {children}
     </motion.div>
@@ -29,5 +29,5 @@ export function Stagger({ children }: { children: React.ReactNode }) {
 
 export const item = {
   hidden: { opacity: 0, y: 12 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: "easeOut" } }
+  show: { opacity: 1, y: 0, transition: { duration: 0.45 } }
 };
