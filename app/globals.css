@@ -2,6 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-accent: #fffbeb;      /* amber-50 section bg */
+  --bg-band: linear-gradient(90deg, #fde68a22, #fff, #fde68a22);
+  --ring: #d97706;           /* amber-600 */
+  --text-primary: #374151;   /* slate-700 */
+  --text-secondary: #6b7280; /* slate-500 */
+  --success: #059669;        /* emerald-600 */
+  --warning: #dc2626;        /* rose-600 */
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Blob keyframes + marquee */
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(10px, -8px) scale(1.03); }
+  66% { transform: translate(-12px, 6px) scale(0.98); }
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
 }

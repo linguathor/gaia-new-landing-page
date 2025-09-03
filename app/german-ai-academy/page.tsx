@@ -35,6 +35,21 @@ import Fit from '../../components/Fit';
 import Cohort from '../../components/Cohort';
 import Instructors from '../../components/Instructors';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
+import LaunchBonuses from '../../components/LaunchBonuses';
+import OnboardingSteps from '../../components/OnboardingSteps';
+import ScenarioGallery from '../../components/ScenarioGallery';
+import ProgressScoreboard from '../../components/ProgressScoreboard';
+import PricingFooter from '../../components/PricingFooter';
+
+// Animation effects imports
+import { FadeIn, Stagger, item } from '../../components/fx/Reveal';
+import BlobBg from '../../components/fx/BlobBg';
+import Parallax from '../../components/fx/Parallax';
+import StickyProgress from '../../components/fx/StickyProgress';
+import Marquee from '../../components/fx/Marquee';
+import Counter from '../../components/fx/Counter';
+import Highlight from '../../components/fx/Highlight';
+import MagneticButton from '../../components/fx/MagneticButton';
 
 export const metadata: Metadata = buildMetadata();
 
@@ -82,7 +97,11 @@ export default function GermanAIAcademyPage() {
       />
       <Header />
       <main role="main">
+        <StickyProgress />
         <Hero hero={academy.hero} />
+
+        {/* Launch Bonuses - High Impact Conversion Element */}
+        <LaunchBonuses />
 
         {/* A) Outcomes - StatBand in band variant */}
         <Section titleId="outcomes" variant="band" center>
@@ -90,6 +109,22 @@ export default function GermanAIAcademyPage() {
           <p className="mt-2 text-gray-700">{academy.outcomes.summary}</p>
           <div className="mt-6">
             <StatBand items={academy.outcomes.items as any} />
+          </div>
+
+          {/* Counter strip for additional metrics */}
+          <div className="mt-8 grid gap-4 sm:grid-cols-3 text-center">
+            <div className="rounded-xl border p-4">
+              <div className="text-3xl font-bold"><Counter to={7} suffix="×" /></div>
+              <p className="text-sm">Ø Übungen/Woche</p>
+            </div>
+            <div className="rounded-xl border p-4">
+              <div className="text-3xl font-bold"><Counter to={86} suffix="%" /></div>
+              <p className="text-sm">erreichen 8+ Szenarien</p>
+            </div>
+            <div className="rounded-xl border p-4">
+              <div className="text-3xl font-bold"><Counter to={3} suffix="x" /></div>
+              <p className="text-sm">Calls/Monat im Schnitt</p>
+            </div>
           </div>
         </Section>
 
@@ -100,16 +135,18 @@ export default function GermanAIAcademyPage() {
             title={academy.learningLoop.title}
             summary={academy.learningLoop.summary}
             media={
-              <div className="rounded-xl border bg-white p-6 shadow-sm">
-                <Timeline steps={academy.learningLoop.steps as any} />
-              </div>
+              <Parallax>
+                <div className="rounded-xl border bg-white p-6 shadow-sm">
+                  <Timeline steps={academy.learningLoop.steps as any} />
+                </div>
+              </Parallax>
             }
           >
-            <p>Kurze Aufgaben. Hohe Frequenz. Sichtbarer Transfer ins Sprechen.</p>
+            <p>Kurze <Highlight>Aufgaben</Highlight>. Hohe Frequenz. Sichtbarer Transfer ins Sprechen.</p>
             <ul className="mt-3 list-disc pl-5 text-gray-800">
               <li>Live-Call = Input und Coaching</li>
               <li>Aufgabe = gezielte Übung</li>
-              <li>KI/Tandem = Anwenden mit Feedback</li>
+              <li><Highlight>KI</Highlight>/Tandem = Anwenden mit Feedback</li>
             </ul>
           </Split>
         </Section>
@@ -151,7 +188,7 @@ export default function GermanAIAcademyPage() {
 
         {/* Progress & Diagnostics */}
         <Section titleId="progress" variant="muted">
-          <ProgressMeter title={academy.progress.title} summary={academy.progress.summary} bullets={academy.progress.bullets as any} detailsHref={academy.progress.detailsHref} />
+          <ProgressScoreboard />
         </Section>
 
         <Section titleId="diagnostics" variant="plain">
@@ -200,6 +237,8 @@ export default function GermanAIAcademyPage() {
               href={academy.pricing.plans[1].cta.href}
             />
           </div>
+          {/* Onboarding Steps - Show structured process */}
+          <OnboardingSteps />
         </Section>
 
         {/* F) Instructors */}
@@ -220,7 +259,23 @@ export default function GermanAIAcademyPage() {
 
         {/* Testimonials & FAQ */}
         <Section titleId="testimonials" variant="muted">
+          {/* Marquee of testimonial quotes */}
+          <div className="mb-8">
+            <Marquee>
+              {academy.testimonials.items.map((t: any) => (
+                <span key={t.name} className="rounded-full bg-gray-100 px-4 py-2 text-sm mx-2">
+                  "{t.text.slice(0, 60)}..." — {t.name}
+                </span>
+              ))}
+            </Marquee>
+          </div>
+
           <TestimonialsFaces title={academy.testimonials.title} items={academy.testimonials.items as any} />
+        </Section>
+
+        {/* Scenario Gallery - Social Proof */}
+        <Section titleId="scenarios" variant="alt">
+          <ScenarioGallery />
         </Section>
 
         <Section titleId="faq" variant="plain">
