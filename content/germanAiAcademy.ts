@@ -29,7 +29,7 @@ export const academy = {
     summary: "Mehr aktive Wörter. Szenarien meistern. Spontan sprechen.",
     items: [
       { label: "+1000 aktive Wörter", sub: "gezielt für Arbeit und Alltag" },
-      { label: "8–12 Gesprächsszenarien", sub: "sicher meistern" },
+      { label: "8–12 Gesprächs­szenerien", sub: "sicher meistern" },
       { label: "Spontanes Sprechen", sub: "ohne Angst vor Fehlern" }
     ]
   },
