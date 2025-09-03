@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import Hero from '../../components/Hero';
 import HowItWorks from '../../components/HowItWorks';
 import Pricing from '../../components/Pricing';
@@ -32,6 +34,7 @@ export default function GermanAIAcademyPage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
+      <Header />
       <main role="main">
         <Hero hero={academy.hero} />
         <HowItWorks howItWorks={academy.howItWorks} />
@@ -40,6 +43,7 @@ export default function GermanAIAcademyPage() {
         <Testimonials testimonials={academy.testimonials} />
         <FAQ faq={academy.faq} />
       </main>
+      <Footer />
     </>
   );
 }

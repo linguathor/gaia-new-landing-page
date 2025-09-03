@@ -14,9 +14,9 @@ interface PriceCardProps {
 
 export default function PriceCard({ plan }: PriceCardProps) {
   return (
-    <div className={`bg-white rounded-lg shadow-lg p-6 border-2 ${plan.popular ? 'border-blue-500' : 'border-gray-200'} relative`}>
+    <div className={`bg-white rounded-lg shadow-lg p-6 border-2 ${plan.popular ? 'border-amber-500' : 'border-gray-200'} relative`}>
       {plan.popular && (
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-blue-500 text-white px-4 py-1 rounded-full text-sm font-medium">
+        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-amber-500 text-white px-4 py-1 rounded-full text-sm font-medium">
           Beliebt
         </div>
       )}
@@ -33,7 +33,7 @@ export default function PriceCard({ plan }: PriceCardProps) {
       </ul>
       <Link
         href={plan.cta.href}
-        className="block bg-blue-500 text-white text-center py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+        className="block bg-amber-500 text-white text-center py-3 rounded-lg font-semibold hover:bg-amber-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
         role="button"
         aria-label={plan.cta.label}
       >
