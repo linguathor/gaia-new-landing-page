@@ -1,5 +1,3 @@
-import { FadeIn, Stagger } from './fx/Reveal';
-
 type QA = { question: string; answer: string };
 type FAQItem = { q: string; a: string };
 
@@ -18,26 +16,20 @@ export default function FAQ({
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-8 sm:py-10">
-      <FadeIn>
-        <h2 className="text-2xl font-bold sm:text-3xl">{faq.title}</h2>
-      </FadeIn>
+      <h2 className="text-2xl font-bold sm:text-3xl">{faq.title}</h2>
 
-      <Stagger>
-        <div className="mt-6 space-y-4">
-          {mergedItems.slice(0, 8).map((item, index) => (
-            <FadeIn key={item.question} delay={index * 0.1}>
-              <div className="rounded-lg border bg-white p-4 hover:shadow-md hover:border-[#229DD1] transition-all duration-300">
-                <summary className="cursor-pointer text-base font-semibold hover:text-[#229DD1] transition-colors duration-300">
-                  {item.question}
-                </summary>
-                <p className="mt-2 text-sm text-gray-700">
-                  {item.answer}
-                </p>
-              </div>
-            </FadeIn>
-          ))}
-        </div>
-      </Stagger>
+      <div className="mt-6 space-y-4">
+        {mergedItems.slice(0, 8).map((item, index) => (
+          <div key={item.question} className="rounded-lg border bg-white p-4 hover:shadow-md hover:border-[#229DD1] transition-all duration-300">
+            <summary className="cursor-pointer text-base font-semibold hover:text-[#229DD1] transition-colors duration-300">
+              {item.question}
+            </summary>
+            <p className="mt-2 text-sm text-gray-700">
+              {item.answer}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
