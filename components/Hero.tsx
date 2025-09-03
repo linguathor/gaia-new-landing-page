@@ -16,7 +16,7 @@ interface HeroProps {
 
 export default function Hero({ hero }: HeroProps) {
   return (
-    <header className="bg-gradient-to-br from-amber-500 via-amber-600 to-amber-700 text-white py-20 px-4 relative overflow-hidden">
+    <header className="text-white py-20 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1183B7 0%, #229DD1 60%, #88B6CD 100%)' }}>
       {/* Animated blob background */}
       <BlobBg />
 

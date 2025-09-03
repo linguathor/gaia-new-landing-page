@@ -28,8 +28,8 @@ export const academy = {
     title: "Ergebnisse in 4 Monaten",
     summary: "Mehr aktive Wörter. Szenarien meistern. Spontan sprechen.",
     items: [
-      { label: "+1000 aktive Wörter", sub: "gezielt für Arbeit und Alltag" },
-      { label: "8–12 Gesprächs­szenerien", sub: "sicher meistern" },
+      { label: "+1000 aktive Wörter", sub: "gezielt für Arbeit und Alltag", value: 1000 },
+      { label: "8–12 Gesprächs­szenerien", sub: "sicher meistern", value: 12 },
       { label: "Spontanes Sprechen", sub: "ohne Angst vor Fehlern" }
     ]
   },

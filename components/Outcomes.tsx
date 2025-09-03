@@ -1,5 +1,7 @@
 // components/Outcomes.tsx
-type Item = { label: string; sub?: string };
+import Counter from './fx/Counter';
+
+type Item = { label: string; sub?: string; value?: number; suffix?: string };
 
 export default function Outcomes({
   title,
@@ -24,7 +26,12 @@ export default function Outcomes({
               className="rounded-xl border bg-gray-50 p-6 text-center"
               aria-label={it.label}
             >
-              <div className="text-2xl font-bold text-amber-600">{it.label}</div>
+              <div className="font-extrabold leading-tight [hyphens:auto] [overflow-wrap:anywhere]
+                          text-[clamp(1.25rem,5vw,1.75rem)] sm:text-[clamp(1.5rem,2.5vw,2rem)]">
+                {typeof it.value === 'number'
+                  ? <Counter to={it.value} suffix={it.suffix ?? ''} />
+                  : it.label}
+              </div>
               {it.sub && <div className="mt-2 text-sm text-gray-600">{it.sub}</div>}
             </li>
           ))}

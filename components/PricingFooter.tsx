@@ -7,7 +7,7 @@ const planOutcomes = [
 
 export default function PricingFooter() {
   return (
-    <section className="bg-amber-50">
+    <section style={{ backgroundColor: '#88B6CD' }}>
       <div className="mx-auto max-w-screen-xl px-4 py-8">
         <h3 className="text-lg font-semibold text-center mb-6">Plan → Ergebnis</h3>
         <div className="grid gap-4 sm:grid-cols-3">

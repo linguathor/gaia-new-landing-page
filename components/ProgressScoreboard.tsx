@@ -7,7 +7,7 @@ const stats = [
 
 export default function ProgressScoreboard() {
   return (
-    <div className="bg-amber-50 border-t border-b border-amber-200">
+    <div className="border-t border-b" style={{ backgroundColor: '#88B6CD', borderColor: '#E5E7EB' }}>
       <div className="mx-auto max-w-screen-xl px-4 py-6">
         <div className="flex flex-wrap justify-center gap-4 text-center">
           {stats.map((stat) => (

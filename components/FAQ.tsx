@@ -1,45 +1,31 @@
-interface FAQProps {
-  faq: {
-    title: string;
-    items: readonly { q: string; a: string }[];
-    image?: { src: string; alt: string; width: number; height: number };
-  };
-  faqExtra?: {
-    items: readonly { q: string; a: string }[];
-  };
-}
+type QA = { question: string; answer: string };
+type FAQItem = { q: string; a: string };
 
-export default function FAQ({ faq, faqExtra }: FAQProps) {
-  // Merge main FAQ and extra FAQ items, limit to 8 items for landing page
-  const allItems = [...faq.items, ...(faqExtra?.items || [])].slice(0, 8);
+export default function FAQ({
+  faq,
+  faqExtra
+}: {
+  faq: { title: string; items: readonly FAQItem[] };
+  faqExtra: { items: readonly FAQItem[] };
+}) {
+  // Merge and transform FAQ items
+  const mergedItems: QA[] = [
+    ...faq.items.map(item => ({ question: item.q, answer: item.a })),
+    ...faqExtra.items.map(item => ({ question: item.q, answer: item.a }))
+  ];
 
   return (
-    <section className="py-16 px-4 bg-white" aria-labelledby="faq-title">
-      <div className="max-w-screen-xl mx-auto">
-        <h2 id="faq-title" className="text-3xl md:text-4xl font-bold text-center mb-12">
-          {faq.title}
-        </h2>
-        <div className="space-y-4">
-          {allItems.map((item, index) => (
-            <details key={index} className="bg-gray-50 p-6 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500">
-                {item.q}
-              </summary>
-              <p className="mt-4 text-gray-700">{item.a}</p>
-            </details>
-          ))}
-        </div>
-        {faq.image && (
-          <img
-            src={faq.image.src}
-            alt={faq.image.alt}
-            width={faq.image.width}
-            height={faq.image.height}
-            loading="lazy"
-            className="mt-8 mx-auto"
-          />
-        )}
+    <div className="mx-auto max-w-5xl px-4 py-8 sm:py-10">
+      <h2 className="text-2xl font-bold sm:text-3xl">{faq.title}</h2>
+
+      <div className="mt-6 space-y-4">
+        {mergedItems.slice(0, 8).map((item) => (
+          <details key={item.question} className="rounded-lg border bg-white p-4">
+            <summary className="cursor-pointer text-base font-semibold">{item.question}</summary>
+            <p className="mt-2 text-sm text-gray-700">{item.answer}</p>
+          </details>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }

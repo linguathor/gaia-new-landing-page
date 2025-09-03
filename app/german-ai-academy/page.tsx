@@ -1,24 +1,13 @@
+// app/german-ai-academy/page.tsx
 import { Metadata } from 'next';
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import StickyCta from "@/components/StickyCTA";
-import Hero from '../../components/Hero';
-import HowItWorks from '../../components/HowItWorks';
-import Pricing from '../../components/Pricing';
-import Guarantee from '../../components/Guarantee';
-import Testimonials from '../../components/Testimonials';
-import FAQ from '../../components/FAQ';
 import { buildMetadata } from '../../lib/seo';
 import { faqJsonLd, productJsonLd, courseJsonLd, courseInstanceJsonLd } from '../../lib/schema';
 import { academy } from '../../content/germanAiAcademy';
 
-// New component imports
-import Section from '../../components/Section';
-import Split from '../../components/Split';
-import StatBand from '../../components/StatBand';
-import IconList from '../../components/IconList';
-import Timeline from '../../components/Timeline';
-import CtaBand from '../../components/CtaBand';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+
+import Hero from '../../components/Hero';
 import Outcomes from '../../components/Outcomes';
 import LearningLoop from '../../components/LearningLoop';
 import CallProgram from '../../components/CallProgram';
@@ -34,22 +23,18 @@ import Community from '../../components/Community';
 import Fit from '../../components/Fit';
 import Cohort from '../../components/Cohort';
 import Instructors from '../../components/Instructors';
+import Pricing from '../../components/Pricing';
+import Guarantee from '../../components/Guarantee';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
+import FAQ from '../../components/FAQ';
+
+// NEW: denser wrappers / bands
+import Compact from '../../components/Compact';
 import LaunchBonuses from '../../components/LaunchBonuses';
 import OnboardingSteps from '../../components/OnboardingSteps';
-import ScenarioGallery from '../../components/ScenarioGallery';
-import ProgressScoreboard from '../../components/ProgressScoreboard';
-import PricingFooter from '../../components/PricingFooter';
 
-// Animation effects imports
-import { FadeIn, Stagger, item } from '../../components/fx/Reveal';
-import BlobBg from '../../components/fx/BlobBg';
-import Parallax from '../../components/fx/Parallax';
+// Effects
 import StickyProgress from '../../components/fx/StickyProgress';
-import Marquee from '../../components/fx/Marquee';
-import Counter from '../../components/fx/Counter';
-import Highlight from '../../components/fx/Highlight';
-import MagneticButton from '../../components/fx/MagneticButton';
 
 export const metadata: Metadata = buildMetadata();
 
@@ -76,17 +61,16 @@ export default function GermanAIAcademyPage() {
 
   return (
     <>
+      {/* JSON-LD */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      {productSchemas.map((schema, index) => (
-        <script
-          key={index}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      ))}
+      {Array.isArray(productSchemas) ? productSchemas.map((schema, i) => (
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      )) : (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchemas) }} />
+      )}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
@@ -95,194 +79,95 @@ export default function GermanAIAcademyPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(courseInstanceSchema) }}
       />
+
       <Header />
-      <main role="main">
-        <StickyProgress />
-        <Hero hero={academy.hero} />
 
-        {/* Launch Bonuses - High Impact Conversion Element */}
-        <LaunchBonuses />
+      {/* scroll-linked progress bar */}
+      <StickyProgress />
 
-        {/* A) Outcomes - StatBand in band variant */}
-        <Section titleId="outcomes" variant="band" center>
-          <h2 id="outcomes" className="text-2xl font-bold sm:text-3xl">{academy.outcomes.title}</h2>
-          <p className="mt-2 text-gray-700">{academy.outcomes.summary}</p>
-          <div className="mt-6">
-            <StatBand items={academy.outcomes.items as any} />
-          </div>
+      <main>
+        {/* === BAND A: HERO (clean white) === */}
+        <section aria-label="Hero" className="bg-white">
+          <Compact>
+            <Hero hero={academy.hero} />
+          </Compact>
+        </section>
 
-          {/* Counter strip for additional metrics */}
-          <div className="mt-8 grid gap-4 sm:grid-cols-3 text-center">
-            <div className="rounded-xl border p-4">
-              <div className="text-3xl font-bold"><Counter to={7} suffix="×" /></div>
-              <p className="text-sm">Ø Übungen/Woche</p>
-            </div>
-            <div className="rounded-xl border p-4">
-              <div className="text-3xl font-bold"><Counter to={86} suffix="%" /></div>
-              <p className="text-sm">erreichen 8+ Szenarien</p>
-            </div>
-            <div className="rounded-xl border p-4">
-              <div className="text-3xl font-bold"><Counter to={3} suffix="x" /></div>
-              <p className="text-sm">Calls/Monat im Schnitt</p>
-            </div>
-          </div>
-        </Section>
+        {/* Slight overlap to reduce the "gap" below hero */}
+        {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
+        <section aria-label="Ergebnisse & Lern-Loop" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
+          <Compact>
+            <Outcomes title={academy.outcomes.title} summary={academy.outcomes.summary} items={academy.outcomes.items as any} />
+            <LearningLoop title={academy.learningLoop.title} summary={academy.learningLoop.summary} steps={academy.learningLoop.steps as any} />
+            <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
+          </Compact>
+        </section>
 
-        {/* B) Learning Loop - Split + Timeline */}
-        <Section titleId="loop" variant="muted">
-          <Split
-            kicker="Der Lern-Loop"
-            title={academy.learningLoop.title}
-            summary={academy.learningLoop.summary}
-            media={
-              <Parallax>
-                <div className="rounded-xl border bg-white p-6 shadow-sm">
-                  <Timeline steps={academy.learningLoop.steps as any} />
-                </div>
-              </Parallax>
-            }
-          >
-            <p>Kurze <Highlight>Aufgaben</Highlight>. Hohe Frequenz. Sichtbarer Transfer ins Sprechen.</p>
-            <ul className="mt-3 list-disc pl-5 text-gray-800">
-              <li>Live-Call = Input und Coaching</li>
-              <li>Aufgabe = gezielte Übung</li>
-              <li><Highlight>KI</Highlight>/Tandem = Anwenden mit Feedback</li>
-            </ul>
-          </Split>
-        </Section>
+        {/* === BAND C: LIGHT GRAY — Materials + Interactivity + Tandem === */}
+        <section aria-label="Materialien & Interaktivität & Tandem" className="bg-gray-50">
+          <Compact>
+            <Interactivity title={academy.interactivity.title} summary={academy.interactivity.summary} bullets={academy.interactivity.bullets as any} />
+            <Materials title={academy.materials.title} summary={academy.materials.summary} bullets={academy.materials.bullets as any} />
+            <TandemExplainer title={academy.tandem.title} summary={academy.tandem.summary} text={academy.tandem.text} status={academy.tandem.status} />
+          </Compact>
+        </section>
 
-        {/* Call Program */}
-        <Section titleId="calls" variant="plain">
-          <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
-        </Section>
+        {/* === BAND D: LIGHT SKY WASH — Progress + Diagnostics + Onboarding === */}
+        <section
+          aria-label="Fortschritt & Onboarding"
+          style={{ backgroundColor: '#88B6CD' }}
+        >
+          <Compact>
+            <ProgressMeter title={academy.progress.title} summary={academy.progress.summary} bullets={academy.progress.bullets as any} />
+            <Diagnostics title={academy.diagnostics.title} summary={academy.diagnostics.summary} bullets={academy.diagnostics.bullets as any} />
+            {/* NEW: denser, concrete "what happens next" steps */}
+            <OnboardingSteps />
+          </Compact>
+        </section>
 
-        {/* C) Materials + Interactivity - merged into one Split */}
-        <Section titleId="materials" variant="alt">
-          <Split
-            title="Materialien & Interaktivität"
-            summary="Alles zum Nacharbeiten. Und echte Beteiligung im Call."
-            reverse
-            media={
-              <div className="rounded-xl border bg-white p-6 shadow-sm">
-                <h3 className="text-lg font-semibold">Nach jedem Call</h3>
-                <IconList items={academy.calls.deliverables as any} />
-              </div>
-            }
-          >
-            <h3 className="text-lg font-semibold">So bleibt es interaktiv</h3>
-            <IconList items={academy.interactivity.bullets as any} />
-          </Split>
-        </Section>
+        {/* === BAND E: LIGHT GRAY — Accountability + AI Plan + Platform === */}
+        <section aria-label="Accountability & Plattform" className="bg-gray-50">
+          <Compact>
+            <AccountabilityOptin />
+            <AiPlan title={academy.aiPlan.title} summary={academy.aiPlan.summary} bullets={academy.aiPlan.bullets as any} />
+            <PlatformChecklist title={academy.ux.title} summary={academy.ux.summary} checklist={academy.ux.checklist as any} />
+          </Compact>
+        </section>
 
-        {/* D) Tandem Spaces - pattern background */}
-        <Section titleId="tandem" variant="pattern">
-          <Split
-            kicker={academy.tandem.status === "Beta" ? "Beta" : undefined}
-            title={academy.tandem.title}
-            summary={academy.tandem.summary}
-            media={<div className="aspect-video w-full rounded-xl border bg-gray-100" />}
-          >
-            <p>{academy.tandem.text}</p>
-          </Split>
-        </Section>
+        {/* === BAND F: LIGHT SKY WASH — Community + Fit + Cohort === */}
+        <section aria-label="Community & Fit & Kohorte" style={{ backgroundColor: '#88B6CD' }}>
+          <Compact>
+            <Community title={academy.community.title} summary={academy.community.summary} bullets={academy.community.bullets as any} />
+            <Fit title={academy.fit.title} summary={academy.fit.summary} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
+            <Cohort title={academy.cohort.title} summary={academy.cohort.summary} start={academy.cohort.start} seats={academy.cohort.seats} cta={academy.cohort.cta} />
+          </Compact>
+        </section>
 
-        {/* Progress & Diagnostics */}
-        <Section titleId="progress" variant="muted">
-          <ProgressScoreboard />
-        </Section>
+        {/* === BAND G: LIGHT GRAY — Instructors === */}
+        <section aria-label="Coaches" className="bg-gray-50">
+          <Compact>
+            <Instructors title={academy.instructors.title} summary={academy.instructors.summary} people={academy.instructors.people as any} />
+          </Compact>
+        </section>
 
-        <Section titleId="diagnostics" variant="plain">
-          <Diagnostics title={academy.diagnostics.title} summary={academy.diagnostics.summary} bullets={academy.diagnostics.bullets as any} />
-        </Section>
+        {/* === BAND H: LIGHT SKY WASH — Launch bonuses + Pricing + Guarantee === */}
+        {/* MOVED: LaunchBonuses placed here (was earlier); acts as a colored lead-in to Pricing */}
+        <section aria-label="Angebot & Garantie" style={{ backgroundColor: '#88B6CD' }}>
+          <Compact>
+            <LaunchBonuses />
+            <Pricing pricing={academy.pricing} />
+            <Guarantee guarantee={academy.guarantee} />
+          </Compact>
+        </section>
 
-        {/* Accountability & AI Plan */}
-        <Section titleId="accountability" variant="alt">
-          <AccountabilityOptin />
-        </Section>
-
-        <Section titleId="aiplan" variant="muted">
-          <AiPlan title={academy.aiPlan.title} summary={academy.aiPlan.summary} bullets={academy.aiPlan.bullets as any} />
-        </Section>
-
-        {/* Platform & Community */}
-        <Section titleId="platform" variant="plain">
-          <PlatformChecklist title={academy.ux.title} summary={academy.ux.summary} checklist={academy.ux.checklist as any} />
-        </Section>
-
-        <Section titleId="community" variant="alt">
-          <Community title={academy.community.title} summary={academy.community.summary} bullets={academy.community.bullets as any} />
-        </Section>
-
-        {/* Fit */}
-        <Section titleId="fit" variant="muted">
-          <Fit title={academy.fit.title} summary={academy.fit.summary} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
-        </Section>
-
-        {/* E) Cohort + CTA band */}
-        <Section titleId="cohort" variant="band">
-          <div className="grid gap-6 lg:grid-cols-[1.2fr_.8fr] lg:items-center">
-            <div>
-              <h2 id="cohort" className="text-2xl font-bold sm:text-3xl">{academy.cohort.title}</h2>
-              <p className="mt-2 text-gray-700">{academy.cohort.summary}</p>
-              <ul className="mt-4 list-disc pl-5 text-gray-800">
-                <li>Onboarding in Woche 1</li>
-                <li>4 Calls pro Monat</li>
-                <li>Vorher-/Nachher-Check</li>
-              </ul>
-            </div>
-            <CtaBand
-              title="In 4 Monaten spürbar sicherer sprechen"
-              sub="Premium (beliebt) – klare Struktur, klare Ergebnisse."
-              label={academy.pricing.plans[1].cta.label}
-              href={academy.pricing.plans[1].cta.href}
-            />
-          </div>
-          {/* Onboarding Steps - Show structured process */}
-          <OnboardingSteps />
-        </Section>
-
-        {/* F) Instructors */}
-        <Section titleId="coaches" variant="muted">
-          <h2 id="coaches" className="text-2xl font-bold sm:text-3xl">{academy.instructors.title}</h2>
-          <p className="mt-2 text-gray-700">{academy.instructors.summary}</p>
-          <Instructors title="" summary={academy.instructors.summary} people={academy.instructors.people as any} />
-        </Section>
-
-        {/* Pricing & Guarantee */}
-        <Section titleId="pricing" variant="plain">
-          <Pricing pricing={academy.pricing} />
-        </Section>
-
-        <Section titleId="guarantee" variant="alt">
-          <Guarantee guarantee={academy.guarantee} />
-        </Section>
-
-        {/* Testimonials & FAQ */}
-        <Section titleId="testimonials" variant="muted">
-          {/* Marquee of testimonial quotes */}
-          <div className="mb-8">
-            <Marquee>
-              {academy.testimonials.items.map((t: any) => (
-                <span key={t.name} className="rounded-full bg-gray-100 px-4 py-2 text-sm mx-2">
-                  "{t.text.slice(0, 60)}..." — {t.name}
-                </span>
-              ))}
-            </Marquee>
-          </div>
-
-          <TestimonialsFaces title={academy.testimonials.title} items={academy.testimonials.items as any} />
-        </Section>
-
-        {/* Scenario Gallery - Social Proof */}
-        <Section titleId="scenarios" variant="alt">
-          <ScenarioGallery />
-        </Section>
-
-        <Section titleId="faq" variant="plain">
-          <FAQ faq={academy.faq} faqExtra={academy.faqExtra} />
-        </Section>
+        {/* === BAND I: CLEAN WHITE — Social proof & FAQ === */}
+        <section aria-label="Testimonials & FAQ" className="bg-white">
+          <Compact>
+            <TestimonialsFaces title={academy.testimonials.title} items={academy.testimonials.items as any} />
+            <FAQ faq={academy.faq} faqExtra={academy.faqExtra} />
+          </Compact>
+        </section>
       </main>
-      <StickyCta href="https://YOUR_COPECART_LINK_PREMIUM" label="Jetzt Premium starten" />
       <Footer />
     </>
   );

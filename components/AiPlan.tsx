@@ -9,7 +9,7 @@ export default function AiPlan({
   bullets: string[];
 }) {
   return (
-    <section aria-labelledby="aiplan-title" className="bg-gray-50">
+    <section aria-labelledby="aiplan-title" className="bg-gray-50 border-4 border-[#229DD1] rounded-xl">
       <div className="mx-auto max-w-screen-xl px-4 py-12 sm:py-16">
         <h2 id="aiplan-title" className="text-2xl font-bold sm:text-3xl">{title}</h2>
         <p className="mt-2 text-lg text-gray-600">{summary}</p>

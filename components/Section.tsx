@@ -20,8 +20,8 @@ export default function Section({
   const bg =
     variant === "plain"   ? "bg-white" :
     variant === "muted"   ? "bg-gray-50" :
-    variant === "alt"     ? "bg-amber-50" :
-    variant === "band"    ? "bg-gradient-to-r from-amber-50 via-white to-amber-50" :
+    variant === "alt"     ? "bg-white" :
+    variant === "band"    ? "bg-gradient-to-r from-white via-gray-50 to-white" :
     // pattern
     "bg-white [background-image:radial-gradient(theme(colors.gray.200)_1px,transparent_1px)] [background-size:16px_16px]";
 
