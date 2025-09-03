@@ -64,3 +64,37 @@ export function productJsonLd(premiumPlan: {
     }
   ];
 }
+
+export function courseJsonLd(opts: {
+  name: string; description: string; providerName: string; url: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": opts.name,
+    "description": opts.description,
+    "provider": {
+      "@type": "Organization",
+      "name": opts.providerName,
+      "sameAs": opts.url
+    }
+  };
+}
+
+export function courseInstanceJsonLd(opts: {
+  courseName: string; startDateISO: string; url: string; offers?: { price: number; url: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "location": { "@type": "VirtualLocation", "url": opts.url },
+    "name": `${opts.courseName} – Kohorte`,
+    "startDate": opts.startDateISO,
+    ...(opts.offers ? {
+      "offers": opts.offers.map(o => ({
+        "@type": "Offer", "priceCurrency": "EUR", "price": o.price, "url": o.url, "availability": "https://schema.org/InStock"
+      }))
+    } : {})
+  };
+}
