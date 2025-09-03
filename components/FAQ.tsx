@@ -16,7 +16,7 @@ export default function FAQ({ faq }: FAQProps) {
         <div className="space-y-4">
           {faq.items.map((item, index) => (
             <details key={index} className="bg-gray-50 p-6 rounded-lg">
-              <summary className="font-semibold text-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500">
+              <summary className="font-semibold text-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500">
                 {item.q}
               </summary>
               <p className="mt-4 text-gray-700">{item.a}</p>

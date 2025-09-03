@@ -10,7 +10,7 @@ export default function Header() {
         >
           Natural. Fluent. German.
         </Link>
-        <nav className="hidden md:flex space-x-6">
+        <nav className="hidden md:flex space-x-6" aria-label="Main navigation">
           <Link
             href="/german-ai-academy"
             className="text-gray-700 hover:text-amber-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"

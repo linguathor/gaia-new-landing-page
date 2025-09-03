@@ -1,8 +1,8 @@
-export function generateFAQSchema(faqItems: readonly { q: string; a: string }[]) {
+export function faqJsonLd(items: readonly { q: string; a: string }[]) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
+    "mainEntity": items.map(item => ({
       "@type": "Question",
       "name": item.q,
       "acceptedAnswer": {
@@ -13,7 +13,14 @@ export function generateFAQSchema(faqItems: readonly { q: string; a: string }[])
   };
 }
 
-export function generateProductSchema(plan: {
+export function productJsonLd(premiumPlan: {
+  name: string;
+  priceNote: string;
+  period: string;
+  features: readonly string[];
+  cta: { label: string; href: string };
+  popular: boolean;
+}, academyPlan: {
   name: string;
   priceNote: string;
   period: string;
@@ -21,17 +28,39 @@ export function generateProductSchema(plan: {
   cta: { label: string; href: string };
   popular: boolean;
 }) {
-  const price = plan.priceNote.split(' ')[0].replace('€', '').replace(',', '.');
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": plan.name,
-    "description": plan.features.join(', '),
-    "offers": {
-      "@type": "Offer",
-      "price": price,
-      "priceCurrency": "EUR",
-      "availability": "https://schema.org/InStock"
-    }
+  const parsePrice = (priceNote: string): number => {
+    const match = priceNote.match(/(\d+(?:,\d+)?)/);
+    return match ? parseFloat(match[1].replace(',', '.')) : 0;
   };
+
+  return [
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": premiumPlan.name,
+      "description": premiumPlan.features.join(', '),
+      "offers": {
+        "@type": "Offer",
+        "price": parsePrice(premiumPlan.priceNote),
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": premiumPlan.cta.href,
+        "priceValidUntil": "2026-12-31"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "name": academyPlan.name,
+      "description": academyPlan.features.join(', '),
+      "offers": {
+        "@type": "Offer",
+        "price": parsePrice(academyPlan.priceNote),
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": academyPlan.cta.href,
+        "priceValidUntil": "2026-12-31"
+      }
+    }
+  ];
 }

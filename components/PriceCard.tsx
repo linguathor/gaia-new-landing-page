@@ -21,7 +21,7 @@ export default function PriceCard({ plan }: PriceCardProps) {
         </div>
       )}
       <h3 className="text-2xl font-bold mb-2">{plan.name}</h3>
-      <p className="text-3xl font-semibold text-blue-600 mb-1">{plan.priceNote}</p>
+      <p className="text-3xl font-semibold text-amber-600 mb-1">{plan.priceNote}</p>
       <p className="text-gray-600 mb-6">{plan.period}</p>
       <ul className="mb-6 space-y-2">
         {plan.features.map((feature, index) => (

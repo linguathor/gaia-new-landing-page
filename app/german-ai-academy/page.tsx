@@ -1,25 +1,25 @@
 import { Metadata } from 'next';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import StickyCTA from '../../components/StickyCTA';
 import Hero from '../../components/Hero';
 import HowItWorks from '../../components/HowItWorks';
 import Pricing from '../../components/Pricing';
 import Guarantee from '../../components/Guarantee';
 import Testimonials from '../../components/Testimonials';
 import FAQ from '../../components/FAQ';
-import { generateSEO } from '../../lib/seo';
-import { generateFAQSchema, generateProductSchema } from '../../lib/schema';
+import { buildMetadata } from '../../lib/seo';
+import { faqJsonLd, productJsonLd } from '../../lib/schema';
 import { academy } from '../../content/germanAiAcademy';
 
-export const metadata: Metadata = generateSEO(
-  academy.hero.h1,
-  academy.hero.sub,
-  '/german-ai-academy'
-);
+export const metadata: Metadata = buildMetadata();
 
 export default function GermanAIAcademyPage() {
-  const faqSchema = generateFAQSchema(academy.faq.items);
-  const productSchemas = academy.pricing.plans.map(plan => generateProductSchema(plan));
+  const faqSchema = faqJsonLd(academy.faq.items);
+  const productSchemas = productJsonLd(
+    academy.pricing.plans.find(plan => plan.popular)!,
+    academy.pricing.plans.find(plan => !plan.popular)!
+  );
 
   return (
     <>
@@ -43,6 +43,7 @@ export default function GermanAIAcademyPage() {
         <Testimonials testimonials={academy.testimonials} />
         <FAQ faq={academy.faq} />
       </main>
+      <StickyCTA />
       <Footer />
     </>
   );
