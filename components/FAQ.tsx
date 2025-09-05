@@ -21,9 +21,9 @@ export default function FAQ({
       <div className="mt-6 space-y-4">
         {mergedItems.slice(0, 8).map((item, index) => (
           <div key={item.question} className="rounded-lg border bg-white p-4 hover:shadow-md hover:border-[#229DD1] transition-all duration-300">
-            <summary className="cursor-pointer text-base font-semibold hover:text-[#229DD1] transition-colors duration-300">
+            <h3 className="text-base font-semibold hover:text-[#229DD1] transition-colors duration-300">
               {item.question}
-            </summary>
+            </h3>
             <p className="mt-2 text-sm text-gray-700">
               {item.answer}
             </p>

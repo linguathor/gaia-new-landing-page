@@ -6,9 +6,32 @@ import Highlight from './fx/Highlight';
 
 export default function Hero() {
   return (
-    <header className="relative bg-white">
+    <header className="relative bg-white overflow-hidden">
       <BlobBg />
-      <div className="mx-auto max-w-screen-xl px-4 py-10 sm:py-12">
+      
+      {/* Left Instructor Image - David */}
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/4 hidden lg:block">
+        <div className="relative w-48 h-64 rounded-2xl overflow-hidden shadow-2xl transform -rotate-6">
+          <img 
+            src="/images/David.png" 
+            alt="David - AI Academy Instructor" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* Right Instructor Image - Flemming */}
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 hidden lg:block">
+        <div className="relative w-48 h-64 rounded-2xl overflow-hidden shadow-2xl transform rotate-6">
+          <img 
+            src="/images/Flemming.png" 
+            alt="Flemming - AI Academy Instructor" 
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-screen-xl px-4 py-10 sm:py-12 relative z-10">
         <div className="mx-auto max-w-3xl text-center">
           <div className="mx-auto mb-2 inline-flex items-center gap-2 rounded-full bg-[#E0F2FB] px-3 py-1 text-sm font-semibold text-[#0E3258]">
             Nächste Runde: Oktober • Begrenzte Plätze
