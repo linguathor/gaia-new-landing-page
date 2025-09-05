@@ -10,7 +10,7 @@ export const academy = {
 
   hero: {
     h1: "Dein schnellster Weg zu sicherem C1-Deutsch in 4 Monaten.",
-    sub: "Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte. Gratis Verlängerung, wenn Ziele nicht erreicht werden.",
+    sub: "Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.",
     ctaPrimary: { label: "Jetzt Premium starten – 990 € Launch", href: "https://YOUR_COPECART_LINK_PREMIUM" },
     ctaSecondary: { label: "Testlektion ansehen", href: "#testlektion" },
     badges: ["B1–C1 geeignet", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
@@ -26,11 +26,34 @@ export const academy = {
 
   outcomes: {
     title: "Ergebnisse in 4 Monaten",
-    summary: "Mehr aktive Wörter. Szenarien meistern. Spontan sprechen.",
+    summary: "Unser Versprechen an dich: sichtbare, nutzbare Fortschritte.",
     items: [
-      { label: "+1000 aktive Wörter", sub: "gezielt für Arbeit und Alltag", value: 1000 },
-      { label: "8–12 Gesprächs­szenerien", sub: "sicher meistern", value: 12 },
-      { label: "Spontanes Sprechen", sub: "ohne Angst vor Fehlern" }
+      { label: "800–1.200 neue aktive Wörter", sub: "gezielt für Arbeit & Alltag" },
+      { label: "8–12 Gesprächs­szenarien",     sub: "sicher meistern" },
+      { label: "Spontanes Sprechen",           sub: "ohne Denkpausen" },
+      { label: "Schnelles Verstehen",          sub: "Kern eines Gesprächs sofort erfassen" }
+    ],
+    definition: {
+      heading: "Was heißt »aktive Wörter«?",
+      text: "Ein Wort gilt als »aktiv«, wenn du es selbständig und korrekt in Gesprächen verwendest. Nicht nur passiv erkennen oder verstehen, sondern aktiv produzieren.",
+      examples: [
+        "Du sagst im Meeting: »Ich bin mit dem Projekt zufrieden« (statt nur zu verstehen, was andere sagen)",
+        "Du schreibst eine E-Mail: »Bitte senden Sie mir die Unterlagen« (statt nur einfache Sätze zu bilden)",
+        "Du diskutierst: »Das ist eine gute Idee, aber wir sollten auch...« (statt nur zuzuhören)"
+      ],
+      counting: "Wortformen werden zusammengezählt: »reden« zählt auch für »redete«, »geredet«, »rede« usw.",
+      practical: "Die Wörter sind direkt nützlich für deinen Arbeitsalltag: Meetings, Feedback-Gespräche, Small Talk mit Kollegen."
+    }
+  },
+
+  status: {
+    title: "Dein erreichbarer Status nach 4 Monaten",
+    bullets: [
+      "Absolutes Verständnis, wenn Kolleg:innen mit dir sprechen",
+      "Keine Denkpausen mehr beim Sprechen",
+      "Alle verstehen sofort, was du meinst",
+      "Du fühlst dich nicht mehr wie ein Außenseiter",
+      "Du kannst endlich du selbst sein – auch auf Deutsch"
     ]
   },
 
@@ -83,7 +106,33 @@ export const academy = {
       "Vorher-/Nachher-Check mit klaren Kriterien",
       "Kostenlose Verlängerung, wenn Ziele nicht erreicht"
     ],
-    detailsHref: "/garantie"
+    detailsHref: "/garantie",
+    percentage: 75,
+    guarantee: "Wenn du nicht zufrieden bist, bekommst du dein Geld zurück.",
+    // NEW: three headline metrics we surface on the page
+    metrics: [
+      {
+        key: "speakingTime",
+        label: "Sprechzeit/Woche",
+        value: 45,
+        unit: "Min",
+        help: "aus KI-Drills & Tandems"
+      },
+      {
+        key: "scenarioScore",
+        label: "Szenarien-Score",
+        value: 8,
+        unit: "/12",
+        help: "gemeisterte Gesprächsszenarien"
+      },
+      {
+        key: "fillerDrop",
+        label: "Füllwörter",
+        value: -32,
+        unit: "%",
+        help: "Rückgang vs. Woche 1"
+      }
+    ]
   },
 
   diagnostics: {
@@ -110,7 +159,7 @@ export const academy = {
 
   ux: {
     title: "Auf der Plattform",
-    summary: "Start-Pfad, Filter, KI-Chat, Offline-Modus – einfach zu nutzen.",
+    summary: "Zwischen den Calls nutzt du die Academy: kurze KI-Drills mit Feedback. Start-Pfad, Filter, KI-Chat, Offline-Modus.",
     checklist: [
       "Start-hier Pfad",
       "Filter nach Fertigkeiten und Themen",
@@ -128,14 +177,14 @@ export const academy = {
 
   fit: {
     title: "Passt das zu dir?",
-    summary: "Für B2+ mit Eigeninitiative. Nicht für A1/A2 oder passive Lerner.",
+    summary: "Ab B2 mit Eigeninitiative. Nicht für A1/A2 oder rein passives Lernen.",
     for: ["B2+ Niveau", "Eigeninitiative", "Zeit: 5–8 Stunden pro Woche"],
     notFor: ["A1/A2", "Nur passives Lernen", "Keine Zeit für kurze Aufgaben"]
   },
 
   cohort: {
-    title: "Nächster Start und Plätze",
-    summary: "Oktober 2025. Begrenzte Plätze – Warteliste empfohlen.",
+    title: "Nächste Runde",
+    summary: "Start in wenigen Wochen. Begrenzte Plätze.",
     start: "Oktober 2025",
     seats: "Begrenzte Plätze. Warteliste empfohlen.",
     cta: { label: "Warteliste", href: "/warteliste" }
@@ -145,8 +194,8 @@ export const academy = {
     title: "Deine Coaches",
     summary: "Flemming (Sprechen/Aussprache) und David (Wortschatz/Struktur).",
     people: [
-      { name: "Flemming", role: "Coach. Fokus: Sprechen und Aussprache.", img: "/images/flemming.jpg" },
-      { name: "David", role: "Coach. Fokus: Wortschatz und Struktur.", img: "/images/david.jpg" }
+      { name: "Flemming", role: "Coach. Fokus: Sprechen und Aussprache." },
+      { name: "David", role: "Coach. Fokus: Wortschatz und Struktur." }
     ]
   },
 
@@ -204,9 +253,9 @@ export const academy = {
   testimonials: {
     title: "Erfolge unserer Lerner",
     items: [
-      { name: "Pablo", text: "Ich mache schnell Fortschritte. Die Übungen sind klar. Die Live-Calls helfen mir beim Sprechen.", img: "/images/pablo.jpg", flagAlt: "ES" },
-      { name: "Sara", text: "Ich war unsicher beim Sprechen. Nach 4 Monaten fühle ich mich sicher in Meetings.", img: "/images/sara.jpg", flagAlt: "IT" },
-      { name: "Ignacio", text: "Die Struktur ist stark. Der Duo-Dialog motiviert. KI-Feedback ist direkt nutzbar.", img: "/images/ignacio.jpg", flagAlt: "AR" }
+      { name: "Pablo", text: "Ich mache schnell Fortschritte. Die Übungen sind klar. Die Live-Calls helfen mir beim Sprechen.", flagAlt: "ES" },
+      { name: "Sara", text: "Ich war unsicher beim Sprechen. Nach 4 Monaten fühle ich mich sicher in Meetings.", flagAlt: "IT" },
+      { name: "Ignacio", text: "Die Struktur ist stark. Der Duo-Dialog motiviert. KI-Feedback ist direkt nutzbar.", flagAlt: "AR" }
     ]
   },
 
@@ -224,6 +273,7 @@ export const academy = {
     items: [
       { q: "Wie groß sind die Gruppen?", a: "Großes Format, aber jeder kommt dran: Hot-Seat, Tandems, Aufgaben." },
       { q: "Wie funktioniert die Garantie?", a: "Vorher/Nachher-Check und Mindestbeteiligung. Details auf der Garantieseite." },
+      { q: "Warum kostet Premium 990 €?", a: "Im Preis enthalten: 16 Live-Calls mit Coaching, geführte Tandems, KI-Feedback (laufende Rechenkosten), Plattform & Materialien, sowie Messung/Reporting. Zudem: 10-Tage Geld-zurück und kostenlose Verlängerung, falls Ziele nicht erreicht werden." },
       { q: "Brauche ich Anki?", a: "Nicht zwingend. Wir bieten Alternativen und optionalen Download." },
       { q: "Welche Themen und Skills?", a: "Hören, Sprechen, Schreiben, Grammatik. Mit Themenfilter." },
       { q: "Wie starte ich?", a: "Teste die Lektion. Wähle deinen Plan. Starte heute." }

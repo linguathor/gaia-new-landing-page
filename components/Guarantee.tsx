@@ -8,7 +8,7 @@ interface GuaranteeProps {
 
 export default function Guarantee({ guarantee }: GuaranteeProps) {
   return (
-    <section className="py-16 px-4 bg-green-50" aria-labelledby="guarantee-title">
+    <section id="garantie" className="py-16 px-4 bg-green-50" aria-labelledby="guarantee-title">
       <div className="max-w-screen-xl mx-auto text-center">
         <h2 id="guarantee-title" className="text-3xl md:text-4xl font-bold mb-6">
           {guarantee.title}

@@ -1,7 +1,7 @@
 // components/Instructors.tsx
 import Image from "next/image";
 
-type Person = { name: string; role: string; img: string };
+type Person = { name: string; role: string; img?: string };
 
 export default function Instructors({
   title,
@@ -22,13 +22,19 @@ export default function Instructors({
           {people.map((p) => (
             <li key={p.name} className="rounded-xl border bg-gray-50 p-6">
               <div className="flex items-start gap-4">
-                <Image
-                  src={p.img}
-                  alt={p.name}
-                  width={64}
-                  height={64}
-                  className="h-16 w-16 rounded-full object-cover"
-                />
+                {p.img ? (
+                  <Image
+                    src={p.img}
+                    alt={p.name}
+                    width={64}
+                    height={64}
+                    className="h-16 w-16 rounded-full object-cover"
+                  />
+                ) : (
+                  <div className="h-16 w-16 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold">
+                    {p.name.charAt(0)}
+                  </div>
+                )}
                 <div>
                   <div className="font-semibold text-gray-900">{p.name}</div>
                   <div className="text-sm text-gray-600">{p.role}</div>

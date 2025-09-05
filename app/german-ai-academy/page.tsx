@@ -8,6 +8,8 @@ import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
 import Hero from '../../components/Hero';
+import ReachableStatus from '../../components/ReachableStatus';
+import GuaranteeStrip from '../../components/GuaranteeStrip';
 import Outcomes from '../../components/Outcomes';
 import LearningLoop from '../../components/LearningLoop';
 import CallProgram from '../../components/CallProgram';
@@ -89,15 +91,17 @@ export default function GermanAIAcademyPage() {
         {/* === BAND A: HERO (clean white) === */}
         <section aria-label="Hero" className="bg-white">
           <Compact>
-            <Hero hero={academy.hero} />
+            <Hero />
           </Compact>
         </section>
+        <ReachableStatus />
+        <GuaranteeStrip />
 
         {/* Slight overlap to reduce the "gap" below hero */}
         {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
         <section aria-label="Ergebnisse & Lern-Loop" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
-            <Outcomes title={academy.outcomes.title} summary={academy.outcomes.summary} items={academy.outcomes.items as any} />
+            <Outcomes />
             <LearningLoop title={academy.learningLoop.title} summary={academy.learningLoop.summary} steps={academy.learningLoop.steps as any} />
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
@@ -118,8 +122,8 @@ export default function GermanAIAcademyPage() {
           style={{ backgroundColor: '#88B6CD' }}
         >
           <Compact>
-            <ProgressMeter title={academy.progress.title} summary={academy.progress.summary} bullets={academy.progress.bullets as any} />
-            <Diagnostics title={academy.diagnostics.title} summary={academy.diagnostics.summary} bullets={academy.diagnostics.bullets as any} />
+            <ProgressMeter />
+            <Diagnostics />
             {/* NEW: denser, concrete "what happens next" steps */}
             <OnboardingSteps />
           </Compact>

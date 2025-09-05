@@ -1,75 +1,52 @@
 import Link from 'next/link';
-import Highlight from './fx/Highlight';
+import { academy } from '../content/germanAiAcademy';
 import BlobBg from './fx/BlobBg';
 import MagneticButton from './fx/MagneticButton';
+import Highlight from './fx/Highlight';
 
-interface HeroProps {
-  hero: {
-    h1: string;
-    sub: string;
-    ctaPrimary: { label: string; href: string };
-    ctaSecondary: { label: string; href: string };
-    badges: readonly string[];
-    image?: { src: string; alt: string; width: number; height: number };
-  };
-}
-
-export default function Hero({ hero }: HeroProps) {
+export default function Hero() {
   return (
-    <header className="text-white py-20 px-4 relative overflow-hidden" style={{ background: 'linear-gradient(135deg, #1183B7 0%, #229DD1 60%, #88B6CD 100%)' }}>
-      {/* Animated blob background */}
+    <header className="relative bg-white">
       <BlobBg />
-
-      {/* Subtle pattern overlay */}
-      <div className="absolute inset-0 opacity-10 [background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.3)_1px,transparent_0)] [background-size:20px_20px]" />
-
-      <div className="relative mx-auto max-w-3xl text-center">
-        {/* Eyebrow bar */}
-        <div className="mx-auto mb-6 inline-flex items-center gap-2 rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-semibold">
-          Nächste Kohorte: Oktober • Begrenzte Plätze
-        </div>
-
-        <h1 className="text-4xl sm:text-5xl font-extrabold [text-wrap:balance] leading-tight">
-          Dein schnellster Weg zu <Highlight>sicherem</Highlight> C1-Deutsch in 4 Monaten.
-        </h1>
-
-        <p className="mt-4 text-lg sm:text-xl text-amber-50 max-w-2xl mx-auto [text-wrap:balance]">
-          Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte. Gratis Verlängerung bei Zielverfehlung.
-        </p>
-
-        {/* Trust row */}
-        <ul className="mt-8 flex flex-wrap justify-center gap-3 text-sm text-amber-100">
-          <li className="rounded-full bg-white/10 backdrop-blur-sm px-4 py-2">Untertitel & Transkripte</li>
-          <li className="rounded-full bg-white/10 backdrop-blur-sm px-4 py-2">Aufzeichnungen</li>
-          <li className="rounded-full bg-white/10 backdrop-blur-sm px-4 py-2">Geld-zurück-Garantie</li>
-        </ul>
-
-        {/* CTAs */}
-        <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-          <MagneticButton href={hero.ctaPrimary.href}>
-            {hero.ctaPrimary.label}
-          </MagneticButton>
-          <Link
-            href={hero.ctaSecondary.href}
-            className="border-2 border-white text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white hover:text-[#229DD1] transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
-            role="button"
-            aria-label={hero.ctaSecondary.label}
-          >
-            {hero.ctaSecondary.label}
-          </Link>
-        </div>
-
-        {/* Badges */}
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          {hero.badges.map((badge, index) => (
-            <span
-              key={index}
-              className="bg-white/90 backdrop-blur-sm text-[#229DD1] px-4 py-2 rounded-full text-sm font-semibold shadow-sm hover:bg-white hover:scale-105 transition-all duration-300"
-              aria-label={`Badge: ${badge}`}
+      <div className="mx-auto max-w-screen-xl px-4 py-10 sm:py-12">
+        <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto mb-2 inline-flex items-center gap-2 rounded-full bg-[#E0F2FB] px-3 py-1 text-sm font-semibold text-[#0E3258]">
+            Nächste Runde: Oktober • Begrenzte Plätze
+          </div>
+          <h1 className="text-4xl sm:text-5xl font-extrabold [text-wrap:balance]">
+            Dein schnellster Weg zu <Highlight>sicherem&nbsp;C1-Deutsch</Highlight>{' '}
+            in <span className="whitespace-nowrap"><Highlight>4&nbsp;Monaten</Highlight></span>.
+          </h1>
+          <p className="mt-2 text-base sm:text-lg text-gray-700">
+            Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.
+          </p>
+          <div className="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
+            <MagneticButton href={academy.pricing.plans[1].cta.href}>
+              {academy.pricing.plans[1].cta.label}
+            </MagneticButton>
+            <Link
+              href="#pricing"
+              role="button"
+              aria-label="Alle Details"
+              className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2"
             >
-              {badge}
-            </span>
-          ))}
+              Alle Details
+            </Link>
+          </div>
+
+          {/* Garantie-Hervorhebung */}
+          <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-[#0E3258]">
+            <svg className="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+              <path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4zM7 10h10M9 14h6" />
+            </svg>
+            <span>10-Tage Geld-zurück-Garantie + Kostenlose Verlängerung</span>
+          </div>
+
+          <ul className="mt-3 flex flex-wrap justify-center gap-2 text-[11px] text-gray-600">
+            <li className="rounded-full bg-gray-100 px-2.5 py-1">Untertitel & Transkripte</li>
+            <li className="rounded-full bg-gray-100 px-2.5 py-1">Aufzeichnungen</li>
+            <li className="rounded-full bg-emerald-100 px-2.5 py-1 font-medium text-emerald-800">Ohne Risiko starten</li>
+          </ul>
         </div>
       </div>
     </header>
