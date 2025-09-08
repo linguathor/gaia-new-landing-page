@@ -17,6 +17,7 @@ import Interactivity from '../../components/Interactivity';
 import Materials from '../../components/Materials';
 import TandemExplainer from '../../components/TandemExplainer';
 import ProgressMeter from '../../components/ProgressMeter';
+import ProgressMetrics from '../../components/ProgressMetrics';
 import Diagnostics from '../../components/Diagnostics';
 import AccountabilityOptin from '../../components/AccountabilityOptin';
 import AiPlan from '../../components/AiPlan';
@@ -106,6 +107,9 @@ export default function GermanAIAcademyPage() {
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
         </section>
+
+        {/* === PROGRESS METRICS SECTION === */}
+        <ProgressMetrics />
 
         {/* === BAND C: LIGHT GRAY — Materials + Interactivity + Tandem === */}
         <section aria-label="Materialien & Interaktivität & Tandem" className="bg-gray-50">
