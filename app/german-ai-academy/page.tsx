@@ -17,8 +17,30 @@ import Interactivity from '../../components/Interactivity';
 import Materials from '../../components/Materials';
 import TandemExplainer from '../../components/TandemExplainer';
 import ProgressMeter from '../../components/ProgressMeter';
-import ProgressMetrics from '../../components/ProgressMetrics';
 import Diagnostics from '../../components/Diagnostics';
+
+// Dynamic import for ProgressMetrics (heavy dashboard component)
+const ProgressMetrics = dynamic(
+  () => import('../../components/ProgressMetrics'),
+  {
+    loading: () => (
+      <div className="section-spacing bg-gradient-to-br from-primary-50 via-white to-secondary-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 animate-pulse">
+          <div className="text-center mb-12">
+            <div className="h-10 bg-neutral-200 rounded w-80 mx-auto mb-4"></div>
+            <div className="h-6 bg-neutral-100 rounded w-96 mx-auto"></div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[1, 2, 3, 4].map(i => (
+              <div key={i} className="bg-white rounded-xl h-80 shadow-soft"></div>
+            ))}
+          </div>
+        </div>
+      </div>
+    ),
+    ssr: true
+  }
+);
 import StickyCTA from '../../components/fx/StickyCTA';
 import AccountabilityOptin from '../../components/AccountabilityOptin';
 import AiPlan from '../../components/AiPlan';
@@ -30,9 +52,32 @@ import Instructors from '../../components/Instructors';
 import Pricing from '../../components/Pricing';
 import Guarantee from '../../components/Guarantee';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
-import TestimonialsSection from '../../components/Testimonials/TestimonialsSection';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
+import dynamic from 'next/dynamic';
+
+// Dynamic imports for performance optimization
+const TestimonialsSection = dynamic(
+  () => import('../../components/Testimonials/TestimonialsSection'),
+  {
+    loading: () => (
+      <div className="section-spacing bg-gradient-to-br from-success-50 via-white to-primary-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center animate-pulse">
+            <div className="h-12 bg-neutral-200 rounded-lg w-96 mx-auto mb-6"></div>
+            <div className="h-6 bg-neutral-100 rounded w-80 mx-auto mb-12"></div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[1, 2, 3].map(i => (
+                <div key={i} className="bg-white rounded-xl h-96 animate-pulse"></div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    ),
+    ssr: false
+  }
+);
 
 // NEW: denser wrappers / bands
 import Compact from '../../components/Compact';
@@ -41,6 +86,7 @@ import OnboardingSteps from '../../components/OnboardingSteps';
 
 // Effects
 import StickyProgress from '../../components/fx/StickyProgress';
+import PerformanceDashboard from '../../components/fx/PerformanceDashboard';
 
 export const metadata: Metadata = buildMetadata();
 
@@ -197,6 +243,32 @@ export default function GermanAIAcademyPage() {
         ctaHref={academy.hero.ctaPrimary.href}
         spotsLeft={academy.hero.urgency.spotsLeft}
       />
+
+      {/* Performance monitoring */}
+      {process.env.NODE_ENV === 'production' && (
+        <script 
+          dangerouslySetInnerHTML={{
+            __html: `
+              // Initialize performance optimizations
+              if (typeof window !== 'undefined') {
+                // Preconnect to external domains
+                const preconnect = (href) => {
+                  const link = document.createElement('link');
+                  link.rel = 'preconnect';
+                  link.href = href;
+                  document.head.appendChild(link);
+                };
+                preconnect('https://images.unsplash.com');
+                preconnect('https://fonts.googleapis.com');
+                preconnect('https://fonts.gstatic.com');
+              }
+            `
+          }}
+        />
+      )}
+      
+      {/* Development performance dashboard */}
+      {process.env.NODE_ENV === 'development' && <PerformanceDashboard />}
     </>
   );
 }

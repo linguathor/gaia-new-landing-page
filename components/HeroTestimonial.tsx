@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import OptimizedImage from './fx/OptimizedImage';
 import { testimonials } from '../content/testimonials';
 
 export default function HeroTestimonial() {
@@ -9,12 +9,15 @@ export default function HeroTestimonial() {
     <div className="bg-white rounded-2xl shadow-soft border border-success-200 p-6 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '1.6s' }}>
       <div className="flex items-start space-x-4">
         <div className="relative w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-soft flex-shrink-0">
-          <Image
+          <OptimizedImage
             src={heroTestimonial.photo}
             alt={`${heroTestimonial.name} - GAIA Success Story`}
             width={64}
             height={64}
             className="w-full h-full object-cover"
+            priority={true}
+            quality={90}
+            sizes="64px"
           />
         </div>
         <div className="flex-grow">

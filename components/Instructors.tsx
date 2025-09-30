@@ -1,5 +1,5 @@
 // components/Instructors.tsx
-import Image from "next/image";
+import OptimizedImage from './fx/OptimizedImage';
 
 type Person = { name: string; role: string; img?: string };
 
@@ -23,7 +23,7 @@ export default function Instructors({
             <li key={p.name} className="rounded-xl border bg-gray-50 p-6">
               <div className="flex items-start gap-4">
                 {p.img ? (
-                  <Image
+                  <OptimizedImage
                     src={p.img}
                     alt={p.name}
                     width={64}

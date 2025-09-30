@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import PerformanceMonitor from '../components/fx/PerformanceMonitor'
 
 export const metadata: Metadata = {
   title: 'German AI Academy',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="de">
-      <body className="font-sans antialiased">{children}</body>
+      <body className="font-sans antialiased">
+        {children}
+        <PerformanceMonitor />
+      </body>
     </html>
   )
 }

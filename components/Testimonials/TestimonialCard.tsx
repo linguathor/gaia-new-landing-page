@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import OptimizedImage from '../fx/OptimizedImage';
 import { Testimonial } from '../../content/testimonials';
 
 interface TestimonialCardProps {
@@ -24,14 +24,14 @@ export default function TestimonialCard({ testimonial, delay = 0 }: TestimonialC
       {/* Header with photo and info */}
       <div className="flex items-start mb-6">
         <div className="relative w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-soft group-hover:shadow-primary transition-all duration-300 flex-shrink-0">
-          <Image
+          <OptimizedImage
             src={testimonial.photo}
             alt={`${testimonial.name} - GAIA Student`}
             width={64}
             height={64}
             className="w-full h-full object-cover"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEAMQAAAB2kJnn//EABoQAAEFAQEAAAAAAAAAAAAAAAEAAgMEBQYH/9oACAEBAAEFAuGI7jqTq"
+            quality={90}
+            sizes="64px"
           />
         </div>
         <div className="ml-4 flex-grow">

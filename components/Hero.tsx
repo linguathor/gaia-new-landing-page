@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import OptimizedImage from './fx/OptimizedImage';
 import { academy } from '../content/germanAiAcademy';
 import BlobBg from './fx/BlobBg';
 import MagneticButton from './fx/MagneticButton';
@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Left Instructor Image - David - Enhanced */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/4 hidden lg:block">
         <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-hover transform -rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:-rotate-12">
-          <Image 
+          <OptimizedImage 
             src="/images/David.png" 
             alt="David - AI Academy Instructor" 
             width={192}
@@ -30,7 +30,7 @@ export default function Hero() {
       {/* Right Instructor Image - Flemming - Enhanced */}
       <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 hidden lg:block">
         <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-hover transform rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:rotate-12">
-          <Image 
+          <OptimizedImage 
             src="/images/Flemming.png" 
             alt="Flemming - AI Academy Instructor" 
             width={192}
