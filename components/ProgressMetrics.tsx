@@ -1,3 +1,5 @@
+import AnimatedCounter from './fx/AnimatedCounter';
+
 export default function ProgressMetrics() {
   return (
     <section className="section-spacing bg-gradient-to-br from-primary-50 via-white to-secondary-50">
@@ -47,7 +49,9 @@ export default function ProgressMetrics() {
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-2xl font-bold text-primary-600">42 Min</span>
+                <span className="text-2xl font-bold text-primary-600">
+                  <AnimatedCounter end={42} suffix=" Min" />
+                </span>
               </div>
             </div>
 
@@ -82,7 +86,9 @@ export default function ProgressMetrics() {
                 ))}
               </div>
               <div className="text-center mt-2">
-                <span className="text-2xl font-bold text-primary-600">9/12</span>
+                <span className="text-2xl font-bold text-primary-600">
+                  <AnimatedCounter end={9} />/12
+                </span>
                 <p className="text-sm text-neutral-600">Szenarien gemeistert</p>
               </div>
             </div>
@@ -118,7 +124,9 @@ export default function ProgressMetrics() {
                 </svg>
               </div>
               <div className="text-center">
-                <span className="text-2xl font-bold text-success-600">-28%</span>
+                <span className="text-2xl font-bold text-success-600">
+                  -<AnimatedCounter end={28} suffix="%" />
+                </span>
                 <p className="text-sm text-neutral-600">(vs. Woche 1)</p>
               </div>
             </div>
@@ -145,7 +153,9 @@ export default function ProgressMetrics() {
             {/* Word Counter Visualization */}
             <div className="mb-4">
               <div className="text-center">
-                <span className="text-3xl font-bold text-secondary-600">1,247</span>
+                <span className="text-3xl font-bold text-secondary-600">
+                  <AnimatedCounter end={1247} />
+                </span>
                 <p className="text-sm text-neutral-600">Aktive Wörter</p>
               </div>
               <div className="mt-2 bg-neutral-200 rounded-full h-3 shadow-inner">

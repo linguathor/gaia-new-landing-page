@@ -84,6 +84,11 @@ import Compact from '../../components/Compact';
 import LaunchBonuses from '../../components/LaunchBonuses';
 import OnboardingSteps from '../../components/OnboardingSteps';
 
+// Phase 7: Advanced Features
+import GermanLevelQuiz from '../../components/GermanLevelQuiz';
+import ProgressCalculator from '../../components/ProgressCalculator';
+import TrustBadges from '../../components/TrustBadges';
+
 // Effects
 import StickyProgress from '../../components/fx/StickyProgress';
 import PerformanceDashboard from '../../components/fx/PerformanceDashboard';
@@ -168,6 +173,9 @@ export default function GermanAIAcademyPage() {
         {/* === PROGRESS METRICS SECTION === */}
         <ProgressMetrics />
 
+        {/* === GERMAN LEVEL QUIZ === */}
+        <GermanLevelQuiz />
+
         {/* === BAND C: LIGHT GRAY — Materials + Interactivity + Tandem === */}
         <section aria-label="Materialien & Interaktivität & Tandem" className="bg-gray-50">
           <Compact>
@@ -208,6 +216,9 @@ export default function GermanAIAcademyPage() {
           </Compact>
         </section>
 
+        {/* === PROGRESS CALCULATOR === */}
+        <ProgressCalculator />
+
         {/* === BAND G: LIGHT GRAY — Instructors === */}
         <section aria-label="Coaches" className="bg-gray-50">
           <Compact>
@@ -227,6 +238,9 @@ export default function GermanAIAcademyPage() {
 
         {/* === ENHANCED TESTIMONIALS SECTION === */}
         <TestimonialsSection />
+
+        {/* === TRUST BADGES === */}
+        <TrustBadges />
 
         {/* === BAND I: CLEAN WHITE — FAQ === */}
         <section aria-label="FAQ" className="bg-white">

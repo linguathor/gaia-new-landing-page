@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import OptimizedImage from './fx/OptimizedImage';
+import { FloatingShapes, AnimatedGradientBg } from './fx/FloatingElements';
 import { academy } from '../content/germanAiAcademy';
 import BlobBg from './fx/BlobBg';
 import MagneticButton from './fx/MagneticButton';
@@ -11,6 +12,8 @@ export default function Hero() {
   return (
     <header className="relative bg-gradient-to-br from-primary-50 via-white to-accent-50 overflow-hidden">
       <BlobBg />
+      <AnimatedGradientBg />
+      <FloatingShapes />
       
       {/* Left Instructor Image - David - Enhanced */}
       <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/4 hidden lg:block">
