@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --bg-accent: #fffbeb;      /* amber-50 section bg */
-  --bg-band: linear-gradient(90deg, #fde68a22, #fff, #fde68a22);
-  --ring: #d97706;           /* amber-600 */
-  --text-primary: #374151;   /* slate-700 */
-  --text-secondary: #6b7280; /* slate-500 */
-  --success: #059669;        /* emerald-600 */
+  /* Enhanced Design System Colors */
+  --primary: #1a365d;        /* Deep blue primary */
+  --secondary: #2d7d9a;      /* Ocean blue secondary */
+  --accent: #f6ad55;         /* Warm orange accent */
+  --success: #38a169;        /* Green success */
+  --neutral: #718096;        /* Gray neutral */
+  
+  /* Background variants */
+  --bg-accent: #fffdf2;      /* accent-50 */
+  --bg-primary: #eff6ff;     /* primary-50 */
+  --bg-band: linear-gradient(90deg, #f6ad5522, #fff, #f6ad5522);
+  
+  /* Interactive states */
+  --ring: #f6ad55;           /* accent-500 */
+  --text-primary: #1e293b;   /* neutral-900 */
+  --text-secondary: #718096; /* neutral-500 */
   --warning: #dc2626;        /* rose-600 */
 }
 
@@ -16,7 +26,53 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Custom animations */
+/* Enhanced Typography */
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-primary-600 font-bold;
+  }
+  
+  p {
+    @apply text-neutral-700 leading-relaxed;
+  }
+  
+  body {
+    @apply text-neutral-800 antialiased;
+  }
+}
+
+/* Enhanced Component Styles */
+@layer components {
+  .btn-primary {
+    @apply bg-gradient-to-br from-primary-600 to-secondary-500 text-white font-semibold px-6 py-3 rounded-xl shadow-primary transition-all duration-300 hover:shadow-hover hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2 active:translate-y-0;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-primary-600 font-semibold px-6 py-3 rounded-xl border-2 border-primary-600 shadow-soft transition-all duration-300 hover:bg-primary-50 hover:shadow-primary focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+  
+  .btn-accent {
+    @apply bg-gradient-to-br from-accent-500 to-accent-600 text-white font-semibold px-6 py-3 rounded-xl shadow-accent transition-all duration-300 hover:shadow-hover hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+  
+  .card-elevated {
+    @apply bg-white rounded-xl shadow-soft border border-neutral-200 transition-all duration-300 hover:shadow-primary hover:-translate-y-1;
+  }
+  
+  .section-spacing {
+    @apply py-20 lg:py-24;
+  }
+  
+  .subsection-spacing {
+    @apply py-12 lg:py-16;
+  }
+  
+  .content-spacing {
+    @apply space-y-6 lg:space-y-8;
+  }
+}
+
+/* Enhanced animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -28,8 +84,36 @@ html {
   }
 }
 
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseSoft {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
 .animate-fadeIn {
   animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.animate-pulseSoft {
+  animation: pulseSoft 2s infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

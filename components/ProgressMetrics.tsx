@@ -1,25 +1,25 @@
 export default function ProgressMetrics() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="section-spacing bg-gradient-to-br from-primary-50 via-white to-secondary-50">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <div className="text-center subsection-spacing animate-slide-up">
+          <h2 className="text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
             So messen wir deinen Fortschritt
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto font-medium">
             Klar, kurz, nützlich – jede Woche im Dashboard.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {/* Sprechzeit pro Woche */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                <span className="text-2xl">🗣</span>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          {/* Sprechzeit pro Woche - Enhanced */}
+          <div className="card-elevated p-8 group">
+            <div className="flex items-center mb-6">
+              <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center shadow-soft group-hover:shadow-primary transition-all duration-300">
+                <span className="text-3xl">🗣</span>
               </div>
-              <div className="ml-3">
-                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Sprechzeit pro Woche</h3>
+              <div className="ml-4">
+                <h3 className="text-xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">Sprechzeit pro Woche</h3>
               </div>
             </div>
             
@@ -38,7 +38,7 @@ export default function ProgressMetrics() {
                   cx="50"
                   cy="50"
                   r="40"
-                  stroke="#10b981"
+                  stroke="#38a169"
                   strokeWidth="8"
                   fill="none"
                   strokeDasharray="251.2"
@@ -47,25 +47,25 @@ export default function ProgressMetrics() {
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-xl font-bold text-gray-900">42 Min</span>
+                <span className="text-2xl font-bold text-primary-600">42 Min</span>
               </div>
             </div>
 
-            <ul className="text-base sm:text-sm text-gray-600 space-y-2 leading-relaxed">
-              <li><strong>Heißt:</strong> Wie viel du wirklich sprichst – nur reden zählt.</li>
-              <li><strong>Beispiel:</strong> 10 Min KI + 20 Min Tandem = 30 Min echte Sprechzeit.</li>
-              <li><strong>Warum wichtig:</strong> Mehr reden = schneller flüssig. 💪</li>
+            <ul className="text-sm text-neutral-600 space-y-3 leading-relaxed">
+              <li><strong className="text-primary-600">Heißt:</strong> Wie viel du wirklich sprichst – nur reden zählt.</li>
+              <li><strong className="text-primary-600">Beispiel:</strong> 10 Min KI + 20 Min Tandem = 30 Min echte Sprechzeit.</li>
+              <li><strong className="text-primary-600">Warum wichtig:</strong> Mehr reden = schneller flüssig. 💪</li>
             </ul>
           </div>
 
-          {/* Szenarien-Score */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                <span className="text-2xl">🎯</span>
+          {/* Szenarien-Score - Enhanced */}
+          <div className="card-elevated p-8 group">
+            <div className="flex items-center mb-6">
+              <div className="w-14 h-14 bg-success-100 rounded-2xl flex items-center justify-center shadow-soft group-hover:shadow-primary transition-all duration-300">
+                <span className="text-3xl">🎯</span>
               </div>
-              <div className="ml-3">
-                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Szenarien-Score (0–12)</h3>
+              <div className="ml-4">
+                <h3 className="text-xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">Szenarien-Score (0–12)</h3>
               </div>
             </div>
 
@@ -75,33 +75,33 @@ export default function ProgressMetrics() {
                 {Array.from({ length: 12 }, (_, i) => (
                   <div
                     key={i}
-                    className={`w-3 h-3 rounded-full ${
-                      i < 9 ? 'bg-green-500' : 'bg-gray-300'
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      i < 9 ? 'bg-success-500 shadow-sm' : 'bg-neutral-300'
                     }`}
                   />
                 ))}
               </div>
               <div className="text-center mt-2">
-                <span className="text-2xl font-bold text-gray-900">9/12</span>
-                <p className="text-sm text-gray-600">Szenarien gemeistert</p>
+                <span className="text-2xl font-bold text-primary-600">9/12</span>
+                <p className="text-sm text-neutral-600">Szenarien gemeistert</p>
               </div>
             </div>
 
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li><strong>Heißt:</strong> In wie vielen Alltagssituationen du locker sprichst.</li>
-              <li><strong>Beispiele:</strong> 📊 Projekt-Update, 💬 Small Talk, 👍 Feedback geben</li>
-              <li><strong>Warum wichtig:</strong> Du kannst Deutsch im echten Leben abrufen, nicht nur im Kopf kennen.</li>
+            <ul className="text-sm text-neutral-600 space-y-3 leading-relaxed">
+              <li><strong className="text-primary-600">Heißt:</strong> In wie vielen Alltagssituationen du locker sprichst.</li>
+              <li><strong className="text-primary-600">Beispiele:</strong> 📊 Projekt-Update, 💬 Small Talk, 👍 Feedback geben</li>
+              <li><strong className="text-primary-600">Warum wichtig:</strong> Du kannst Deutsch im echten Leben abrufen, nicht nur im Kopf kennen.</li>
             </ul>
           </div>
 
-          {/* Füllwörter */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                <span className="text-2xl">✂️</span>
+          {/* Füllwörter - Enhanced */}
+          <div className="card-elevated p-8 group">
+            <div className="flex items-center mb-6">
+              <div className="w-14 h-14 bg-accent-100 rounded-2xl flex items-center justify-center shadow-soft group-hover:shadow-primary transition-all duration-300">
+                <span className="text-3xl">✂️</span>
               </div>
-              <div className="ml-3">
-                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Füllwörter ↓</h3>
+              <div className="ml-4">
+                <h3 className="text-xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">Füllwörter ↓</h3>
               </div>
             </div>
 
@@ -111,82 +111,82 @@ export default function ProgressMetrics() {
                 <svg className="w-full h-full" viewBox="0 0 100 50">
                   <polyline
                     fill="none"
-                    stroke="#ef4444"
+                    stroke="#38a169"
                     strokeWidth="2"
                     points="10,40 25,35 40,25 55,20 70,15 85,10"
                   />
                 </svg>
               </div>
               <div className="text-center">
-                <span className="text-2xl font-bold text-green-600">-28%</span>
-                <p className="text-sm text-gray-600">(vs. Woche 1)</p>
+                <span className="text-2xl font-bold text-success-600">-28%</span>
+                <p className="text-sm text-neutral-600">(vs. Woche 1)</p>
               </div>
             </div>
 
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li><strong>Heißt:</strong> Weniger „äh, ähm, also…".</li>
-              <li><strong>Vorher:</strong> „Also äh, ich äh wollte sagen, dass ähm…"</li>
-              <li><strong>Nachher:</strong> „Ich wollte sagen, dass…" ✅</li>
-              <li><strong>Warum wichtig:</strong> Du klingst klarer und souveräner – gerade in Meetings. 👔</li>
+            <ul className="text-sm text-neutral-600 space-y-3 leading-relaxed">
+              <li><strong className="text-primary-600">Heißt:</strong> Weniger „äh, ähm, also…".</li>
+              <li><strong className="text-primary-600">Vorher:</strong> „Also äh, ich äh wollte sagen, dass ähm…"</li>
+              <li><strong className="text-primary-600">Nachher:</strong> „Ich wollte sagen, dass…" ✅</li>
+              <li><strong className="text-primary-600">Warum wichtig:</strong> Du klingst klarer und souveräner – gerade in Meetings. 👔</li>
             </ul>
           </div>
 
-          {/* Aktive Wörter */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
-            <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                <span className="text-2xl">📈</span>
+          {/* Aktive Wörter - Enhanced */}
+          <div className="card-elevated p-8 group">
+            <div className="flex items-center mb-6">
+              <div className="w-14 h-14 bg-secondary-100 rounded-2xl flex items-center justify-center shadow-soft group-hover:shadow-primary transition-all duration-300">
+                <span className="text-3xl">📈</span>
               </div>
-              <div className="ml-3">
-                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Aktive Wörter</h3>
+              <div className="ml-4">
+                <h3 className="text-xl font-bold text-primary-600 group-hover:text-primary-700 transition-colors">Aktive Wörter</h3>
               </div>
             </div>
 
             {/* Word Counter Visualization */}
             <div className="mb-4">
               <div className="text-center">
-                <span className="text-3xl font-bold text-purple-600">1,247</span>
-                <p className="text-sm text-gray-600">Aktive Wörter</p>
+                <span className="text-3xl font-bold text-secondary-600">1,247</span>
+                <p className="text-sm text-neutral-600">Aktive Wörter</p>
               </div>
-              <div className="mt-2 bg-gray-200 rounded-full h-2">
-                <div className="bg-purple-600 h-2 rounded-full" style={{ width: '85%' }}></div>
+              <div className="mt-2 bg-neutral-200 rounded-full h-3 shadow-inner">
+                <div className="bg-gradient-to-r from-secondary-500 to-secondary-600 h-3 rounded-full shadow-sm transition-all duration-500" style={{ width: '85%' }}></div>
               </div>
-              <p className="text-xs text-gray-500 mt-1">Ziel: 1,500 Wörter</p>
+              <p className="text-xs text-neutral-500 mt-2 font-medium">Ziel: 1,500 Wörter</p>
             </div>
 
-            <ul className="text-sm text-gray-600 space-y-2">
-              <li><strong>Heißt:</strong> Wörter, die du selbst benutzt, nicht nur erkennst.</li>
-              <li><strong>Beispiel:</strong> „vereinbaren" dreimal korrekt → zählt als aktiv.</li>
-              <li><strong>Warum wichtig:</strong> Du lernst Vokabeln, die sofort in Meetings, Mails und Gesprächen nützlich sind.</li>
+            <ul className="text-sm text-neutral-600 space-y-3 leading-relaxed">
+              <li><strong className="text-primary-600">Heißt:</strong> Wörter, die du selbst benutzt, nicht nur erkennst.</li>
+              <li><strong className="text-primary-600">Beispiel:</strong> „vereinbaren" dreimal korrekt → zählt als aktiv.</li>
+              <li><strong className="text-primary-600">Warum wichtig:</strong> Du lernst Vokabeln, die sofort in Meetings, Mails und Gesprächen nützlich sind.</li>
             </ul>
           </div>
         </div>
 
-        {/* Summary Section */}
-        <div className="mt-12 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-6 sm:p-8 text-center">
-          <div className="flex flex-col sm:flex-row items-center justify-center mb-6">
-            <span className="text-4xl sm:text-3xl mb-2 sm:mb-0 sm:mr-2">👉</span>
-            <h3 className="text-2xl sm:text-xl font-bold text-gray-900 leading-tight">
+        {/* Enhanced Summary Section */}
+        <div className="subsection-spacing bg-gradient-to-r from-primary-50 via-accent-50 to-success-50 rounded-3xl p-8 sm:p-12 text-center shadow-soft border border-accent-200 animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="flex flex-col sm:flex-row items-center justify-center mb-8">
+            <span className="text-5xl sm:text-4xl mb-4 sm:mb-0 sm:mr-4">👉</span>
+            <h3 className="text-3xl sm:text-2xl lg:text-3xl font-bold text-primary-600 leading-tight">
               Dein Dashboard = dein Deutsch-Fitness-Tracker
             </h3>
           </div>
-          <p className="text-xl sm:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-2xl sm:text-xl lg:text-2xl text-neutral-700 max-w-5xl mx-auto leading-relaxed font-medium">
             🟢 Sprechzeit hoch + Szenarien gemeistert + Füllwörter runter → du bist auf Kurs. 🚀
           </p>
           
-          {/* Success Indicators */}
-          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-3 sm:gap-4 mt-8">
-            <div className="flex items-center bg-white rounded-full px-6 py-3 shadow-sm min-h-[44px]">
-              <span className="w-6 h-6 text-green-500 mr-3 text-xl">✅</span>
-              <span className="text-base sm:text-sm font-medium">Konstante Sprechzeit</span>
+          {/* Enhanced Success Indicators */}
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-4 lg:gap-6">
+            <div className="flex items-center bg-white rounded-2xl px-8 py-4 shadow-soft border border-success-200 min-h-[56px] hover:shadow-primary transition-all duration-300 group">
+              <span className="w-8 h-8 text-success-500 mr-4 text-2xl group-hover:scale-110 transition-transform">✅</span>
+              <span className="text-lg font-semibold text-neutral-700">Konstante Sprechzeit</span>
             </div>
-            <div className="flex items-center bg-white rounded-full px-6 py-3 shadow-sm min-h-[44px]">
-              <span className="w-6 h-6 text-green-500 mr-3 text-xl">✅</span>
-              <span className="text-base sm:text-sm font-medium">≥ 8 Szenarien gemeistert</span>
+            <div className="flex items-center bg-white rounded-2xl px-8 py-4 shadow-soft border border-success-200 min-h-[56px] hover:shadow-primary transition-all duration-300 group">
+              <span className="w-8 h-8 text-success-500 mr-4 text-2xl group-hover:scale-110 transition-transform">✅</span>
+              <span className="text-lg font-semibold text-neutral-700">≥ 8 Szenarien gemeistert</span>
             </div>
-            <div className="flex items-center bg-white rounded-full px-6 py-3 shadow-sm min-h-[44px]">
-              <span className="w-6 h-6 text-green-500 mr-3 text-xl">✅</span>
-              <span className="text-base sm:text-sm font-medium">-25% Füllwörter oder besser</span>
+            <div className="flex items-center bg-white rounded-2xl px-8 py-4 shadow-soft border border-success-200 min-h-[56px] hover:shadow-primary transition-all duration-300 group">
+              <span className="w-8 h-8 text-success-500 mr-4 text-2xl group-hover:scale-110 transition-transform">✅</span>
+              <span className="text-lg font-semibold text-neutral-700">-25% Füllwörter oder besser</span>
             </div>
           </div>
         </div>

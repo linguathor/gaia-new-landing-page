@@ -19,24 +19,24 @@ export default function ScarcityNotification({ spotsLeft, enrolledToday, classNa
   if (!showNotification) return null;
 
   return (
-    <div className={`animate-fadeIn ${className}`}>
-      {/* Spots remaining alert */}
-      <div className="bg-red-50 border border-red-200 rounded-lg p-3 mb-3">
-        <div className="flex items-center">
-          <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse mr-2"></div>
-          <p className="text-red-800 font-semibold text-sm">
-            Nur noch <span className="text-red-600 font-bold">{spotsLeft} Plätze</span> verfügbar
+    <div className={`animate-fade-in ${className}`}>
+      {/* Enhanced spots remaining alert */}
+      <div className="bg-gradient-to-r from-accent-50 to-accent-100 border-2 border-accent-300 rounded-xl p-4 mb-4 shadow-accent">
+        <div className="flex items-center justify-center">
+          <div className="w-3 h-3 bg-accent-500 rounded-full animate-pulseSoft mr-3"></div>
+          <p className="text-accent-800 font-bold text-lg text-center">
+            Nur noch <span className="text-accent-600 font-extrabold text-xl">{spotsLeft} Plätze</span> verfügbar
           </p>
         </div>
       </div>
 
-      {/* Recent enrollment notification */}
+      {/* Enhanced enrollment notification */}
       {enrolledToday > 0 && (
-        <div className="bg-green-50 border border-green-200 rounded-lg p-3">
-          <div className="flex items-center">
-            <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-            <p className="text-green-800 text-sm">
-              <span className="font-semibold">{enrolledToday} Personen</span> haben sich heute angemeldet
+        <div className="bg-gradient-to-r from-success-50 to-success-100 border-2 border-success-300 rounded-xl p-4 shadow-soft">
+          <div className="flex items-center justify-center">
+            <div className="w-3 h-3 bg-success-500 rounded-full mr-3 animate-pulseSoft"></div>
+            <p className="text-success-800 font-semibold text-base text-center">
+              <span className="font-bold text-success-600">{enrolledToday} Personen</span> haben sich heute angemeldet
             </p>
           </div>
         </div>
