@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-import OptimizedImage from '../fx/OptimizedImage';
+import AvatarImage from '../fx/AvatarImage';
 import { Testimonial } from '../../content/testimonials';
 
 interface TestimonialCarouselProps {
@@ -82,12 +82,13 @@ export default function TestimonialCarousel({ testimonials }: TestimonialCarouse
           <div className="flex items-center justify-between">
             <div className="flex items-center">
               <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-soft mr-4">
-                <OptimizedImage
+                <AvatarImage
                   src={testimonials[activeIndex].photo}
                   alt={testimonials[activeIndex].name}
+                  name={testimonials[activeIndex].name}
                   width={48}
                   height={48}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-full"
                   quality={85}
                   sizes="48px"
                 />

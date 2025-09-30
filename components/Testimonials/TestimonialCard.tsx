@@ -1,4 +1,4 @@
-import OptimizedImage from '../fx/OptimizedImage';
+import AvatarImage from '../fx/AvatarImage';
 import { Testimonial } from '../../content/testimonials';
 
 interface TestimonialCardProps {
@@ -24,12 +24,13 @@ export default function TestimonialCard({ testimonial, delay = 0 }: TestimonialC
       {/* Header with photo and info */}
       <div className="flex items-start mb-6">
         <div className="relative w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-soft group-hover:shadow-primary transition-all duration-300 flex-shrink-0">
-          <OptimizedImage
+          <AvatarImage
             src={testimonial.photo}
             alt={`${testimonial.name} - GAIA Student`}
+            name={testimonial.name}
             width={64}
             height={64}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover rounded-full"
             quality={90}
             sizes="64px"
           />

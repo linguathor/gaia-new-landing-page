@@ -23,7 +23,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "sarah-mueller",
     name: "Sarah Müller",
-    photo: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face",
+    photo: "", // Will fallback to initials avatar
     role: "Senior Product Manager",
     company: "SAP",
     beforeLevel: "B1",
@@ -42,7 +42,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "miguel-rodriguez",
     name: "Miguel Rodríguez",
-    photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+    photo: "", // Will fallback to initials avatar
     role: "Software Engineer",
     company: "Siemens",
     beforeLevel: "A2",
@@ -61,7 +61,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "priya-sharma",
     name: "Priya Sharma",
-    photo: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=face",
+    photo: "", // Will fallback to initials avatar
     role: "Marketing Director",
     company: "BMW",
     beforeLevel: "B1",
@@ -80,7 +80,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "james-wilson",
     name: "James Wilson",
-    photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+    photo: "", // Will fallback to initials avatar
     role: "Business Analyst",
     company: "Deutsche Bank",
     beforeLevel: "A2",
@@ -99,7 +99,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "anna-kowalski",
     name: "Anna Kowalski",
-    photo: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=face",
+    photo: "", // Will fallback to initials avatar
     role: "UX Designer",
     company: "Zalando",
     beforeLevel: "B2",
@@ -117,7 +117,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "david-chen",
     name: "David Chen",
-    photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=face",
+    photo: "", // Will fallback to initials avatar
     role: "Data Scientist",
     company: "Mercedes-Benz",
     beforeLevel: "A2",
