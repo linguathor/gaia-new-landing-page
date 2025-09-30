@@ -30,6 +30,8 @@ import Instructors from '../../components/Instructors';
 import Pricing from '../../components/Pricing';
 import Guarantee from '../../components/Guarantee';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
+import TestimonialsSection from '../../components/Testimonials/TestimonialsSection';
+import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
 
 // NEW: denser wrappers / bands
@@ -96,6 +98,14 @@ export default function GermanAIAcademyPage() {
             <Hero />
           </Compact>
         </section>
+        
+        {/* Hero Testimonial for immediate social proof */}
+        <section className="relative -mt-8 pb-8 px-4 bg-white">
+          <div className="max-w-screen-xl mx-auto">
+            <HeroTestimonial />
+          </div>
+        </section>
+        
         <ReachableStatus />
         <GuaranteeStrip />
 
@@ -169,10 +179,12 @@ export default function GermanAIAcademyPage() {
           </Compact>
         </section>
 
-        {/* === BAND I: CLEAN WHITE — Social proof & FAQ === */}
-        <section aria-label="Testimonials & FAQ" className="bg-white">
+        {/* === ENHANCED TESTIMONIALS SECTION === */}
+        <TestimonialsSection />
+
+        {/* === BAND I: CLEAN WHITE — FAQ === */}
+        <section aria-label="FAQ" className="bg-white">
           <Compact>
-            <TestimonialsFaces title={academy.testimonials.title} items={academy.testimonials.items as any} />
             <FAQ faq={academy.faq} faqExtra={academy.faqExtra} />
           </Compact>
         </section>
