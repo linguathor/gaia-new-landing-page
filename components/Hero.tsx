@@ -4,6 +4,8 @@ import { academy } from '../content/germanAiAcademy';
 import BlobBg from './fx/BlobBg';
 import MagneticButton from './fx/MagneticButton';
 import Highlight from './fx/Highlight';
+import CountdownTimer from './fx/CountdownTimer';
+import ScarcityNotification from './fx/ScarcityNotification';
 
 export default function Hero() {
   return (
@@ -39,29 +41,54 @@ export default function Hero() {
       </div>
 
       <div className="mx-auto max-w-screen-xl px-4 py-10 sm:py-12 relative z-10">
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="mx-auto mb-2 inline-flex items-center gap-2 rounded-full bg-[#E0F2FB] px-3 py-1 text-sm font-semibold text-[#0E3258]">
-            Nächste Runde: Oktober • Begrenzte Plätze
+        <div className="mx-auto max-w-4xl text-center">
+          {/* Urgency Badge */}
+          <div className="mx-auto mb-4 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 px-4 py-2 text-base font-bold text-red-700">
+            <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></div>
+            {academy.hero.audienceBadge}
           </div>
-          <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight [text-wrap:balance]">
+
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight [text-wrap:balance] mb-6">
             Dein schnellster Weg zu <Highlight>sicherem&nbsp;C1-Deutsch</Highlight>{' '}
             in <span className="whitespace-nowrap"><Highlight>4&nbsp;Monaten</Highlight></span>.
           </h1>
-          <p className="mt-4 text-lg sm:text-xl leading-relaxed text-gray-700 max-w-2xl mx-auto">
+
+          <p className="text-xl sm:text-2xl leading-relaxed text-gray-700 max-w-3xl mx-auto mb-8">
             Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.
           </p>
-          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
-            <MagneticButton href={academy.pricing.plans[1].cta.href}>
-              {academy.pricing.plans[1].cta.label}
+
+          {/* Scarcity Notification */}
+          <div className="max-w-md mx-auto mb-6">
+            <ScarcityNotification 
+              spotsLeft={academy.hero.urgency.spotsLeft}
+              enrolledToday={academy.hero.urgency.enrolledToday}
+            />
+          </div>
+
+          {/* Primary CTA - More Prominent */}
+          <div className="mb-6">
+            <MagneticButton href={academy.hero.ctaPrimary.href}>
+              {academy.hero.ctaPrimary.label}
             </MagneticButton>
+          </div>
+
+          {/* Secondary CTA - Smaller */}
+          <div className="mb-8">
             <Link
-              href="#pricing"
+              href={academy.hero.ctaSecondary.href}
               role="button"
-              aria-label="Alle Details"
-              className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 min-h-[44px] min-w-[120px]"
+              aria-label={academy.hero.ctaSecondary.label}
+              className="inline-flex items-center justify-center text-gray-600 hover:text-gray-900 transition-colors underline underline-offset-4 text-lg"
             >
-              Alle Details
+              {academy.hero.ctaSecondary.label}
             </Link>
+          </div>
+
+          {/* Countdown Timer */}
+          <div className="max-w-md mx-auto mb-6">
+            <CountdownTimer 
+              targetDate={academy.hero.urgency.cohortStartDate}
+            />
           </div>
 
           {/* Garantie-Hervorhebung */}

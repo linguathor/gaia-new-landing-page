@@ -19,6 +19,7 @@ import TandemExplainer from '../../components/TandemExplainer';
 import ProgressMeter from '../../components/ProgressMeter';
 import ProgressMetrics from '../../components/ProgressMetrics';
 import Diagnostics from '../../components/Diagnostics';
+import StickyCTA from '../../components/fx/StickyCTA';
 import AccountabilityOptin from '../../components/AccountabilityOptin';
 import AiPlan from '../../components/AiPlan';
 import PlatformChecklist from '../../components/PlatformChecklist';
@@ -177,6 +178,13 @@ export default function GermanAIAcademyPage() {
         </section>
       </main>
       <Footer />
+      
+      {/* Sticky CTA for mobile users */}
+      <StickyCTA 
+        ctaText={academy.hero.ctaPrimary.label}
+        ctaHref={academy.hero.ctaPrimary.href}
+        spotsLeft={academy.hero.urgency.spotsLeft}
+      />
     </>
   );
 }

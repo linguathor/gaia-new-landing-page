@@ -11,10 +11,15 @@ export const academy = {
   hero: {
     h1: "Dein schnellster Weg zu sicherem C1-Deutsch in 4 Monaten.",
     sub: "Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.",
-    ctaPrimary: { label: "Jetzt Premium starten – 990 € Launch", href: "https://YOUR_COPECART_LINK_PREMIUM" },
-    ctaSecondary: { label: "Testlektion ansehen", href: "#testlektion" },
+    ctaPrimary: { label: "Sicher dir deinen Platz – Nur noch 8 verfügbar", href: "https://YOUR_COPECART_LINK_PREMIUM" },
+    ctaSecondary: { label: "Alle Details", href: "#pricing" },
     badges: ["B1–C1 geeignet", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
-    audienceBadge: "Für B2+ Lerner mit Zeit und Energie"
+    audienceBadge: "Nächste Runde: 15. Oktober • Begrenzte Plätze",
+    urgency: {
+      spotsLeft: 8,
+      cohortStartDate: "2025-10-15",
+      enrolledToday: 3
+    }
   },
 
   // Optional teaser block (for TestLessonTeaser component)
