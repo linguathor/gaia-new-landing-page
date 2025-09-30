@@ -43,14 +43,14 @@ export default function Hero() {
           <div className="mx-auto mb-2 inline-flex items-center gap-2 rounded-full bg-[#E0F2FB] px-3 py-1 text-sm font-semibold text-[#0E3258]">
             Nächste Runde: Oktober • Begrenzte Plätze
           </div>
-          <h1 className="text-4xl sm:text-5xl font-extrabold [text-wrap:balance]">
+          <h1 className="text-3xl xs:text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight [text-wrap:balance]">
             Dein schnellster Weg zu <Highlight>sicherem&nbsp;C1-Deutsch</Highlight>{' '}
             in <span className="whitespace-nowrap"><Highlight>4&nbsp;Monaten</Highlight></span>.
           </h1>
-          <p className="mt-2 text-base sm:text-lg text-gray-700">
+          <p className="mt-4 text-lg sm:text-xl leading-relaxed text-gray-700 max-w-2xl mx-auto">
             Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.
           </p>
-          <div className="mt-5 flex flex-col items-center gap-2 sm:flex-row sm:justify-center">
+          <div className="mt-8 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
             <MagneticButton href={academy.pricing.plans[1].cta.href}>
               {academy.pricing.plans[1].cta.label}
             </MagneticButton>
@@ -58,21 +58,21 @@ export default function Hero() {
               href="#pricing"
               role="button"
               aria-label="Alle Details"
-              className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-6 py-3 text-base font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2"
+              className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-900 shadow-sm transition hover:bg-gray-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-600 focus-visible:ring-offset-2 min-h-[44px] min-w-[120px]"
             >
               Alle Details
             </Link>
           </div>
 
           {/* Garantie-Hervorhebung */}
-          <div className="mt-4 flex items-center justify-center gap-2 text-sm font-semibold text-[#0E3258]">
-            <svg className="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
+          <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-2 text-base sm:text-sm font-semibold text-[#0E3258]">
+            <svg className="h-6 w-6 sm:h-5 sm:w-5 text-emerald-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
               <path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4zM7 10h10M9 14h6" />
             </svg>
-            <span>10-Tage Geld-zurück-Garantie + Kostenlose Verlängerung</span>
+            <span className="text-center sm:text-left">10-Tage Geld-zurück-Garantie + Kostenlose Verlängerung</span>
           </div>
 
-          <ul className="mt-3 flex flex-wrap justify-center gap-2 text-[11px] text-gray-600">
+          <ul className="mt-4 flex flex-wrap justify-center gap-3 text-sm sm:text-xs text-gray-600">
             <li className="rounded-full bg-gray-100 px-2.5 py-1">Untertitel & Transkripte</li>
             <li className="rounded-full bg-gray-100 px-2.5 py-1">Aufzeichnungen</li>
             <li className="rounded-full bg-emerald-100 px-2.5 py-1 font-medium text-emerald-800">Ohne Risiko starten</li>

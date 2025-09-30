@@ -26,7 +26,7 @@ export default function MagneticButton({
       onMouseLeave={() => {
         if (ref.current) ref.current.style.transform = "translate(0,0)";
       }}
-      className="inline-flex items-center justify-center rounded-md border border-amber-600 bg-amber-600 px-6 py-3 font-semibold text-white shadow-sm transition will-change-transform hover:bg-amber-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2"
+      className="inline-flex items-center justify-center rounded-md border border-amber-600 bg-amber-600 px-8 py-4 text-lg font-semibold text-white shadow-sm transition will-change-transform hover:bg-amber-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-600 focus-visible:ring-offset-2 min-h-[44px] min-w-[160px]"
     >
       {children}
     </Link>

@@ -11,7 +11,7 @@ export default function ProgressMetrics() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {/* Sprechzeit pro Woche */}
           <div className="bg-white rounded-2xl p-6 shadow-lg border border-gray-100">
             <div className="flex items-center mb-4">
@@ -19,7 +19,7 @@ export default function ProgressMetrics() {
                 <span className="text-2xl">🗣</span>
               </div>
               <div className="ml-3">
-                <h3 className="font-semibold text-gray-900">Sprechzeit pro Woche</h3>
+                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Sprechzeit pro Woche</h3>
               </div>
             </div>
             
@@ -51,7 +51,7 @@ export default function ProgressMetrics() {
               </div>
             </div>
 
-            <ul className="text-sm text-gray-600 space-y-2">
+            <ul className="text-base sm:text-sm text-gray-600 space-y-2 leading-relaxed">
               <li><strong>Heißt:</strong> Wie viel du wirklich sprichst – nur reden zählt.</li>
               <li><strong>Beispiel:</strong> 10 Min KI + 20 Min Tandem = 30 Min echte Sprechzeit.</li>
               <li><strong>Warum wichtig:</strong> Mehr reden = schneller flüssig. 💪</li>
@@ -65,7 +65,7 @@ export default function ProgressMetrics() {
                 <span className="text-2xl">🎯</span>
               </div>
               <div className="ml-3">
-                <h3 className="font-semibold text-gray-900">Szenarien-Score (0–12)</h3>
+                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Szenarien-Score (0–12)</h3>
               </div>
             </div>
 
@@ -101,7 +101,7 @@ export default function ProgressMetrics() {
                 <span className="text-2xl">✂️</span>
               </div>
               <div className="ml-3">
-                <h3 className="font-semibold text-gray-900">Füllwörter ↓</h3>
+                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Füllwörter ↓</h3>
               </div>
             </div>
 
@@ -138,7 +138,7 @@ export default function ProgressMetrics() {
                 <span className="text-2xl">📈</span>
               </div>
               <div className="ml-3">
-                <h3 className="font-semibold text-gray-900">Aktive Wörter</h3>
+                <h3 className="text-lg sm:text-base font-semibold text-gray-900">Aktive Wörter</h3>
               </div>
             </div>
 
@@ -163,30 +163,30 @@ export default function ProgressMetrics() {
         </div>
 
         {/* Summary Section */}
-        <div className="mt-12 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 text-center">
-          <div className="flex items-center justify-center mb-4">
-            <span className="text-3xl mr-2">👉</span>
-            <h3 className="text-xl font-bold text-gray-900">
+        <div className="mt-12 bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-6 sm:p-8 text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center mb-6">
+            <span className="text-4xl sm:text-3xl mb-2 sm:mb-0 sm:mr-2">👉</span>
+            <h3 className="text-2xl sm:text-xl font-bold text-gray-900 leading-tight">
               Dein Dashboard = dein Deutsch-Fitness-Tracker
             </h3>
           </div>
-          <p className="text-lg text-gray-700 max-w-4xl mx-auto">
+          <p className="text-xl sm:text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
             🟢 Sprechzeit hoch + Szenarien gemeistert + Füllwörter runter → du bist auf Kurs. 🚀
           </p>
           
           {/* Success Indicators */}
-          <div className="flex flex-wrap justify-center gap-4 mt-6">
-            <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
-              <span className="w-5 h-5 text-green-500 mr-2">✅</span>
-              <span className="text-sm font-medium">Konstante Sprechzeit</span>
+          <div className="flex flex-col sm:flex-row sm:flex-wrap justify-center gap-3 sm:gap-4 mt-8">
+            <div className="flex items-center bg-white rounded-full px-6 py-3 shadow-sm min-h-[44px]">
+              <span className="w-6 h-6 text-green-500 mr-3 text-xl">✅</span>
+              <span className="text-base sm:text-sm font-medium">Konstante Sprechzeit</span>
             </div>
-            <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
-              <span className="w-5 h-5 text-green-500 mr-2">✅</span>
-              <span className="text-sm font-medium">≥ 8 Szenarien gemeistert</span>
+            <div className="flex items-center bg-white rounded-full px-6 py-3 shadow-sm min-h-[44px]">
+              <span className="w-6 h-6 text-green-500 mr-3 text-xl">✅</span>
+              <span className="text-base sm:text-sm font-medium">≥ 8 Szenarien gemeistert</span>
             </div>
-            <div className="flex items-center bg-white rounded-full px-4 py-2 shadow-sm">
-              <span className="w-5 h-5 text-green-500 mr-2">✅</span>
-              <span className="text-sm font-medium">-25% Füllwörter oder besser</span>
+            <div className="flex items-center bg-white rounded-full px-6 py-3 shadow-sm min-h-[44px]">
+              <span className="w-6 h-6 text-green-500 mr-3 text-xl">✅</span>
+              <span className="text-base sm:text-sm font-medium">-25% Füllwörter oder besser</span>
             </div>
           </div>
         </div>
