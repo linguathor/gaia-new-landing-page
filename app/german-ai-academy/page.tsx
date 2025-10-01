@@ -56,6 +56,7 @@ import TestimonialsFaces from '../../components/TestimonialsFaces';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
 import ProblemSolution from '../../components/ProblemSolution';
+import FourReasons from '../../components/FourReasons';
 import dynamic from 'next/dynamic';
 
 // Dynamic imports for performance optimization
@@ -272,6 +273,15 @@ export default function GermanAIAcademyPage() {
               deadline={academy.launchBonuses.deadline}
               bonuses={academy.launchBonuses.bonuses}
             />
+          </Compact>
+        </section>
+
+        {/* === FINAL CONVERSION PUSH - 4 REASONS === */}
+        <FourReasons />
+
+        {/* === PRICING & GUARANTEE === */}
+        <section aria-label="Pricing & Garantie" style={{ backgroundColor: '#88B6CD' }}>
+          <Compact>
             <Pricing pricing={academy.pricing} />
             <Guarantee guarantee={academy.guarantee} />
           </Compact>
