@@ -173,14 +173,12 @@ export default function GermanAIAcademyPage() {
         {/* === PROGRESS METRICS SECTION === */}
         <ProgressMetrics />
 
-        {/* === GERMAN LEVEL QUIZ === */}
-        <GermanLevelQuiz />
+        {/* German Level Quiz removed - distraction and not necessary */}
 
-        {/* === BAND C: LIGHT GRAY — Materials + Interactivity + Tandem === */}
-        <section aria-label="Materialien & Interaktivität & Tandem" className="bg-gray-50">
+        {/* === BAND C: LIGHT GRAY — Tandem Spaces === */}
+        <section aria-label="Tandem Spaces" className="bg-gray-50">
           <Compact>
-            <Interactivity title={academy.interactivity.title} summary={academy.interactivity.summary} bullets={academy.interactivity.bullets as any} />
-            <Materials title={academy.materials.title} summary={academy.materials.summary} bullets={academy.materials.bullets as any} />
+            {/* Interactivity and Materials now integrated into CallProgram above */}
             <TandemExplainer title={academy.tandem.title} summary={academy.tandem.summary} text={academy.tandem.text} status={academy.tandem.status} />
           </Compact>
         </section>
@@ -202,7 +200,7 @@ export default function GermanAIAcademyPage() {
         <section aria-label="Accountability & Plattform" className="bg-gray-50">
           <Compact>
             <AccountabilityOptin />
-            <AiPlan title={academy.aiPlan.title} summary={academy.aiPlan.summary} bullets={academy.aiPlan.bullets as any} />
+            {/* AI Plan section removed - confusing KI-Lernplan content */}
             <PlatformChecklist title={academy.ux.title} summary={academy.ux.summary} checklist={academy.ux.checklist as any} />
           </Compact>
         </section>
@@ -212,12 +210,11 @@ export default function GermanAIAcademyPage() {
           <Compact>
             <Community title={academy.community.title} summary={academy.community.summary} bullets={academy.community.bullets as any} />
             <Fit title={academy.fit.title} summary={academy.fit.summary} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
-            <Cohort title={academy.cohort.title} summary={academy.cohort.summary} start={academy.cohort.start} seats={academy.cohort.seats} cta={academy.cohort.cta} />
+            {/* Cohort section removed for pre-launch phase - will be added back after launch */}
           </Compact>
         </section>
 
-        {/* === PROGRESS CALCULATOR === */}
-        <ProgressCalculator />
+        {/* Progress Calculator removed - misleading timeline information */}
 
         {/* === BAND G: LIGHT GRAY — Instructors === */}
         <section aria-label="Coaches" className="bg-gray-50">
