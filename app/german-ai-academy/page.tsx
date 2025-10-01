@@ -180,16 +180,6 @@ export default function GermanAIAcademyPage() {
             <Outcomes />
             {/* LearningLoop removed - too confusing and comes too early */}
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
-            
-            {/* CTA after seeing results and program structure */}
-            <div className="py-12">
-              <CtaBand 
-                title="Diese Ergebnisse willst du auch?"
-                sub="Sichere dir jetzt einen der letzten Plätze für dein B2/C1-Level."
-                label="Jetzt anmelden"
-                href="#pricing"
-              />
-            </div>
           </Compact>
         </section>
 
