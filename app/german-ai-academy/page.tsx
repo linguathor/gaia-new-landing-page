@@ -162,10 +162,10 @@ export default function GermanAIAcademyPage() {
 
         {/* Slight overlap to reduce the "gap" below hero */}
         {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
-        <section aria-label="Ergebnisse & Lern-Loop" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
+        <section aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Outcomes />
-            <LearningLoop title={academy.learningLoop.title} summary={academy.learningLoop.summary} steps={academy.learningLoop.steps as any} />
+            {/* LearningLoop removed - too confusing and comes too early */}
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
         </section>

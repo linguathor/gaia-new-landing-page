@@ -58,7 +58,8 @@ export const academy = {
       "Keine Denkpausen mehr beim Sprechen",
       "Alle verstehen sofort, was du meinst",
       "Du fühlst dich nicht mehr wie ein Außenseiter",
-      "Du kannst endlich du selbst sein – auch auf Deutsch"
+      "Du kannst endlich du selbst sein – auch auf Deutsch",
+      "Sichere Teilnahme an komplexen Diskussionen und Meetings"
     ]
   },
 

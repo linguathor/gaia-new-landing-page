@@ -10,13 +10,29 @@ export default function Outcomes() {
       </h2>
       <p className="mt-1 text-gray-700">{academy.outcomes.summary}</p>
 
-      <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {academy.outcomes.items.map((it, index) => (
-          <div key={it.label} className="rounded-xl border bg-white p-5 shadow-sm text-center">
-            <div className="font-extrabold leading-tight [hyphens:auto] [overflow-wrap:anywhere] text-[clamp(1.25rem,5vw,1.75rem)] sm:text-[clamp(1.5rem,2.5vw,2rem)]">
-              {'value' in (it as any) ? <Counter to={(it as any).value} suffix={(it as any).suffix ?? ''} /> : it.label}
+          <div key={it.label} className="group card-elevated p-8 text-center transition-all duration-300 hover:scale-105">
+            <div className="mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary-100 to-accent-100 border-2 border-primary-300 group-hover:border-primary-400 transition-all duration-300">
+                <div className="text-2xl font-bold text-primary-600">
+                  {index === 0 && '📚'}
+                  {index === 1 && '💬'}
+                  {index === 2 && '⚡'}
+                  {index === 3 && '🎯'}
+                </div>
+              </div>
             </div>
-            {it.sub && <div className="mt-1 text-xs text-gray-600">{it.sub}</div>}
+            <div className="mb-3">
+              <div className="font-bold text-2xl lg:text-3xl text-primary-600 mb-2 leading-tight group-hover:text-primary-700 transition-colors">
+                {'value' in (it as any) ? <Counter to={(it as any).value} suffix={(it as any).suffix ?? ''} /> : it.label}
+              </div>
+              {it.sub && (
+                <div className="text-base font-medium text-accent-700 bg-accent-50 px-3 py-1 rounded-full inline-block">
+                  {it.sub}
+                </div>
+              )}
+            </div>
           </div>
         ))}
       </div>
