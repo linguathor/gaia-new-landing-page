@@ -76,27 +76,15 @@ export default function Hero() {
             </MagneticButton>
           </div>
 
-          {/* Enhanced Secondary CTA */}
-          <div className="animate-slide-up" style={{ animationDelay: '0.8s' }}>
-            <Link
-              href={academy.hero.ctaSecondary.href}
-              role="button"
-              aria-label={academy.hero.ctaSecondary.label}
-              className="inline-flex items-center justify-center text-neutral-600 hover:text-primary-600 transition-all duration-300 underline underline-offset-4 decoration-2 hover:decoration-primary-400 text-lg font-medium"
-            >
-              {academy.hero.ctaSecondary.label}
-            </Link>
-          </div>
-
           {/* Enhanced Countdown Timer */}
-          <div className="max-w-lg mx-auto animate-slide-up" style={{ animationDelay: '1s' }}>
+          <div className="max-w-lg mx-auto animate-slide-up" style={{ animationDelay: '0.8s' }}>
             <CountdownTimer 
               targetDate={academy.hero.urgency.cohortStartDate}
             />
           </div>
 
           {/* Simplified Key Benefits */}
-          <ul className="flex flex-wrap justify-center gap-3 text-sm font-medium animate-slide-up" style={{ animationDelay: '1.2s' }}>
+          <ul className="flex flex-wrap justify-center gap-3 text-sm font-medium animate-slide-up" style={{ animationDelay: '1s' }}>
             <li className="rounded-full bg-primary-100 border border-primary-300 px-6 py-3 font-semibold text-primary-800 transition-all duration-300 hover:bg-primary-200">
               B2-C1 Programm
             </li>

@@ -30,7 +30,7 @@ export default function ScarcityNotification({ spotsLeft, enrolledToday, classNa
             </p>
           </div>
           <p className="text-accent-700 font-semibold text-base text-center">
-            Für Leute ab B2-Niveau
+            Für Deutschlernende ab B2-Niveau
           </p>
         </div>
       </div>

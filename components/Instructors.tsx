@@ -26,12 +26,12 @@ export default function Instructors({
                   <OptimizedImage
                     src={p.img}
                     alt={p.name}
-                    width={64}
-                    height={64}
-                    className="h-16 w-16 rounded-full object-cover"
+                    width={96}
+                    height={96}
+                    className="h-24 w-24 rounded-full object-cover"
                   />
                 ) : (
-                  <div className="h-16 w-16 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold">
+                  <div className="h-24 w-24 rounded-full bg-gray-300 flex items-center justify-center text-gray-600 font-bold text-xl">
                     {p.name.charAt(0)}
                   </div>
                 )}

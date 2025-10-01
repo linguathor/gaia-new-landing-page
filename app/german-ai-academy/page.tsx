@@ -18,6 +18,7 @@ import Materials from '../../components/Materials';
 import TandemExplainer from '../../components/TandemExplainer';
 import ProgressMeter from '../../components/ProgressMeter';
 import Diagnostics from '../../components/Diagnostics';
+import CtaBand from '../../components/CtaBand';
 
 // Dynamic import for ProgressMetrics (heavy dashboard component)
 const ProgressMetrics = dynamic(
@@ -175,6 +176,16 @@ export default function GermanAIAcademyPage() {
             <Outcomes />
             {/* LearningLoop removed - too confusing and comes too early */}
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
+            
+            {/* CTA after seeing results and program structure */}
+            <div className="py-12">
+              <CtaBand 
+                title="Diese Ergebnisse willst du auch?"
+                sub="Sichere dir jetzt einen der letzten Plätze für dein B2/C1-Level."
+                label="Jetzt starten"
+                href="#pricing"
+              />
+            </div>
           </Compact>
         </section>
 
@@ -216,9 +227,19 @@ export default function GermanAIAcademyPage() {
         {/* === BAND F: LIGHT SKY WASH — Community + Fit + Cohort === */}
         <section aria-label="Community & Fit & Kohorte" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
-            <Community title={academy.community.title} summary={academy.community.summary} bullets={academy.community.bullets as any} />
+            <Community community={academy.community} />
             <Fit title={academy.fit.title} summary={academy.fit.summary} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
             {/* Cohort section removed for pre-launch phase - will be added back after launch */}
+            
+            {/* CTA after community social proof */}
+            <div className="py-12">
+              <CtaBand 
+                title="Schließe dich 500+ B2/C1-Lernern an"
+                sub="Jeden Tag aktive Unterstützung in der Telegram-Community."
+                label="Jetzt Platz sichern"
+                href="#pricing"
+              />
+            </div>
           </Compact>
         </section>
 
@@ -228,6 +249,16 @@ export default function GermanAIAcademyPage() {
         <section aria-label="Coaches" className="bg-gray-50">
           <Compact>
             <Instructors title={academy.instructors.title} summary={academy.instructors.summary} people={academy.instructors.people as any} />
+            
+            {/* CTA after seeing instructor credibility */}
+            <div className="py-12">
+              <CtaBand 
+                title="Lerne von den Besten"
+                sub="Muttersprachliche Coaches und jahrelange Erfahrung warten auf dich."
+                label="Jetzt starten"
+                href="#pricing"
+              />
+            </div>
           </Compact>
         </section>
 

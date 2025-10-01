@@ -9,16 +9,16 @@ export const academy = {
   },
 
   hero: {
-    h1: "Viermonatiger C1-Fluency Sprint",
-    sub: "Mix aus KI-Tutoring und menschlicher Expertise und Begleitung",
+    h1: "4-monatiger C1-Fluency Sprint",
+    sub: "Idealer Mix aus KI-Tutoring und menschlicher Expertise und Begleitung",
     ctaPrimary: { label: "Sicher dir deinen Platz – Nur 28 Plätze frei", href: "https://YOUR_COPECART_LINK_PREMIUM" },
-    ctaSecondary: { label: "Alle Details", href: "#pricing" },
+    // ctaSecondary removed as requested - unnecessary for conversion
     badges: ["B1–C1 geeignet", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
     audienceBadge: "B1–C1 geeignet",
     urgency: {
       spotsLeft: 28,
       cohortStartDate: "2025-10-15",
-      enrolledToday: 3
+      enrolledToday: 2
     }
   },
 
@@ -176,9 +176,53 @@ export const academy = {
   },
 
   community: {
-    title: "Community",
-    summary: "B2/C1-Gruppen, Tandems, Aufgaben – kein reiner Chat.",
-    bullets: ["B2- und C1-Gruppen", "Tandems und Aufgaben", "Kein reiner Chat"]
+    title: "Community & Support",
+    summary: "Aktive Lerngemeinschaft mit täglichem Austausch, Telegram-Support und strukturierten Übungsgruppen.",
+    description: "Werde Teil einer motivierten Community aus B2/C1-Lernern. Täglich aktive Diskussionen, schnelle Hilfe bei Fragen und regelmäßige Tandem-Sessions.",
+    features: [
+      {
+        title: "Telegram-Gruppe",
+        description: "Direkter Austausch mit Coaches und Teilnehmern. Schnelle Antworten auf Fragen und täglich neue Lerntipps.",
+        icon: "telegram",
+        access: "Sofortiger Zugang nach Anmeldung"
+      },
+      {
+        title: "Level-Gruppen",
+        description: "Separate B2- und C1-Gruppen für zielgerichtete Diskussionen und passende Herausforderungen.",
+        icon: "users",
+        access: "Einstufung nach Aufnahmetest"
+      },
+      {
+        title: "Tandem-Vermittlung",
+        description: "Wir vermitteln Übungspartner mit ähnlichem Level und gleichen Zielen für regelmäßige Gespräche.",
+        icon: "partnership",
+        access: "Automatische Vermittlung"
+      },
+      {
+        title: "Aufgaben-Challenges",
+        description: "Wöchentliche Community-Challenges mit Belohnungen für aktive Teilnahme und Fortschritte.",
+        icon: "trophy",
+        access: "Freiwillige Teilnahme"
+      }
+    ],
+    telegramInfo: {
+      title: "Telegram-Community beitreten",
+      description: "Über 500 aktive B2/C1-Lerner. Täglich neue Inhalte, schnelle Hilfe und motivierende Erfolgsgeschichten.",
+      benefits: [
+        "Sofortiger Support bei Fragen",
+        "Täglich neue Lerntipps und Übungen",
+        "Motivierende Erfolgsgeschichten",
+        "Vermittlung von Tandem-Partnern",
+        "Exklusive Community-Events"
+      ],
+      joinProcess: "Nach der Anmeldung erhältst du automatisch den Telegram-Link und wirst in die passende Level-Gruppe eingeladen."
+    },
+    stats: {
+      members: "500+",
+      dailyMessages: "150+",
+      successStories: "50+",
+      activeHours: "16h täglich"
+    }
   },
 
   fit: {
