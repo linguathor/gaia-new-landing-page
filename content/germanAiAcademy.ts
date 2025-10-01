@@ -12,8 +12,8 @@ export const academy = {
     h1: "4-monatiger C1-Fluency Sprint",
     sub: "Idealer Mix aus KI-Tutoring und menschlicher Expertise und Begleitung",
     ctaPrimary: { label: "Jetzt anmelden", href: "https://YOUR_COPECART_LINK_PREMIUM" },
-    badges: ["B1–C1 geeignet", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
-    audienceBadge: "B1–C1 geeignet",
+    badges: ["Für Deutschlernende ab B2-Niveau", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
+    audienceBadge: "Für Deutschlernende ab B2-Niveau",
     urgency: {
       spotsLeft: 28,
       cohortStartDate: "2025-10-15",

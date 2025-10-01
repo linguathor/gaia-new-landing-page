@@ -29,9 +29,7 @@ export default function ScarcityNotification({ spotsLeft, enrolledToday, classNa
               Nur noch <span className="text-accent-600 font-extrabold text-xl">{spotsLeft} Plätze</span> verfügbar
             </p>
           </div>
-          <p className="text-accent-700 font-semibold text-base text-center">
-            Für Deutschlernende ab B2-Niveau
-          </p>
+
         </div>
       </div>
 

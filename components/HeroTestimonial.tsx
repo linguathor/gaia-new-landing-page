@@ -28,7 +28,7 @@ export default function HeroTestimonial() {
             <div>
               <div className="font-bold text-primary-600">{heroTestimonial.name}</div>
               <div className="text-sm text-neutral-600">
-                {heroTestimonial.role} • {heroTestimonial.company}
+                {heroTestimonial.role}{heroTestimonial.company && ` • ${heroTestimonial.company}`}
               </div>
             </div>
             <div className="flex items-center space-x-2">
