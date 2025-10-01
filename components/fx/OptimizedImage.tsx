@@ -13,8 +13,13 @@ interface OptimizedImageProps {
   sizes?: string;
 }
 
-// Generate a simple blur data URL
+// Generate a simple blur data URL (client-side only)
 const generateBlurDataURL = (width: number, height: number): string => {
+  // Check if we're in a browser environment
+  if (typeof window === 'undefined' || typeof document === 'undefined') {
+    return 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAxMCAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8cmVjdCB3aWR0aD0iMTAiIGhlaWdodD0iMTAiIGZpbGw9IiNmMWY1ZjkiLz4KPC9zdmc+';
+  }
+  
   const canvas = document.createElement('canvas');
   canvas.width = width;
   canvas.height = height;
@@ -48,19 +53,22 @@ export default function OptimizedImage({
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
   
-  // Generate blur placeholder
-  const blurDataURL = `data:image/svg+xml;base64,${Buffer.from(
-    `<svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style="stop-color:#f1f5f9;stop-opacity:1" />
-          <stop offset="50%" style="stop-color:#e2e8f0;stop-opacity:1" />
-          <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1" />
-        </linearGradient>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#grad)" />
-    </svg>`
-  ).toString('base64')}`;
+  // Validate src prop
+  if (!src || src.trim() === '') {
+    return (
+      <div 
+        className={`bg-gradient-to-br from-neutral-100 to-neutral-200 flex items-center justify-center ${className}`}
+        style={{ width, height }}
+      >
+        <svg className="w-8 h-8 text-neutral-400" fill="currentColor" viewBox="0 0 20 20">
+          <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
+        </svg>
+      </div>
+    );
+  }
+  
+  // Generate simple blur placeholder (client-safe)
+  const blurDataURL = generateBlurDataURL(width, height);
 
   if (hasError) {
     return (

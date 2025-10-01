@@ -91,7 +91,15 @@ import TrustBadges from '../../components/TrustBadges';
 
 // Effects
 import StickyProgress from '../../components/fx/StickyProgress';
-import PerformanceDashboard from '../../components/fx/PerformanceDashboard';
+
+// Dynamic import for PerformanceDashboard to avoid hydration issues
+const PerformanceDashboard = dynamic(
+  () => import('../../components/fx/PerformanceDashboard'),
+  {
+    ssr: false,
+    loading: () => null
+  }
+);
 
 export const metadata: Metadata = buildMetadata();
 
@@ -284,7 +292,7 @@ export default function GermanAIAcademyPage() {
       )}
       
       {/* Development performance dashboard */}
-      {process.env.NODE_ENV === 'development' && <PerformanceDashboard />}
+      <PerformanceDashboard />
     </>
   );
 }
