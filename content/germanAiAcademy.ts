@@ -9,14 +9,14 @@ export const academy = {
   },
 
   hero: {
-    h1: "Dein schnellster Weg zu sicherem C1-Deutsch in 4 Monaten.",
-    sub: "Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.",
-    ctaPrimary: { label: "Sicher dir deinen Platz – Nur noch 8 verfügbar", href: "https://YOUR_COPECART_LINK_PREMIUM" },
+    h1: "Viermonatiger C1-Fluency Sprint",
+    sub: "Mix aus KI-Tutoring und menschlicher Expertise und Begleitung",
+    ctaPrimary: { label: "Sicher dir deinen Platz – Nur 30 Plätze frei", href: "https://YOUR_COPECART_LINK_PREMIUM" },
     ctaSecondary: { label: "Alle Details", href: "#pricing" },
     badges: ["B1–C1 geeignet", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
-    audienceBadge: "Nächste Runde: 15. Oktober • Begrenzte Plätze",
+    audienceBadge: "B1–C1 geeignet",
     urgency: {
-      spotsLeft: 8,
+      spotsLeft: 30,
       cohortStartDate: "2025-10-15",
       enrolledToday: 3
     }

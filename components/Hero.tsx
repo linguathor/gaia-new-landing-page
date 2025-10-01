@@ -54,12 +54,11 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight [text-wrap:balance] text-primary-600 animate-slide-up">
-            Dein schnellster Weg zu <Highlight>sicherem&nbsp;C1-Deutsch</Highlight>{' '}
-            in <span className="whitespace-nowrap"><Highlight>4&nbsp;Monaten</Highlight></span>.
+            <Highlight>{academy.hero.h1}</Highlight>
           </h1>
 
           <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed text-neutral-600 max-w-4xl mx-auto font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Tägliche KI-Übungen. Wöchentliche Live-Calls. Messbare Fortschritte.
+            {academy.hero.sub}
           </p>
 
           {/* Enhanced Scarcity Notification */}
