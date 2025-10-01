@@ -25,7 +25,7 @@ export default function Pricing({ pricing }: PricingProps) {
           {pricing.title}
         </h2>
         <p className="text-center text-gray-600 mb-12">{pricing.note}</p>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {pricing.plans.map((plan, index) => (
             <PriceCard key={index} plan={plan} />
           ))}

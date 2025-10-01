@@ -51,7 +51,6 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
                 Nur noch {spotsLeft} Plätze
               </p>
             </div>
-            <p className="text-xs text-gray-600">Nächste Runde: 15. Oktober</p>
           </div>
           <div className="flex-shrink-0">
             <MagneticButton href={ctaHref}>
