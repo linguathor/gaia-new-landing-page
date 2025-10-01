@@ -239,12 +239,18 @@ export default function GermanAIAcademyPage() {
 
         {/* Progress Calculator removed - misleading timeline information */}
 
-        {/* === BAND G: LIGHT GRAY — Instructors === */}
-        <section aria-label="Coaches" className="bg-gray-50">
+        {/* === BAND G: BLUE GRADIENT — Instructors === */}
+        <Instructors 
+          title={academy.instructors.title} 
+          summary={academy.instructors.summary} 
+          subtitle={academy.instructors.subtitle}
+          description={academy.instructors.description}
+          people={academy.instructors.people as any} 
+        />
+        
+        {/* CTA after seeing instructor credibility */}
+        <section className="bg-gray-50">
           <Compact>
-            <Instructors title={academy.instructors.title} summary={academy.instructors.summary} people={academy.instructors.people as any} />
-            
-            {/* CTA after seeing instructor credibility */}
             <div className="py-12">
               <CtaBand 
                 title="Lerne von den Besten"

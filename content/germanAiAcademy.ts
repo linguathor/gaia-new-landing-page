@@ -240,11 +240,23 @@ export const academy = {
   },
 
   instructors: {
-    title: "Deine Coaches",
-    summary: "Flemming (Sprechen/Aussprache) und David (Wortschatz/Struktur).",
+    title: "Wer wir sind?",
+    summary: "Zwei leidenschaftliche Sprach-Coaches und Sprachenlerner.",
+    subtitle: "David & Flemming",
+    description: "Sprach-Coaches, Deutschlehrer, Sprachenliebhaber",
     people: [
-      { name: "Flemming", role: "Coach. Fokus: Sprechen und Aussprache." },
-      { name: "David", role: "Coach. Fokus: Wortschatz und Struktur." }
+      {
+        name: "David",
+        role: "Coach. Fokus: Wortschatz und Struktur.",
+        description: "David kommt aus Kalifornien in den USA und hat erst vor 20 Jahren begonnen, Deutsch zu lernen, aber man merkt nicht, dass er kein Muttersprachler ist. Er hat innerhalb kürzester Zeit gelernt, die Deutsche Sprache auf muttersprachlichem Niveau zu sprechen.",
+        img: "/images/david-coach.jpg"
+      },
+      {
+        name: "Flemming",
+        role: "Coach. Fokus: Sprechen und Aussprache.",
+        description: "Flemming ist deutscher Muttersprachler und spricht ebenfalls mehrere Sprachen auf hohem Niveau. Zudem hat er jahrelang als Journalist gearbeitet und kennt sich bestens mit den Feinheiten der deutschen Sprache aus.",
+        img: "/images/flemming-coach.jpg"
+      }
     ]
   },
 
