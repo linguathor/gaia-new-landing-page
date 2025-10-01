@@ -334,20 +334,53 @@ export const academy = {
   },
 
   faq: {
-    title: "Häufige Fragen",
+    title: "Häufige Fragen (FAQ)",
     items: [
-      { q: "Für wen ist das Programm?", a: "Für Lerner zwischen B1 und C1, die schnell Fortschritte wollen." },
-      { q: "Wie viel Zeit brauche ich?", a: "Rechne mit 5–8 Stunden pro Woche." },
-      { q: "Gibt es Ratenzahlungen?", a: "Ja, über den Zahlungsanbieter." },
-      { q: "Was, wenn ich einen Call verpasse?", a: "Es gibt Aufzeichnungen und Drills." }
+      { 
+        q: "Für wen ist das Programm geeignet?", 
+        a: "Für motivierte Deutschlerner auf B2–C1-Niveau, die in kurzer Zeit spürbare Fortschritte machen wollen – egal ob für Beruf, Studium oder Alltag." 
+      },
+      { 
+        q: "Wie funktioniert die Garantie?", 
+        a: "Wenn du aktiv mitmachst (14 von 16 Calls und mindestens 1 wöchentliches Tandem) und dich trotzdem nicht deutlich verbesserst, verlängern wir das Programm kostenlos um 4 Monate. Also, absolut kein Risiko für dich." 
+      },
+      { 
+        q: "Wie viel Zeit brauche ich wirklich?", 
+        a: "Plane etwa 3–4 Stunden pro Woche ein. Das ist das Mindestmaß, was jeder schafft und was du brauchst, um Fortschritte zu machen. Wenn du noch 1-2 Stunden mehr hast, wirst du noch schnellere Fortschritte sehen." 
+      },
+      { 
+        q: "Wie groß sind die Gruppen?", 
+        a: "In den Live-Calls sind ca. 30 Teilnehmer dabei – hier geht es um Wortschatz und Hörverstehen. Für die Sprechpraxis übst du dagegen in kleinen Tandem-Gruppen mit 2–5 Teilnehmern. So bekommst du beides: Dynamik und intensives Feedback." 
+      },
+      { 
+        q: "Was, wenn ich einen Call verpasse?", 
+        a: "Kein Problem: Du bekommst Aufzeichnungen, Transkripte und Aufgaben, sodass du flexibel nacharbeiten kannst. Außerdem kannst du jederzeit mit KI und Tandems üben – dein Fortschritt bleibt erhalten." 
+      }
     ]
   },
 
   faqExtra: {
     items: [
-      { q: "Wie groß sind die Gruppen?", a: "Großes Format, aber jeder kommt dran: Hot-Seat, Tandems, Aufgaben." },
-      { q: "Wie funktioniert die Garantie?", a: "Vorher/Nachher-Check und Mindestbeteiligung. Details auf der Garantieseite." },
-      { q: "Warum kostet Premium 990 €?", a: "Im Preis enthalten: 16 Live-Calls mit Coaching, geführte Tandems, KI-Feedback (laufende Rechenkosten), Plattform & Materialien, sowie Messung/Reporting. Zudem: 10-Tage Geld-zurück und kostenlose Verlängerung, falls Ziele nicht erreicht werden." },
+      { 
+        q: "Was ist der Unterschied zwischen dem C1 Fluency Sprint und der C1-Masterclass?", 
+        a: "Die Ergebnisse nach 4 Monaten sind ungefähr die gleichen. Aber wenn du die maximale persönliche Betreuung durch erfahrene Lehrer und Coaches wünschst, dann bekommst du das in der Masterclass." 
+      },
+      { 
+        q: "Was, wenn ich schnell die Motivation verliere?", 
+        a: "Genau deshalb haben wir ein System mit wöchentlicher Fortschrittsmessung entwickelt. Du siehst schwarz auf weiß, wie du besser wirst – das motiviert mehr als jedes abstrakte Ziel. Außerdem hält dich die Community und dein Tandem-Partner am Ball." 
+      },
+      { 
+        q: "Kann ich KI-Feedback überhaupt trauen?", 
+        a: "Ja – und das Beste: Es bleibt nicht bei KI. Die KI liefert dir sofort nach jedem Gespräch ein Transkript und Feedback. Dazu kommen unsere Coaches David und Flemming in den Calls. Du profitierst also von präziser Technik + menschlicher Erfahrung." 
+      },
+      { 
+        q: "Gibt es Ratenzahlungen?", 
+        a: "Ja, über unseren Zahlungsanbieter kannst du bequem in Raten zahlen." 
+      },
+      { 
+        q: "Brauche ich Anki unbedingt?", 
+        a: "Nein. Du kannst wählen: digitale Lernkarten mit Anki – oder unser handschriftliches System. Beides ist effektiv, du entscheidest, was zu dir passt." 
+      },
       { q: "Brauche ich Anki?", a: "Nicht zwingend. Wir bieten Alternativen und optionalen Download." },
       { q: "Welche Themen und Skills?", a: "Hören, Sprechen, Schreiben, Grammatik. Mit Themenfilter." },
       { q: "Wie starte ich?", a: "Teste die Lektion. Wähle deinen Plan. Starte heute." }
