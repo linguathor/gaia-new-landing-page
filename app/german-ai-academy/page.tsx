@@ -55,6 +55,7 @@ import Guarantee from '../../components/Guarantee';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
+import ProblemSolution from '../../components/ProblemSolution';
 import dynamic from 'next/dynamic';
 
 // Dynamic imports for performance optimization
@@ -165,6 +166,9 @@ export default function GermanAIAcademyPage() {
             <HeroTestimonial />
           </div>
         </section>
+        
+        {/* Problem & Solution Section - Emotional Connection */}
+        <ProblemSolution />
         
         <ReachableStatus />
         <GuaranteeStrip />
