@@ -251,6 +251,26 @@ export const academy = {
     ]
   },
 
+  launchBonuses: {
+    title: "Exklusive Launch-Boni",
+    summary: "Starte bis zum 20. Oktober und erhalte diese wertvollen Zusätze kostenlos dazu",
+    deadline: "Nur bis 20. Oktober 2024",
+    bonuses: [
+      {
+        title: "Wöchentliche Übungspläne",
+        description: "Strukturierte 7-Tage-Pläne mit klaren Tageszielen. Jede Woche erhältst du einen personalisierten Plan mit konkreten Aufgaben für kontinuierlichen Fortschritt.",
+        value: "Wert: 150€",
+        icon: "calendar"
+      },
+      {
+        title: "Bonus-Materialien Paket",
+        description: "Zusätzliche Übungen, Checklisten und Vorlagen für häufige Gesprächssituationen. Direkt anwendbar in Beruf und Alltag.",
+        value: "Wert: 99€",
+        icon: "book"
+      }
+    ]
+  },
+
   guarantee: {
     title: "10-Tage-Garantie",
     text: "Starte ohne Risiko. Wenn du innerhalb von 10 Tagen merkst, dass es nicht passt, erhältst du dein Geld zurück. Erreichst du deine Ziele nicht, verlängern wir kostenlos."

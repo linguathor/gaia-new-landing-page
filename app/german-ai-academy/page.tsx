@@ -81,7 +81,7 @@ const TestimonialsSection = dynamic(
 
 // NEW: denser wrappers / bands
 import Compact from '../../components/Compact';
-import LaunchBonuses from '../../components/LaunchBonuses';
+import { LaunchBonuses } from '../../components/LaunchBonuses';
 import OnboardingSteps from '../../components/OnboardingSteps';
 
 // Phase 7: Advanced Features
@@ -227,7 +227,12 @@ export default function GermanAIAcademyPage() {
         {/* MOVED: LaunchBonuses placed here (was earlier); acts as a colored lead-in to Pricing */}
         <section aria-label="Angebot & Garantie" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
-            <LaunchBonuses />
+            <LaunchBonuses 
+              title={academy.launchBonuses.title}
+              summary={academy.launchBonuses.summary}
+              deadline={academy.launchBonuses.deadline}
+              bonuses={academy.launchBonuses.bonuses}
+            />
             <Pricing pricing={academy.pricing} />
             <Guarantee guarantee={academy.guarantee} />
           </Compact>
