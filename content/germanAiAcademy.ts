@@ -211,26 +211,19 @@ export const academy = {
     note: "inkl. MwSt. | klare Kündigungsbedingungen | transparente Laufzeiten",
     plans: [
       {
-        name: "Academy",
-        priceNote: "149 € / 199 € / 249 €",
-        period: "3 / 6 / 12 Monate",
-        features: ["KI-Übungen", "Community", "Aufzeichnungen"],
-        cta: { label: "Academy starten", href: "https://YOUR_COPECART_LINK_ACADEMY" },
-        popular: false,
-        legal: "inkl. MwSt. • monatlich kündbar / keine Mindestlaufzeit"
-      },
-      {
-        name: "Premium (beliebt)",
-        priceNote: "990 € / 4 Monate (Launch, statt 1.200 €)",
+        name: "Premium",
+        priceNote: "990 € / 4 Monate",
         period: "einmalig",
         features: [
-          "Alles aus Academy",
-          "4×/Monat Live-Calls",
-          "Call-Drills und Tandem-Spaces",
+          "16 Live-Calls mit Coaching",
+          "KI-Übungen mit Feedback",
+          "Tandem-Spaces (Beta)",
+          "Community-Zugang",
           "Fortschritts-Messung",
+          "Materialien nach jedem Call",
           "Gratis Verlängerung bei Zielverfehlung"
         ],
-        cta: { label: "Jetzt Premium starten", href: "https://YOUR_COPECART_LINK_PREMIUM" },
+        cta: { label: "Jetzt starten", href: "https://YOUR_COPECART_LINK_PREMIUM" },
         popular: true,
         legal: "inkl. MwSt. • Einmalzahlung"
       },
