@@ -11,12 +11,12 @@ export const academy = {
   hero: {
     h1: "Viermonatiger C1-Fluency Sprint",
     sub: "Mix aus KI-Tutoring und menschlicher Expertise und Begleitung",
-    ctaPrimary: { label: "Sicher dir deinen Platz – Nur 30 Plätze frei", href: "https://YOUR_COPECART_LINK_PREMIUM" },
+    ctaPrimary: { label: "Sicher dir deinen Platz – Nur 28 Plätze frei", href: "https://YOUR_COPECART_LINK_PREMIUM" },
     ctaSecondary: { label: "Alle Details", href: "#pricing" },
     badges: ["B1–C1 geeignet", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
     audienceBadge: "B1–C1 geeignet",
     urgency: {
-      spotsLeft: 30,
+      spotsLeft: 28,
       cohortStartDate: "2025-10-15",
       enrolledToday: 3
     }
