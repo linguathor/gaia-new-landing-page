@@ -21,16 +21,16 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    id: "lupita-academy",
-    name: "Lupita",
-    photo: "", // Will fallback to initials avatar
+    id: "ignacio-academy",
+    name: "Ignacio",
+    photo: "/images/ignacio.jpg",
     role: "Academy Graduate",
     company: "German AI Academy",
     beforeLevel: "B2",
     afterLevel: "C1",
     duration: 4,
-    quote: "Der strukturierte Ansatz mit KI-Unterstützung und persönlichem Coaching hat den entscheidenden Unterschied gemacht. Endlich spreche ich fließend und selbstbewusst Deutsch.",
-    videoUrl: "/videos/testimonials/lupita-academy.mp4",
+    quote: "ChatGPT hat mir viel geholfen, aber erst jetzt wo ich die Academy von Flemming und David nutze, kann ich wirklich sagen, dass ich KI effektiv nutze.",
+    videoUrl: "/videos/testimonials/ignacio-academy.mp4",
     metrics: {
       sprechzeit: 55,
       scenarios: 12,
