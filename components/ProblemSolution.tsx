@@ -123,7 +123,7 @@ export default function ProblemSolution() {
             {/* Call to Action */}
             <div className="pt-4">
               <MagneticButton href="#pricing">
-                Ja, ich möchte mich anmelden
+                Jetzt anmelden
               </MagneticButton>
             </div>
           </div>

@@ -121,7 +121,7 @@ export default function CallProgram({
           
           {/* CTA */}
           <MagneticButton href="#pricing">
-            Jetzt Live-Calls sichern
+            Jetzt anmelden
           </MagneticButton>
         </div>
       </div>

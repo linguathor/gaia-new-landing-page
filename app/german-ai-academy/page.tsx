@@ -186,7 +186,7 @@ export default function GermanAIAcademyPage() {
               <CtaBand 
                 title="Diese Ergebnisse willst du auch?"
                 sub="Sichere dir jetzt einen der letzten Plätze für dein B2/C1-Level."
-                label="Jetzt starten"
+                label="Jetzt anmelden"
                 href="#pricing"
               />
             </div>
@@ -240,7 +240,7 @@ export default function GermanAIAcademyPage() {
               <CtaBand 
                 title="Schließe dich 500+ B2/C1-Lernern an"
                 sub="Jeden Tag aktive Unterstützung in der Telegram-Community."
-                label="Jetzt Platz sichern"
+                label="Jetzt anmelden"
                 href="#pricing"
               />
             </div>
@@ -259,7 +259,7 @@ export default function GermanAIAcademyPage() {
               <CtaBand 
                 title="Lerne von den Besten"
                 sub="Muttersprachliche Coaches und jahrelange Erfahrung warten auf dich."
-                label="Jetzt starten"
+                label="Jetzt anmelden"
                 href="#pricing"
               />
             </div>
