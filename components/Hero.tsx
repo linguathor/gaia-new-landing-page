@@ -95,30 +95,16 @@ export default function Hero() {
             />
           </div>
 
-          {/* Enhanced Guarantee Section */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-lg font-semibold text-primary-600 animate-slide-up" style={{ animationDelay: '1.2s' }}>
-            <div className="flex items-center gap-2 bg-success-50 border border-success-200 rounded-full px-4 py-2">
-              <svg className="h-6 w-6 text-success-600" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-                <path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4zM7 10h10M9 14h6" />
-              </svg>
-              <span className="text-success-800">10-Tage Geld-zurück-Garantie</span>
-            </div>
-            <div className="hidden sm:block text-neutral-400">+</div>
-            <div className="bg-accent-50 border border-accent-200 rounded-full px-4 py-2">
-              <span className="text-accent-800">Kostenlose Verlängerung</span>
-            </div>
-          </div>
-
-          {/* Enhanced Feature Pills */}
-          <ul className="flex flex-wrap justify-center gap-3 text-sm font-medium animate-slide-up" style={{ animationDelay: '1.4s' }}>
-            <li className="rounded-full bg-neutral-100 border border-neutral-200 px-4 py-2 text-neutral-700 transition-all duration-300 hover:bg-neutral-200">
-              Untertitel & Transkripte
+          {/* Simplified Key Benefits */}
+          <ul className="flex flex-wrap justify-center gap-3 text-sm font-medium animate-slide-up" style={{ animationDelay: '1.2s' }}>
+            <li className="rounded-full bg-primary-100 border border-primary-300 px-6 py-3 font-semibold text-primary-800 transition-all duration-300 hover:bg-primary-200">
+              B2-C1 Programm
             </li>
-            <li className="rounded-full bg-neutral-100 border border-neutral-200 px-4 py-2 text-neutral-700 transition-all duration-300 hover:bg-neutral-200">
-              Aufzeichnungen
+            <li className="rounded-full bg-success-100 border border-success-300 px-6 py-3 font-semibold text-success-800 transition-all duration-300 hover:bg-success-200">
+              4 Monate Intensiv
             </li>
-            <li className="rounded-full bg-success-100 border border-success-300 px-4 py-2 font-semibold text-success-800 transition-all duration-300 hover:bg-success-200">
-              Ohne Risiko starten
+            <li className="rounded-full bg-accent-100 border border-accent-300 px-6 py-3 font-semibold text-accent-800 transition-all duration-300 hover:bg-accent-200">
+              Live-Coaching
             </li>
           </ul>
         </div>

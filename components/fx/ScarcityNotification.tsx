@@ -22,10 +22,15 @@ export default function ScarcityNotification({ spotsLeft, enrolledToday, classNa
     <div className={`animate-fade-in ${className}`}>
       {/* Enhanced spots remaining alert */}
       <div className="bg-gradient-to-r from-accent-50 to-accent-100 border-2 border-accent-300 rounded-xl p-4 mb-4 shadow-accent">
-        <div className="flex items-center justify-center">
-          <div className="w-3 h-3 bg-accent-500 rounded-full animate-pulseSoft mr-3"></div>
-          <p className="text-accent-800 font-bold text-lg text-center">
-            Nur noch <span className="text-accent-600 font-extrabold text-xl">{spotsLeft} Plätze</span> verfügbar
+        <div className="flex flex-col items-center justify-center">
+          <div className="flex items-center justify-center mb-2">
+            <div className="w-3 h-3 bg-accent-500 rounded-full animate-pulseSoft mr-3"></div>
+            <p className="text-accent-800 font-bold text-lg text-center">
+              Nur noch <span className="text-accent-600 font-extrabold text-xl">{spotsLeft} Plätze</span> verfügbar
+            </p>
+          </div>
+          <p className="text-accent-700 font-semibold text-base text-center">
+            Für Leute ab B2-Niveau
           </p>
         </div>
       </div>

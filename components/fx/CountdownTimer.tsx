@@ -62,44 +62,13 @@ export default function CountdownTimer({ targetDate, className = "" }: Countdown
   return (
     <div className={`bg-gradient-to-r from-primary-50 via-accent-50 to-primary-50 border-2 border-primary-300 rounded-xl p-6 shadow-primary ${className}`}>
       <div className="text-center">
-        <p className="text-primary-800 font-bold text-lg mb-4 flex items-center justify-center gap-2">
-          <span className="text-2xl animate-pulseSoft">⏰</span>
-          Anmeldung schließt in:
+        <p className="text-primary-800 font-bold text-xl flex items-center justify-center gap-3">
+          <span className="text-3xl animate-pulseSoft">⏰</span>
+          Anmeldung schließt in Kürze
         </p>
-        <div className="flex justify-center gap-3 sm:gap-4">
-          <div className="bg-white rounded-xl p-3 sm:p-4 shadow-soft border border-primary-200 min-w-[60px] sm:min-w-[70px] hover:shadow-primary transition-all duration-300">
-            <div className="text-2xl sm:text-3xl font-bold text-primary-600">
-              {timeRemaining.days.toString().padStart(2, '0')}
-            </div>
-            <div className="text-sm sm:text-base text-primary-500 font-semibold">
-              Tage
-            </div>
-          </div>
-          <div className="bg-white rounded-xl p-3 sm:p-4 shadow-soft border border-primary-200 min-w-[60px] sm:min-w-[70px] hover:shadow-primary transition-all duration-300">
-            <div className="text-2xl sm:text-3xl font-bold text-primary-600">
-              {timeRemaining.hours.toString().padStart(2, '0')}
-            </div>
-            <div className="text-sm sm:text-base text-primary-500 font-semibold">
-              Std
-            </div>
-          </div>
-          <div className="bg-white rounded-xl p-3 sm:p-4 shadow-soft border border-primary-200 min-w-[60px] sm:min-w-[70px] hover:shadow-primary transition-all duration-300">
-            <div className="text-2xl sm:text-3xl font-bold text-primary-600">
-              {timeRemaining.minutes.toString().padStart(2, '0')}
-            </div>
-            <div className="text-sm sm:text-base text-primary-500 font-semibold">
-              Min
-            </div>
-          </div>
-          <div className="bg-white rounded-xl p-3 sm:p-4 shadow-soft border border-primary-200 min-w-[60px] sm:min-w-[70px] hover:shadow-primary transition-all duration-300">
-            <div className="text-2xl sm:text-3xl font-bold text-accent-600 animate-pulseSoft">
-              {timeRemaining.seconds.toString().padStart(2, '0')}
-            </div>
-            <div className="text-sm sm:text-base text-primary-500 font-semibold">
-              Sek
-            </div>
-          </div>
-        </div>
+        <p className="text-primary-600 font-medium text-base mt-2">
+          Sichere dir jetzt deinen Platz
+        </p>
       </div>
     </div>
   );

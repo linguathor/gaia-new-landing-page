@@ -21,21 +21,21 @@ export interface Testimonial {
 
 export const testimonials: Testimonial[] = [
   {
-    id: "sarah-mueller",
-    name: "Sarah Müller",
+    id: "lupita-academy",
+    name: "Lupita",
     photo: "", // Will fallback to initials avatar
-    role: "Senior Product Manager",
-    company: "SAP",
-    beforeLevel: "B1",
+    role: "Academy Graduate",
+    company: "German AI Academy",
+    beforeLevel: "B2",
     afterLevel: "C1",
     duration: 4,
-    quote: "Endlich kann ich in Meetings selbstbewusst sprechen! Meine Kollegen haben sofort den Unterschied bemerkt. Die KI-Übungen haben genau meine Schwachstellen getroffen.",
-    linkedinUrl: "https://linkedin.com/in/sarah-mueller-sap",
+    quote: "Der strukturierte Ansatz mit KI-Unterstützung und persönlichem Coaching hat den entscheidenden Unterschied gemacht. Endlich spreche ich fließend und selbstbewusst Deutsch.",
+    videoUrl: "/videos/testimonials/lupita-academy.mp4",
     metrics: {
-      sprechzeit: 45,
-      scenarios: 11,
-      fillwords: -35,
-      activeWords: 1840
+      sprechzeit: 55,
+      scenarios: 12,
+      fillwords: -45,
+      activeWords: 2200
     },
     featured: true
   },
