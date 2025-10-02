@@ -168,10 +168,10 @@ export default function GermanAIAcademyPage() {
           </div>
         </section>
         
+        <ReachableStatus />
+        
         {/* Problem & Solution Section - Emotional Connection */}
         <ProblemSolution />
-        
-        <ReachableStatus />
         <GuaranteeStrip />
 
         {/* Slight overlap to reduce the "gap" below hero */}
