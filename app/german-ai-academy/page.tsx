@@ -15,7 +15,7 @@ import LearningLoop from '../../components/LearningLoop';
 import CallProgram from '../../components/CallProgram';
 import Interactivity from '../../components/Interactivity';
 import Materials from '../../components/Materials';
-import TandemExplainer from '../../components/TandemExplainer';
+import TandemSpaces from '../../components/TandemSpaces';
 import ProgressMeter from '../../components/ProgressMeter';
 import Diagnostics from '../../components/Diagnostics';
 import CtaBand from '../../components/CtaBand';
@@ -195,13 +195,8 @@ export default function GermanAIAcademyPage() {
 
         {/* German Level Quiz removed - distraction and not necessary */}
 
-        {/* === BAND C: LIGHT GRAY — Tandem Spaces === */}
-        <section aria-label="Tandem Spaces" className="bg-gray-50">
-          <Compact>
-            {/* Interactivity and Materials now integrated into CallProgram above */}
-            <TandemExplainer title={academy.tandem.title} summary={academy.tandem.summary} text={academy.tandem.text} status={academy.tandem.status} />
-          </Compact>
-        </section>
+        {/* === COMPREHENSIVE TANDEM SPACES SECTION === */}
+        <TandemSpaces data={academy.tandemSpaces} />
 
         {/* === BAND D: LIGHT SKY WASH — Progress + Diagnostics + Onboarding === */}
         <section

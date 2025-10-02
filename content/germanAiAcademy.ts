@@ -96,12 +96,107 @@ export const academy = {
     bullets: ["PDF-Handout", "Digitale Karteikarten (Anki/Quizlet)", "Aufgaben mit Lösung"]
   },
 
-  tandem: {
-    title: "Tandem-Spaces",
-    summary: "Geführte Tandems mit KI-Feedback. Kurze Slots, hohe Aktivität.",
-    text: "Geführte Tandems mit klaren Aufgaben und KI-Feedback. Kurze Slots. Hohe Aktivität.",
-    status: "Beta" as const
-    // demoHref: "/videos/tandem-demo.mp4" // optional
+  tandemSpaces: {
+    title: "Tandem-Spaces: Deine persönliche Sprechpraxis",
+    subtitle: "Strukturierte Peer-Sessions mit KI-Feedback für echte Gespräche",
+    status: "Beta" as const,
+    features: [
+      {
+        icon: "🎯",
+        title: "Strukturierte Praxis",
+        description: "Geführte Rollenspiele und Szenarien",
+        details: ["Job-spezifische Situationen (Medizin, Business, etc.)", "Zeitgesteuerte Übungen für maximale Effizienz", "Vorbereitete Prompts und Gesprächsleitfäden"]
+      },
+      {
+        icon: "👥",
+        title: "Kleine Gruppen (2-5 Personen)",
+        description: "Mehr Sprechzeit pro Person",
+        details: ["Weniger Stress, mehr Vertrauen", "Feste Tandem-Partner für Kontinuität", "Persönliche Lernbeziehungen aufbauen"]
+      },
+      {
+        icon: "🔄",
+        title: "Regelmäßige Termine",
+        description: "Wöchentliche feste Slots",
+        details: ["Verlässliche Lernroutine entwickeln", "Accountability durch Partner", "Automatische Zoom-Integration"]
+      },
+      {
+        icon: "🤖",
+        title: "KI-gestütztes Feedback",
+        description: "Automatische Zoom-Transkription",
+        details: ["Detailliertes Sprach-Feedback nach jeder Session", "Fortschrittsmessung über Zeit", "Personalisierte Verbesserungsvorschläge"]
+      }
+    ],
+    process: [
+      {
+        step: 1,
+        title: "Matching",
+        description: "Wir verbinden dich mit Lernpartnern auf ähnlichem Niveau",
+        details: "Basierend auf Sprachniveau, Verfügbarkeit und Lernzielen"
+      },
+      {
+        step: 2,
+        title: "Terminplanung",
+        description: "Feste wöchentliche Slots via Zoom-Integration",
+        details: "Flexible Terminwahl mit automatischen Kalender-Einträgen"
+      },
+      {
+        step: 3,
+        title: "Strukturierte Sessions",
+        description: "Geführte Gespräche mit vorbereiteten Szenarien und Prompts",
+        details: "30-45 Minuten fokussierte Sprechpraxis mit klaren Zielen"
+      },
+      {
+        step: 4,
+        title: "KI-Auswertung",
+        description: "Automatisches Feedback zu Wortschatz, Grammatik und Flüssigkeit",
+        details: "Detaillierter Bericht binnen 24 Stunden nach der Session"
+      }
+    ],
+    scenarios: [
+      {
+        industry: "Medizin",
+        icon: "🏥",
+        situations: ["Patientengespräche", "Anamnese", "Kollegen-Diskussionen", "Befundbesprechungen"],
+        level: "both" as const
+      },
+      {
+        industry: "Business",
+        icon: "💼",
+        situations: ["Meetings leiten", "Präsentationen", "Verhandlungen", "Kundentermine"],
+        level: "both" as const
+      },
+      {
+        industry: "Technik",
+        icon: "💻",
+        situations: ["Code-Reviews", "Projektbesprechungen", "Kundentermine", "Team-Standup"],
+        level: "C1" as const
+      },
+      {
+        industry: "Alltag",
+        icon: "🏠",
+        situations: ["Behördengänge", "Elterngespräche", "Nachbarschaftskonflikte", "Arztbesuche"],
+        level: "B2" as const
+      }
+    ],
+    benefits: {
+      B2: [
+        "Übergang von passivem zu aktivem Sprechen",
+        "Vertrauen in spontane Gespräche aufbauen",
+        "Häufige Fehler systematisch eliminieren",
+        "Grundwortschatz in echten Situationen anwenden"
+      ],
+      C1: [
+        "Nuancen und komplexe Strukturen üben",
+        "Berufsspezifische Kommunikation perfektionieren",
+        "Native-ähnliche Flüssigkeit entwickeln",
+        "Kulturelle Feinheiten meistern"
+      ]
+    },
+    testimonial: {
+      name: "Anna Kowalski",
+      text: "Das Tandem-Learning hat den Unterschied gemacht. Echte Gespräche mit Feedback in Echtzeit.",
+      level: "B2 → C1"
+    }
   },
 
   progress: {
