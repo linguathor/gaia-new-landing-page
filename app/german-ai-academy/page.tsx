@@ -16,8 +16,7 @@ import CallProgram from '../../components/CallProgram';
 import Interactivity from '../../components/Interactivity';
 import Materials from '../../components/Materials';
 import TandemSpaces from '../../components/TandemSpaces';
-import ProgressMeter from '../../components/ProgressMeter';
-import Diagnostics from '../../components/Diagnostics';
+import GermanAiAcademyAccess from '../../components/GermanAiAcademyAccess';
 import CtaBand from '../../components/CtaBand';
 
 // Dynamic import for ProgressMetrics (heavy dashboard component)
@@ -85,7 +84,7 @@ const TestimonialsSection = dynamic(
 // NEW: denser wrappers / bands
 import Compact from '../../components/Compact';
 import { LaunchBonuses } from '../../components/LaunchBonuses';
-import OnboardingSteps from '../../components/OnboardingSteps';
+
 
 // Phase 7: Advanced Features
 import GermanLevelQuiz from '../../components/GermanLevelQuiz';
@@ -198,18 +197,8 @@ export default function GermanAIAcademyPage() {
         {/* === COMPREHENSIVE TANDEM SPACES SECTION === */}
         <TandemSpaces data={academy.tandemSpaces} />
 
-        {/* === BAND D: LIGHT SKY WASH — Progress + Diagnostics + Onboarding === */}
-        <section
-          aria-label="Fortschritt & Onboarding"
-          style={{ backgroundColor: '#88B6CD' }}
-        >
-          <Compact>
-            <ProgressMeter />
-            <Diagnostics />
-            {/* NEW: denser, concrete "what happens next" steps */}
-            <OnboardingSteps />
-          </Compact>
-        </section>
+        {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
+        <GermanAiAcademyAccess data={academy.germanAiAcademyAccess} />
 
         {/* === BAND E: LIGHT GRAY — Accountability + AI Plan + Platform === */}
         <section aria-label="Accountability & Plattform" className="bg-gray-50">

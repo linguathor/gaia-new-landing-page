@@ -199,49 +199,30 @@ export const academy = {
     }
   },
 
-  progress: {
-    title: "Fortschritt und Garantie",
-    summary: "Vorher/Nachher-Check. Kostenlose Verlängerung bei Zielverfehlung.",
-    bullets: [
-      "Vorher-/Nachher-Check mit klaren Kriterien",
-      "Kostenlose Verlängerung, wenn Ziele nicht erreicht"
-    ],
-    detailsHref: "/garantie",
-    percentage: 75,
-    guarantee: "Wenn du nicht zufrieden bist, bekommst du dein Geld zurück.",
-    // NEW: three headline metrics we surface on the page
-    metrics: [
+  germanAiAcademyAccess: {
+    title: "Voller Zugang zu deinem persönlichen KI-Tutor",
+    subtitle: "In unserer GERMAN AI ACADEMY bekommst du präzises, individuelles Training – wann du möchtest, so oft du willst.",
+    features: [
       {
-        key: "speakingTime",
-        label: "Sprechzeit/Woche",
-        value: 45,
-        unit: "Min",
-        help: "aus KI-Drills & Tandems"
+        icon: "🎭",
+        title: "Szenarien-Training",
+        description: "Realistische Gesprächssituationen für Beruf und Alltag mit sofortigem Feedback und Verbesserungsvorschlägen."
       },
       {
-        key: "scenarioScore",
-        label: "Szenarien-Score",
-        value: 8,
-        unit: "/12",
-        help: "gemeisterte Gesprächsszenarien"
+        icon: "🎪",
+        title: "Rollenspiele",
+        description: "Interaktive Dialoge in verschiedenen Rollen – vom Bewerbungsgespräch bis zum Arztbesuch."
       },
       {
-        key: "fillerDrop",
-        label: "Füllwörter",
-        value: -32,
-        unit: "%",
-        help: "Rückgang vs. Woche 1"
+        icon: "📚",
+        title: "Grammatikübungen für C1",
+        description: "Fortgeschrittene Strukturen, Konjunktiv, komplexe Satzbau-Übungen für perfekte Präzision."
+      },
+      {
+        icon: "💬",
+        title: "Feedback wann du möchtest",
+        description: "Sofortige Korrekturen, Aussprache-Tipps und personalisierte Lernempfehlungen – 24/7 verfügbar."
       }
-    ]
-  },
-
-  diagnostics: {
-    title: "Wie wir Fortschritt messen",
-    summary: "Einstufungstest, Abschlusstest, Szenarien als Zielkorridor.",
-    bullets: [
-      "Einstufungstest → individueller Plan",
-      "Abschlusstest mit Szenarien",
-      "Zielkorridor: 8–12 komplexe Szenarien"
     ]
   },
 
