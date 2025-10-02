@@ -29,7 +29,7 @@ export const academy = {
   },
 
   outcomes: {
-    title: "Ergebnisse in 4 Monaten",
+    title: "So funktioniert unser Programm",
     summary: "Unser Versprechen an dich: sichtbare, nutzbare Fortschritte.",
     items: [
       { label: "800–1.200 neue aktive Wörter", sub: "gezielt für Arbeit & Alltag" },
