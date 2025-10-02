@@ -12,7 +12,7 @@ export default function Header() {
           href="/"
           className="text-xl sm:text-2xl font-bold text-gray-900 hover:text-amber-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
         >
-          <span className="hidden sm:inline">Natural. Fluent. German.</span>
+          <span className="hidden sm:inline">Natural. Fluent. German. & LinguaThor</span>
           <span className="sm:hidden">GAIA</span>
         </Link>
         

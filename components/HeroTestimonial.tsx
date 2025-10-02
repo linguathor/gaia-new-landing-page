@@ -22,7 +22,7 @@ export default function HeroTestimonial() {
         </div>
         <div className="flex-grow">
           <blockquote className="text-neutral-700 font-medium leading-relaxed mb-3">
-            "{heroTestimonial.quote.substring(0, 120)}..."
+            "{heroTestimonial.quote}"
           </blockquote>
           <div className="flex items-center justify-between">
             <div>
