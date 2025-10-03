@@ -13,13 +13,23 @@ export default function Instructors({
   summary,
   subtitle,
   description,
-  people
+  people,
+  showCta = false,
+  ctaTitle,
+  ctaSubtitle,
+  ctaLabel,
+  ctaHref
 }: {
   title: string;
   summary: string;
   subtitle?: string;
   description?: string;
   people: Person[];
+  showCta?: boolean;
+  ctaTitle?: string;
+  ctaSubtitle?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
 }) {
   return (
     <section aria-labelledby="instructors-title" className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-16 lg:py-24">
@@ -29,20 +39,23 @@ export default function Instructors({
           {/* Left side - Coaches photo */}
           <div className="flex justify-center">
             <div className="relative">
-              <div className="bg-blue-500 rounded-2xl p-8 shadow-2xl">
+              {/* Responsive card wrapper: controls visual size across breakpoints */}
+              <div className="bg-blue-500 rounded-2xl p-6 sm:p-8 shadow-2xl w-64 sm:w-80 md:w-[420px]">
                 <OptimizedImage
                   src="/images/David-Flemming.jpg"
                   alt="David & Flemming"
-                  width={400}
-                  height={300}
-                  className="rounded-xl object-cover"
+                  // Use a larger intrinsic size for better optimization; sizes controls actual delivered file
+                  width={1200}
+                  height={800}
+                  sizes="(max-width: 640px) 72vw, (max-width: 1024px) 50vw, 420px"
+                  className="rounded-xl object-cover w-full h-auto"
                 />
               </div>
               {subtitle && (
-                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white text-blue-800 rounded-full shadow-lg flex flex-col items-center text-center px-6 py-4 w-56 md:w-64">
-                  <h3 className="text-lg font-bold leading-tight">{subtitle}</h3>
+                <div className="absolute -bottom-8 md:-bottom-6 left-1/2 transform -translate-x-1/2 bg-white text-blue-800 rounded-full shadow-lg flex flex-col items-center text-center px-4 sm:px-6 py-3 w-48 sm:w-56 md:w-64">
+                  <h3 className="text-base sm:text-lg font-bold leading-tight">{subtitle}</h3>
                   {description && (
-                    <p className="text-xs text-blue-600 mt-1 leading-snug">{description}</p>
+                    <p className="text-xs sm:text-sm text-blue-600 mt-1 leading-snug">{description}</p>
                   )}
                 </div>
               )}
@@ -75,6 +88,28 @@ export default function Instructors({
             </div>
           </div>
         </div>
+
+        {/* Optional CTA at bottom of section */}
+        {showCta && ctaTitle && ctaLabel && ctaHref && (
+          <div className="mt-16 text-center">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-10 max-w-2xl mx-auto border border-white/20">
+              <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+                {ctaTitle}
+              </h3>
+              {ctaSubtitle && (
+                <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+                  {ctaSubtitle}
+                </p>
+              )}
+              <a
+                href={ctaHref}
+                className="inline-block bg-white text-blue-700 font-bold text-lg px-10 py-4 rounded-full hover:bg-blue-50 transition-all hover:scale-105 shadow-xl"
+              >
+                {ctaLabel}
+              </a>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   );

@@ -213,22 +213,13 @@ export default function GermanAIAcademyPage() {
           summary={academy.instructors.summary} 
           subtitle={academy.instructors.subtitle}
           description={academy.instructors.description}
-          people={academy.instructors.people as any} 
+          people={academy.instructors.people as any}
+          showCta={true}
+          ctaTitle="Lerne von den Besten"
+          ctaSubtitle="Muttersprachliche Coaches und jahrelange Erfahrung warten auf dich."
+          ctaLabel="Jetzt anmelden"
+          ctaHref="#pricing"
         />
-        
-        {/* CTA after seeing instructor credibility */}
-        <section className="bg-gray-50">
-          <Compact>
-            <div className="py-12">
-              <CtaBand 
-                title="Lerne von den Besten"
-                sub="Muttersprachliche Coaches und jahrelange Erfahrung warten auf dich."
-                label="Jetzt anmelden"
-                href="#pricing"
-              />
-            </div>
-          </Compact>
-        </section>
 
         {/* === BAND H: LIGHT SKY WASH — Launch bonuses + Pricing + Guarantee === */}
         {/* MOVED: LaunchBonuses placed here (was earlier); acts as a colored lead-in to Pricing */}
