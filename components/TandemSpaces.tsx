@@ -46,7 +46,7 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
         {/* Life-Focused Scenarios */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-4 text-gray-900">
-            Deine Szenarien-Praxis
+            Diese Szenarien wirst du meistern
           </h3>
           <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
             Von persönlichen Geschichten zu komplexen Diskussionen – entwickle deine Ausdrucksfähigkeit in authentischen Gesprächssituationen
@@ -76,32 +76,6 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
                 </ul>
               </div>
             ))}
-          </div>
-        </div>
-
-        {/* Level-Specific Benefits */}
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
-          <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-8">
-            <h4 className="text-xl font-bold mb-4 text-blue-900">Für B2-Lerner</h4>
-            <ul className="space-y-3">
-              {data.benefits.B2.map((benefit, index) => (
-                <li key={index} className="flex items-start text-blue-800">
-                  <span className="text-blue-500 mr-3 mt-1">→</span>
-                  {benefit}
-                </li>
-              ))}
-            </ul>
-          </div>
-          <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-8">
-            <h4 className="text-xl font-bold mb-4 text-green-900">Für C1-Lerner</h4>
-            <ul className="space-y-3">
-              {data.benefits.C1.map((benefit, index) => (
-                <li key={index} className="flex items-start text-green-800">
-                  <span className="text-green-500 mr-3 mt-1">→</span>
-                  {benefit}
-                </li>
-              ))}
-            </ul>
           </div>
         </div>
       </div>
