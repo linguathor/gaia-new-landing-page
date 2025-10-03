@@ -40,7 +40,7 @@ export default function Instructors({
           <div className="flex justify-center">
             <div className="relative">
               {/* Responsive card wrapper: controls visual size across breakpoints */}
-              <div className="bg-blue-500 rounded-2xl p-6 sm:p-8 shadow-2xl w-64 sm:w-80 md:w-[420px]">
+              <div className="bg-blue-500 rounded-2xl p-6 sm:p-8 shadow-2xl w-64 sm:w-80 md:w-[420px] overflow-hidden">
                 <OptimizedImage
                   src="/images/David-Flemming.jpg"
                   alt="David & Flemming"
@@ -48,7 +48,7 @@ export default function Instructors({
                   width={1200}
                   height={800}
                   sizes="(max-width: 640px) 72vw, (max-width: 1024px) 50vw, 420px"
-                  className="rounded-xl object-cover w-full h-full aspect-[3/2]"
+                  className="rounded-xl object-contain w-full h-auto"
                 />
               </div>
               {subtitle && (
