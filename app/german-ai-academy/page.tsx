@@ -161,12 +161,20 @@ export default function GermanAIAcademyPage() {
         </section>
         
         {/* Hero Testimonial for immediate social proof */}
-        <section className="relative -mt-8 pb-8 px-4 bg-white">
-          <div className="max-w-screen-xl mx-auto">
-            <HeroTestimonial />
-          </div>
-        </section>
-        
+          <section className="relative -mt-8 pb-8 px-4 bg-white">
+            <div className="max-w-screen-xl mx-auto">
+              <HeroTestimonial />
+            </div>
+          </section>
+
+        {/* Program functionality heading moved above 'Ergebnisse in 4 Monaten' */}
+        <div className="mx-auto max-w-screen-xl px-4 py-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-4">
+            So funktioniert unser Programm
+          </h2>
+          <hr className="border-t border-gray-200 mt-4" />
+        </div>
+
         <ReachableStatus />
         
         {/* Problem & Solution Section - Emotional Connection */}
@@ -178,12 +186,7 @@ export default function GermanAIAcademyPage() {
         <section aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Outcomes />
-            {/* Program functionality section heading */}
-            <div className="mx-auto max-w-screen-xl px-4 py-8">
-              <h2 className="text-2xl font-bold sm:text-3xl text-center mb-8">
-                So funktioniert unser Programm
-              </h2>
-            </div>
+            {/* Program functionality section heading removed (moved above) */}
             {/* LearningLoop removed - too confusing and comes too early */}
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
