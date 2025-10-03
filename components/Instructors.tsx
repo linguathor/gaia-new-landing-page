@@ -39,10 +39,10 @@ export default function Instructors({
                 />
               </div>
               {subtitle && (
-                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white text-blue-800 px-8 py-3 rounded-full shadow-lg">
-                  <h3 className="text-xl font-bold">{subtitle}</h3>
+                <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 bg-white text-blue-800 rounded-full shadow-lg flex flex-col items-center text-center px-6 py-4 w-56 md:w-64">
+                  <h3 className="text-lg font-bold leading-tight">{subtitle}</h3>
                   {description && (
-                    <p className="text-sm text-blue-600 mt-1">{description}</p>
+                    <p className="text-xs text-blue-600 mt-1 leading-snug">{description}</p>
                   )}
                 </div>
               )}
