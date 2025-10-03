@@ -114,7 +114,7 @@ export const academy = {
         details: ["Weniger Stress, mehr Vertrauen", "Feste Tandem-Partner für Kontinuität", "Persönliche Lernbeziehungen aufbauen"]
       },
       {
-        icon: "�",
+        icon: "📅",
         title: "Regelmäßige Termine",
         description: "Wöchentliche feste Slots",
         details: ["Verlässliche Lernroutine entwickeln", "Accountability durch Partner", "Automatische Zoom-Integration"]
