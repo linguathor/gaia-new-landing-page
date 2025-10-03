@@ -443,6 +443,18 @@ export const academy = {
   diagnostics: {
     title: "Wie messen wir deinen Fortschritt?",
     summary: "Drei klare Kennzahlen für messbare Verbesserungen – die Basis für unsere Garantie."
+  },
+
+  progress: {
+    title: "Dein Lernfortschritt",
+    summary: "Verfolge deine Entwicklung mit klaren Kennzahlen und Zielen.",
+    metrics: [
+      { key: "words", label: "Aktive Wörter", value: 1200, unit: "", help: "Wörter, die du aktiv verwendest" },
+      { key: "scenarios", label: "Szenarien gemeistert", value: 8, unit: "/12", help: "Gesprächssituationen mit Score ≥7" },
+      { key: "fluency", label: "Sprechzeit/Woche", value: 45, unit: "Min", help: "Aktive Sprechzeit ohne Pausen" }
+    ],
+    percentage: 75,
+    guarantee: "Bei weniger als 75% Fortschritt verlängern wir kostenlos"
   }
 } as const;
 
