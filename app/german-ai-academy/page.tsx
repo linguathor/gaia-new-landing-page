@@ -218,7 +218,7 @@ export default function GermanAIAcademyPage() {
           ctaTitle="Lerne von den Besten"
           ctaSubtitle="Muttersprachliche Coaches und jahrelange Erfahrung warten auf dich."
           ctaLabel="Jetzt anmelden"
-          ctaHref="#pricing"
+          ctaHref="https://www.copecart.com/products/4f9cc412/checkout"
         />
 
         {/* === BAND H: LIGHT SKY WASH — Launch bonuses + Pricing + Guarantee === */}
