@@ -204,21 +204,11 @@ export default function GermanAIAcademyPage() {
         {/* Removed per request: 'Wöchentliche Mikro-Aufgaben' and 'Auf der Plattform' sections */}
 
         {/* === BAND F: LIGHT SKY WASH — Community + Fit + Cohort === */}
-        <section aria-label="Community & Fit & Kohorte" style={{ backgroundColor: '#88B6CD' }}>
+        <section aria-label="Community & Kohorte" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Community community={academy.community} />
-            <Fit title={academy.fit.title} summary={academy.fit.summary} forList={academy.fit.for as any} notForList={academy.fit.notFor as any} />
-            {/* Cohort section removed for pre-launch phase - will be added back after launch */}
-            
-            {/* CTA after community social proof */}
-            <div className="py-12">
-              <CtaBand 
-                title="Schließe dich 500+ B2/C1-Lernern an"
-                sub="Jeden Tag aktive Unterstützung in der Telegram-Community."
-                label="Jetzt anmelden"
-                href="#pricing"
-              />
-            </div>
+            {/* 'Passt das zu dir?' (Fit) removed per request */}
+            {/* CTA band removed per request */}
           </Compact>
         </section>
 
