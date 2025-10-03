@@ -117,34 +117,6 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
             </ul>
           </div>
         </div>
-
-        {/* Testimonial */}
-        <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-xl p-8 text-center border border-primary-100">
-          <blockquote className="text-lg text-gray-700 mb-4 italic">
-            "{data.testimonial.text}"
-          </blockquote>
-          <div className="flex items-center justify-center gap-4">
-            <div>
-              <div className="font-bold text-primary-600">{data.testimonial.name}</div>
-              <div className="text-sm text-gray-600">{data.testimonial.level}</div>
-            </div>
-          </div>
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-amber-100 to-orange-100 rounded-xl p-8 border border-amber-200">
-            <h4 className="text-xl font-bold mb-2 text-amber-900">
-              Exklusiver Beta-Zugang
-            </h4>
-            <p className="text-amber-800 mb-4">
-              Begrenzte Beta-Plätze verfügbar • Inklusive in Premium & Elite-Mastermind
-            </p>
-            <button className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105">
-              Tandem-Partner finden
-            </button>
-          </div>
-        </div>
       </div>
     </section>
   );

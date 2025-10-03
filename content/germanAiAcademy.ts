@@ -191,11 +191,6 @@ export const academy = {
         "Native-ähnliche Flüssigkeit entwickeln",
         "Kulturelle Feinheiten meistern"
       ]
-    },
-    testimonial: {
-      name: "Anna Kowalski",
-      text: "Das Tandem-Learning hat den Unterschied gemacht. Echte Gespräche mit Feedback in Echtzeit.",
-      level: "B2 → C1"
     }
   },
 
