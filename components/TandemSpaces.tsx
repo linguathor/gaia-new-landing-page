@@ -52,30 +52,40 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
             Von persönlichen Geschichten zu komplexen Diskussionen – entwickle deine Ausdrucksfähigkeit in authentischen Gesprächssituationen
           </p>
           <div className="grid md:grid-cols-2 gap-8">
-            {data.scenarios.map((scenario, index) => (
-              <div key={index} className={`bg-gradient-to-br ${scenario.color} rounded-xl p-6 shadow-soft border border-gray-200 hover:shadow-lg transition-all duration-300`}>
-                <div className="flex items-center gap-3 mb-4">
-                  <span className="text-3xl">{scenario.icon}</span>
-                  <div className="flex-1">
-                    <div className="flex items-center justify-between mb-2">
-                      <h4 className="font-bold text-gray-900">{scenario.category}</h4>
-                      <span className="text-xs bg-white/80 px-3 py-1 rounded-full text-gray-700 font-medium">
-                        {scenario.level === 'both' ? 'B2–C1' : scenario.level}
-                      </span>
+            {data.scenarios.map((scenario, index) => {
+              // Map scenario colors to full Tailwind gradient classes
+              const gradientClass = 
+                scenario.color === 'from-purple-50 via-purple-100 to-pink-100' ? 'bg-gradient-to-br from-purple-50 via-purple-100 to-pink-100' :
+                scenario.color === 'from-sky-50 via-blue-100 to-cyan-100' ? 'bg-gradient-to-br from-sky-50 via-blue-100 to-cyan-100' :
+                scenario.color === 'from-emerald-50 via-green-100 to-teal-100' ? 'bg-gradient-to-br from-emerald-50 via-green-100 to-teal-100' :
+                scenario.color === 'from-yellow-50 via-amber-100 to-orange-100' ? 'bg-gradient-to-br from-yellow-50 via-amber-100 to-orange-100' :
+                'bg-gradient-to-br from-gray-50 to-gray-100';
+              
+              return (
+                <div key={index} className={`${gradientClass} rounded-xl p-6 shadow-soft border border-gray-200 hover:shadow-lg transition-all duration-300`}>
+                  <div className="flex items-center gap-3 mb-4">
+                    <span className="text-3xl">{scenario.icon}</span>
+                    <div className="flex-1">
+                      <div className="flex items-center justify-between mb-2">
+                        <h4 className="font-bold text-gray-900">{scenario.category}</h4>
+                        <span className="text-xs bg-white/80 px-3 py-1 rounded-full text-gray-700 font-medium">
+                          {scenario.level === 'both' ? 'B2–C1' : scenario.level}
+                        </span>
+                      </div>
+                      <p className="text-sm text-gray-700 mb-4">{scenario.description}</p>
                     </div>
-                    <p className="text-sm text-gray-700 mb-4">{scenario.description}</p>
                   </div>
+                  <ul className="space-y-2">
+                    {scenario.situations.map((situation, idx) => (
+                      <li key={idx} className="text-sm text-gray-700 flex items-start">
+                        <span className="text-green-600 mr-2 mt-0.5">✓</span>
+                        <span className="font-medium">{situation}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <ul className="space-y-2">
-                  {scenario.situations.map((situation, idx) => (
-                    <li key={idx} className="text-sm text-gray-700 flex items-start">
-                      <span className="text-green-600 mr-2 mt-0.5">✓</span>
-                      <span className="font-medium">{situation}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>
