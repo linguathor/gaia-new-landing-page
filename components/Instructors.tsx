@@ -48,7 +48,7 @@ export default function Instructors({
                   width={1200}
                   height={800}
                   sizes="(max-width: 640px) 72vw, (max-width: 1024px) 50vw, 420px"
-                  className="rounded-xl object-cover w-full h-auto"
+                  className="rounded-xl object-cover w-full h-full aspect-[3/2]"
                 />
               </div>
               {subtitle && (
