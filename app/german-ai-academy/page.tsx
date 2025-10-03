@@ -173,17 +173,16 @@ export default function GermanAIAcademyPage() {
 
         {/* Slight overlap to reduce the "gap" below hero */}
         {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
-        <div className="mx-auto max-w-screen-xl px-4 py-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-4">
-            So funktioniert unser Programm
-          </h2>
-          <hr className="border-t border-gray-200 mt-4" />
-        </div>
 
         <section aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
+            <div className="mx-auto max-w-screen-xl px-4 py-8 text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+                So funktioniert unser Programm
+              </h2>
+              <hr className="border-t border-white/30 mt-4" />
+            </div>
             <Outcomes />
-            {/* Program functionality section heading removed (moved above) */}
             {/* LearningLoop removed - too confusing and comes too early */}
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
@@ -204,13 +203,7 @@ export default function GermanAIAcademyPage() {
         {/* Removed per request: 'Wöchentliche Mikro-Aufgaben' and 'Auf der Plattform' sections */}
 
         {/* === BAND F: LIGHT SKY WASH — Community + Fit + Cohort === */}
-        <section aria-label="Community & Kohorte" style={{ backgroundColor: '#88B6CD' }}>
-          <Compact>
-            <Community community={academy.community} />
-            {/* 'Passt das zu dir?' (Fit) removed per request */}
-            {/* CTA band removed per request */}
-          </Compact>
-        </section>
+        {/* Community & Support section intentionally removed from rendering per request. Component remains in the repo. */}
 
         {/* Progress Calculator removed - misleading timeline information */}
 
