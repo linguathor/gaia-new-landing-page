@@ -9,7 +9,6 @@ import Footer from '../../components/Footer';
 
 import Hero from '../../components/Hero';
 import ReachableStatus from '../../components/ReachableStatus';
-import GuaranteeStrip from '../../components/GuaranteeStrip';
 import Outcomes from '../../components/Outcomes';
 import LearningLoop from '../../components/LearningLoop';
 import CallProgram from '../../components/CallProgram';
@@ -170,8 +169,7 @@ export default function GermanAIAcademyPage() {
         <ReachableStatus />
         
         {/* Problem & Solution Section - Emotional Connection */}
-        <ProblemSolution />
-        <GuaranteeStrip />
+  <ProblemSolution />
 
         {/* Slight overlap to reduce the "gap" below hero */}
         {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
