@@ -126,32 +126,6 @@ export const academy = {
         details: ["Detailliertes Sprach-Feedback nach jeder Session", "Fortschrittsmessung über Zeit", "Personalisierte Verbesserungsvorschläge"]
       }
     ],
-    process: [
-      {
-        step: 1,
-        title: "Matching",
-        description: "Wir verbinden dich mit Lernpartnern auf ähnlichem Niveau",
-        details: "Basierend auf Sprachniveau, Verfügbarkeit und Lernzielen"
-      },
-      {
-        step: 2,
-        title: "Terminplanung",
-        description: "Feste wöchentliche Slots via Zoom-Integration",
-        details: "Flexible Terminwahl mit automatischen Kalender-Einträgen"
-      },
-      {
-        step: 3,
-        title: "Strukturierte Sessions",
-        description: "Geführte Gespräche mit vorbereiteten Szenarien und Prompts",
-        details: "30-45 Minuten fokussierte Sprechpraxis mit klaren Zielen"
-      },
-      {
-        step: 4,
-        title: "KI-Auswertung",
-        description: "Automatisches Feedback zu Wortschatz, Grammatik und Flüssigkeit",
-        details: "Detaillierter Bericht binnen 24 Stunden nach der Session"
-      }
-    ],
     scenarios: [
       {
         category: "Persönliches & Biografie",

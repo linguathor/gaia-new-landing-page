@@ -43,25 +43,6 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
           ))}
         </div>
 
-        {/* How It Works Process */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">
-            So funktioniert's
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {data.process.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-full flex items-center justify-center text-white font-bold text-lg mx-auto mb-4">
-                  {step.step}
-                </div>
-                <h4 className="font-bold text-lg mb-2 text-gray-900">{step.title}</h4>
-                <p className="text-gray-600 mb-2">{step.description}</p>
-                <p className="text-sm text-gray-500">{step.details}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Life-Focused Scenarios */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-center mb-4 text-gray-900">
