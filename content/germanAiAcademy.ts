@@ -114,7 +114,7 @@ export const academy = {
         details: ["Weniger Stress, mehr Vertrauen", "Feste Tandem-Partner für Kontinuität", "Persönliche Lernbeziehungen aufbauen"]
       },
       {
-        icon: "🔄",
+        icon: "�",
         title: "Regelmäßige Termine",
         description: "Wöchentliche feste Slots",
         details: ["Verlässliche Lernroutine entwickeln", "Accountability durch Partner", "Automatische Zoom-Integration"]
@@ -207,7 +207,7 @@ export const academy = {
     subtitle: "In unserer GERMAN AI ACADEMY bekommst du präzises, individuelles Training – wann du möchtest, so oft du willst.",
     features: [
       {
-        icon: "👤",
+        icon: "�",
         title: "Szenarien-Training",
         description: "Realistische Gesprächssituationen für Beruf und Alltag mit sofortigem Feedback und Verbesserungsvorschlägen."
       },
@@ -217,7 +217,7 @@ export const academy = {
         description: "Interaktive Dialoge in verschiedenen Rollen – vom Bewerbungsgespräch bis zum Arztbesuch."
       },
       {
-        icon: "🌍",
+        icon: "📚",
         title: "Grammatikübungen für C1",
         description: "Fortgeschrittene Strukturen, Konjunktiv, komplexe Satzbau-Übungen für perfekte Präzision."
       },
