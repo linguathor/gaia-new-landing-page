@@ -155,7 +155,7 @@ export const academy = {
     scenarios: [
       {
         category: "Persönliches & Biografie",
-        icon: "�",
+        icon: "\u{1F464}",
         color: "from-purple-100 to-pink-100",
         situations: ["Berufliche Laufbahn erzählen", "Wohnsituation beschreiben", "Über Freundschaft und Familie", "Leidenschaften vorstellen"],
         level: "both" as const,
@@ -163,7 +163,7 @@ export const academy = {
       },
       {
         category: "Erlebnisse & Kultur", 
-        icon: "�",
+        icon: "\u{1F30D}",
         color: "from-blue-100 to-cyan-100",
         situations: ["Reiseerlebnisse schildern", "Kulturelle Traditionen erklären", "Anekdoten erzählen", "Lieblingsorte beschreiben"],
         level: "both" as const,
@@ -171,7 +171,7 @@ export const academy = {
       },
       {
         category: "Beruf & Gesellschaft",
-        icon: "�", 
+        icon: "\u{1F4BC}", 
         color: "from-green-100 to-emerald-100",
         situations: ["Meinungen zu aktuellen Themen", "Technologie im Alltag", "Berufliche Herausforderungen", "Gesundheit & Lebensstil"],
         level: "C1" as const,
