@@ -236,10 +236,10 @@ export default function GermanAIAcademyPage() {
         </section>
 
         {/* === ENHANCED TESTIMONIALS SECTION === */}
-        <TestimonialsSection />
+        {/* TestimonialsSection removed from rendering per request. Component remains in repo. */}
 
         {/* === TRUST BADGES === */}
-        <TrustBadges />
+        {/* TrustBadges (stats section) removed from rendering per request. Component remains in repo. */}
 
         {/* === BAND I: CLEAN WHITE — FAQ === */}
         <section aria-label="FAQ" className="bg-white">
