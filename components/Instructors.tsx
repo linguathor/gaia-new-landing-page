@@ -65,7 +65,7 @@ export default function Instructors({
           {/* Right side - Content */}
           <div className="space-y-8">
             <div>
-              <h2 id="instructors-title" className="text-4xl lg:text-5xl font-bold mb-4">
+              <h2 id="instructors-title" className="text-4xl lg:text-5xl font-bold text-white mb-4">
                 {title}
               </h2>
               <p className="text-xl text-blue-100 leading-relaxed">
@@ -93,7 +93,7 @@ export default function Instructors({
         {showCta && ctaTitle && ctaLabel && ctaHref && (
           <div className="mt-16 text-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-8 py-10 max-w-2xl mx-auto border border-white/20">
-              <h3 className="text-3xl lg:text-4xl font-bold mb-4">
+              <h3 className="text-3xl lg:text-4xl font-bold text-white mb-4">
                 {ctaTitle}
               </h3>
               {ctaSubtitle && (

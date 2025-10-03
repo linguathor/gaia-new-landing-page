@@ -222,17 +222,7 @@ export default function GermanAIAcademyPage() {
         />
 
         {/* === BAND H: LIGHT SKY WASH — Launch bonuses + Pricing + Guarantee === */}
-        {/* MOVED: LaunchBonuses placed here (was earlier); acts as a colored lead-in to Pricing */}
-        <section aria-label="Angebot & Garantie" style={{ backgroundColor: '#88B6CD' }}>
-          <Compact>
-            <LaunchBonuses 
-              title={academy.launchBonuses.title}
-              summary={academy.launchBonuses.summary}
-              deadline={academy.launchBonuses.deadline}
-              bonuses={academy.launchBonuses.bonuses}
-            />
-          </Compact>
-        </section>
+        {/* LaunchBonuses section removed from rendering per request. Component remains in repo. */}
 
         {/* === FINAL CONVERSION PUSH - 4 REASONS === */}
         <FourReasons />
