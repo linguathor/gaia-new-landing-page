@@ -197,17 +197,11 @@ export default function GermanAIAcademyPage() {
         {/* === COMPREHENSIVE TANDEM SPACES SECTION === */}
         <TandemSpaces data={academy.tandemSpaces} />
 
-        {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
-        <GermanAiAcademyAccess data={academy.germanAiAcademyAccess} />
+  {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
+  {/* Removed per request: GermanAiAcademyAccess section */}
 
         {/* === BAND E: LIGHT GRAY — Accountability + AI Plan + Platform === */}
-        <section aria-label="Accountability & Plattform" className="bg-gray-50">
-          <Compact>
-            <AccountabilityOptin />
-            {/* AI Plan section removed - confusing KI-Lernplan content */}
-            <PlatformChecklist title={academy.ux.title} summary={academy.ux.summary} checklist={academy.ux.checklist as any} />
-          </Compact>
-        </section>
+        {/* Removed per request: 'Wöchentliche Mikro-Aufgaben' and 'Auf der Plattform' sections */}
 
         {/* === BAND F: LIGHT SKY WASH — Community + Fit + Cohort === */}
         <section aria-label="Community & Fit & Kohorte" style={{ backgroundColor: '#88B6CD' }}>
