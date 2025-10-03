@@ -438,6 +438,11 @@ export const academy = {
       { q: "Welche Themen und Skills?", a: "Hören, Sprechen, Schreiben, Grammatik. Mit Themenfilter." },
       { q: "Wie starte ich?", a: "Teste die Lektion. Wähle deinen Plan. Starte heute." }
     ]
+  },
+
+  diagnostics: {
+    title: "Wie messen wir deinen Fortschritt?",
+    summary: "Drei klare Kennzahlen für messbare Verbesserungen – die Basis für unsere Garantie."
   }
 } as const;
 
