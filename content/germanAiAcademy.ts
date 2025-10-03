@@ -154,28 +154,36 @@ export const academy = {
     ],
     scenarios: [
       {
-        industry: "Medizin",
-        icon: "🏥",
-        situations: ["Patientengespräche", "Anamnese", "Kollegen-Diskussionen", "Befundbesprechungen"],
-        level: "both" as const
+        category: "Persönliches & Biografie",
+        icon: "�",
+        color: "from-purple-100 to-pink-100",
+        situations: ["Berufliche Laufbahn erzählen", "Wohnsituation beschreiben", "Über Freundschaft und Familie", "Leidenschaften vorstellen"],
+        level: "both" as const,
+        description: "Deine Geschichte, deine Erfahrungen – authentisch und persönlich"
       },
       {
-        industry: "Business",
-        icon: "💼",
-        situations: ["Meetings leiten", "Präsentationen", "Verhandlungen", "Kundentermine"],
-        level: "both" as const
+        category: "Erlebnisse & Kultur", 
+        icon: "�",
+        color: "from-blue-100 to-cyan-100",
+        situations: ["Reiseerlebnisse schildern", "Kulturelle Traditionen erklären", "Anekdoten erzählen", "Lieblingsorte beschreiben"],
+        level: "both" as const,
+        description: "Geschichten und Erfahrungen lebendig vermitteln"
       },
       {
-        industry: "Technik",
-        icon: "💻",
-        situations: ["Code-Reviews", "Projektbesprechungen", "Kundentermine", "Team-Standup"],
-        level: "C1" as const
+        category: "Beruf & Gesellschaft",
+        icon: "�", 
+        color: "from-green-100 to-emerald-100",
+        situations: ["Meinungen zu aktuellen Themen", "Technologie im Alltag", "Berufliche Herausforderungen", "Gesundheit & Lebensstil"],
+        level: "C1" as const,
+        description: "Komplexe Themen durchdenken und strukturiert argumentieren"
       },
       {
-        industry: "Alltag",
-        icon: "🏠",
-        situations: ["Behördengänge", "Elterngespräche", "Nachbarschaftskonflikte", "Arztbesuche"],
-        level: "B2" as const
+        category: "Zukunft & Reflexion",
+        icon: "🔮",
+        color: "from-amber-100 to-orange-100", 
+        situations: ["Zukunftspläne entwickeln", "Dankbarkeit ausdrücken", "Persönliche Ziele formulieren", "Lebenserfahrungen reflektieren"],
+        level: "C1" as const,
+        description: "Abstrakt denken und tiefere Einsichten ausdrücken"
       }
     ],
     benefits: {

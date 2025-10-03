@@ -62,28 +62,34 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
           </div>
         </div>
 
-        {/* Job-Specific Scenarios */}
+        {/* Life-Focused Scenarios */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-center mb-12 text-gray-900">
-            Praxis-Szenarien für deinen Beruf
+          <h3 className="text-2xl font-bold text-center mb-4 text-gray-900">
+            Deine Szenarien-Praxis
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <p className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+            Von persönlichen Geschichten zu komplexen Diskussionen – entwickle deine Ausdrucksfähigkeit in authentischen Gesprächssituationen
+          </p>
+          <div className="grid md:grid-cols-2 gap-8">
             {data.scenarios.map((scenario, index) => (
-              <div key={index} className="bg-white rounded-xl p-6 shadow-soft border border-gray-100">
+              <div key={index} className={`bg-gradient-to-br ${scenario.color} rounded-xl p-6 shadow-soft border border-gray-200 hover:shadow-lg transition-all duration-300`}>
                 <div className="flex items-center gap-3 mb-4">
-                  <span className="text-2xl">{scenario.icon}</span>
-                  <div>
-                    <h4 className="font-bold text-gray-900">{scenario.industry}</h4>
-                    <span className="text-xs bg-gray-100 px-2 py-1 rounded-full text-gray-600">
-                      {scenario.level === 'both' ? 'B2-C1' : scenario.level}
-                    </span>
+                  <span className="text-3xl">{scenario.icon}</span>
+                  <div className="flex-1">
+                    <div className="flex items-center justify-between mb-2">
+                      <h4 className="font-bold text-gray-900">{scenario.category}</h4>
+                      <span className="text-xs bg-white/80 px-3 py-1 rounded-full text-gray-700 font-medium">
+                        {scenario.level === 'both' ? 'B2–C1' : scenario.level}
+                      </span>
+                    </div>
+                    <p className="text-sm text-gray-700 mb-4">{scenario.description}</p>
                   </div>
                 </div>
                 <ul className="space-y-2">
                   {scenario.situations.map((situation, idx) => (
-                    <li key={idx} className="text-sm text-gray-600 flex items-start">
-                      <span className="text-green-500 mr-2">✓</span>
-                      {situation}
+                    <li key={idx} className="text-sm text-gray-700 flex items-start">
+                      <span className="text-green-600 mr-2 mt-0.5">✓</span>
+                      <span className="font-medium">{situation}</span>
                     </li>
                   ))}
                 </ul>
