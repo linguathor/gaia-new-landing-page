@@ -16,14 +16,9 @@ export default function Header() {
           <span className="sm:hidden">GAIA</span>
         </Link>
         
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation (links intentionally removed) */}
         <nav className="hidden md:flex space-x-6" aria-label="Main navigation">
-          <Link
-            href="/german-ai-academy"
-            className="text-gray-700 hover:text-amber-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 py-2 px-3"
-          >
-            Academy
-          </Link>
+          {/* intentionally left blank - top-right 'Academy' label removed */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -42,13 +37,7 @@ export default function Header() {
         {isMenuOpen && (
           <nav className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden" aria-label="Mobile navigation">
             <div className="px-4 py-4">
-              <Link
-                href="/german-ai-academy"
-                className="block text-gray-700 hover:text-amber-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 py-3 px-3 text-lg font-medium"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                Academy
-              </Link>
+              {/* academy link removed from mobile nav as well */}
             </div>
           </nav>
         )}
