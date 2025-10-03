@@ -176,11 +176,10 @@ export default function GermanAIAcademyPage() {
 
         <section aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
-            <div className="mx-auto max-w-screen-xl px-4 py-8 text-center">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+            <div className="mx-auto max-w-screen-xl px-4 pt-12 pb-6 text-center">
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
                 So funktioniert unser Programm
               </h2>
-              <hr className="border-t border-white/30 mt-4" />
             </div>
             <Outcomes />
             {/* LearningLoop removed - too confusing and comes too early */}
