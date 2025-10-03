@@ -31,7 +31,7 @@ export default function Instructors({
             <div className="relative">
               <div className="bg-blue-500 rounded-2xl p-8 shadow-2xl">
                 <OptimizedImage
-                  src="/images/coaches-photo.jpg"
+                  src="/images/David-Flemming.jpg"
                   alt="David & Flemming"
                   width={400}
                   height={300}
