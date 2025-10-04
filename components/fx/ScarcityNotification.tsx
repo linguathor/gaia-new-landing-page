@@ -39,7 +39,7 @@ export default function ScarcityNotification({ spotsLeft, enrolledToday, classNa
           <div className="flex items-center justify-center">
             <div className="w-3 h-3 bg-success-500 rounded-full mr-3 animate-pulseSoft"></div>
             <p className="text-success-800 font-semibold text-base text-center">
-              <span className="font-bold text-success-600">{enrolledToday} Personen</span> haben sich heute angemeldet
+              <span className="font-bold text-success-600">{enrolledToday} Personen</span> haben sich schon angemeldet
             </p>
           </div>
         </div>
