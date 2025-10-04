@@ -15,9 +15,9 @@ export const academy = {
     badges: ["Für Deutschlernende ab B2-Niveau", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
     audienceBadge: "Für Deutschlernende ab B2-Niveau",
     urgency: {
-      spotsLeft: 28,
+      spotsLeft: 25,
       cohortStartDate: "2025-10-15",
-      enrolledToday: 2
+      enrolledToday: 5
     }
   },
 
@@ -345,7 +345,7 @@ export const academy = {
           "Persönlicher Chat",
           "Sehr limitiert"
         ],
-        cta: { label: "Bewerbung senden", href: "/bewerbung" },
+        cta: { label: "Jetzt bewerben", href: "https://calendly.com/goldbecherflemming/30min" },
         popular: false,
         legal: "inkl. MwSt. • Bewerbung erforderlich"
       }
