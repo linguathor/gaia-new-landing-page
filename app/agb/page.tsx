@@ -262,9 +262,6 @@ export default function AGBPage() {
           </p>
           <p className="text-gray-700 mb-4">
             E-Mail:<br />
-            <a href="mailto:flemming@naturalfluentgerman.com" className="text-blue-600 hover:text-blue-800 underline">
-              flemming@naturalfluentgerman.com
-            </a><br />
             <a href="mailto:david@linguathor.com" className="text-blue-600 hover:text-blue-800 underline">
               david@linguathor.com
             </a>

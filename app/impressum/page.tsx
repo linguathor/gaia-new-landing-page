@@ -12,32 +12,19 @@ export default function ImpressumPage() {
         <h1 className="text-4xl font-bold text-gray-900 mb-8">Impressum</h1>
         
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Angaben gemäß § 5 TMG</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Kontaktinformationen</h2>
           <p className="text-gray-700 mb-2">
-            <strong>German AI Academy</strong>
+            <strong>LinguaThor UG (haftungsbeschränkt)</strong>
           </p>
           <p className="text-gray-700 mb-2">
-            [Firmenname/Rechtsform]<br />
-            [Straße und Hausnummer]<br />
-            [PLZ und Ort]<br />
-            [Land]
+            Weender Landstr. 6<br />
+            37073 Göttingen, Deutschland
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Vertreten durch</h2>
-          <p className="text-gray-700">
-            [Name des Vertretungsberechtigten]
-          </p>
-        </section>
-
-        <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Kontakt</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">E-Mail-Adresse</h2>
           <p className="text-gray-700 mb-2">
-            <strong>E-Mail:</strong><br />
-            <a href="mailto:flemming@naturalfluentgerman.com" className="text-blue-600 hover:text-blue-800 underline">
-              flemming@naturalfluentgerman.com
-            </a><br />
             <a href="mailto:david@linguathor.com" className="text-blue-600 hover:text-blue-800 underline">
               david@linguathor.com
             </a>
@@ -45,37 +32,47 @@ export default function ImpressumPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Umsatzsteuer-ID</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Umsatzsteuer-Identifikationsnummer</h2>
           <p className="text-gray-700">
-            Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:<br />
-            [USt-IdNr.]
+            DE 326289821
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">EU-Streitschlichtung</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Handelsregister</h2>
           <p className="text-gray-700">
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:{' '}
+            <strong>Handelsregisterblatt-Nummer:</strong> 205769<br />
+            <strong>Registergericht:</strong> Amtsgericht Göttingen
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Gesetzlich vertreten durch</h2>
+          <p className="text-gray-700">
+            David Allen Martin II
+          </p>
+        </section>
+
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Verbraucherinformation gemäß Verordnung EU Nr. 524/2013</h2>
+          <p className="text-gray-700">
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit, die Sie unter{' '}
             <a 
-              href="https://ec.europa.eu/consumers/odr/" 
+              href="https://consumer-redress.ec.europa.eu" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 underline"
             >
-              https://ec.europa.eu/consumers/odr/
+              https://consumer-redress.ec.europa.eu
             </a>
-            <br />
-            Unsere E-Mail-Adressen finden Sie oben im Impressum.
+            {' '}finden.
           </p>
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-            Verbraucherstreitbeilegung/Universalschlichtungsstelle
-          </h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Verbraucherinformation gemäß Verbraucherstreitbeilegungsgesetz</h2>
           <p className="text-gray-700">
-            Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer 
-            Verbraucherschlichtungsstelle teilzunehmen.
+            Wir sind nicht bereit und verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
           </p>
         </section>
 
@@ -98,7 +95,7 @@ export default function ImpressumPage() {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Haftung für Links</h2>
           <p className="text-gray-700 mb-4">
-            Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
+            Die Website enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. 
             Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der 
             verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
           </p>
@@ -111,23 +108,23 @@ export default function ImpressumPage() {
         </section>
 
         <section className="mb-8">
-          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Urheberrecht</h2>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Rechtlicher Hinweis zum Urheberrecht</h2>
+          <p className="text-gray-700 mb-4">
+            Die Texte, Bilder, Grafiken, Animationen, Video- und Audiodateien sowie alle weiteren Inhalte auf 
+            dieser Webseite unterliegen den gesetzlichen Bestimmungen des Urheberrechts und ggf. weiteren Rechten 
+            des geistigen Eigentums.
+          </p>
+          <p className="text-gray-700 mb-4">
+            Der geschützte Inhalt dieser Webseite darf ohne Einwilligung des Rechtsinhabers nicht vervielfältigt, 
+            verbreitet, wiedergegeben, öffentlich zugänglich gemacht oder sonst verwertet werden.
+          </p>
           <p className="text-gray-700">
-            Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen 
-            Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der 
-            Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. 
-            Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.
+            Änderungen von Konstruktion, Ausstattung und Lieferumfang sowie Abweichungen im Farbton sowie Irrtümer 
+            bleiben vorbehalten. Alle angegebenen Preise sind unverbindlich.
           </p>
         </section>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <p className="text-sm text-gray-600">
-            Quelle: Erstellt mit Unterstützung von{' '}
-            <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
-              e-recht24.de
-            </a>
-          </p>
-        </div>
+
       </div>
     </div>
   );

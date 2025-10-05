@@ -101,15 +101,12 @@ export default function DatenschutzPage() {
             Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
           </p>
           <p className="text-gray-700 mb-4">
-            [Firmenname]<br />
-            [Straße und Hausnummer]<br />
-            [PLZ und Ort]
+            LinguaThor UG (haftungsbeschränkt)<br />
+            Weender Landstr. 6<br />
+            37073 Göttingen, Deutschland
           </p>
           <p className="text-gray-700 mb-4">
             E-Mail:<br />
-            <a href="mailto:flemming@naturalfluentgerman.com" className="text-blue-600 hover:text-blue-800 underline">
-              flemming@naturalfluentgerman.com
-            </a><br />
             <a href="mailto:david@linguathor.com" className="text-blue-600 hover:text-blue-800 underline">
               david@linguathor.com
             </a>
@@ -211,14 +208,7 @@ export default function DatenschutzPage() {
           </p>
         </section>
 
-        <div className="mt-12 pt-8 border-t border-gray-200">
-          <p className="text-sm text-gray-600">
-            Quelle: Erstellt mit Unterstützung von{' '}
-            <a href="https://www.e-recht24.de" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 underline">
-              e-recht24.de
-            </a>
-          </p>
-        </div>
+
       </div>
     </div>
   );
