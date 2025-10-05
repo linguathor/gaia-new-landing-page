@@ -6,8 +6,9 @@ export default function Footer() {
       <div className="max-w-screen-xl mx-auto">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Natural. Fluent. German.</h3>
-            <p className="text-gray-300 mb-4">
+            <h3 className="text-xl font-bold text-blue-300 mb-1">Natural. Fluent. German.</h3>
+            <h4 className="text-lg font-semibold text-blue-300 mb-4">LinguaThor</h4>
+            <p className="text-white mb-4">
               Dein Weg zu sicherem C1-Deutsch durch KI-gestützte Übungen und Live-Calls.
             </p>
           </div>
