@@ -35,9 +35,50 @@ export default function Header() {
 
         {/* Mobile Navigation Menu */}
         {isMenuOpen && (
-          <nav className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden" aria-label="Mobile navigation">
-            <div className="px-4 py-4">
-              {/* academy link removed from mobile nav as well */}
+          <nav className="absolute top-full left-0 right-0 bg-white border-b border-gray-200 md:hidden shadow-lg z-50" aria-label="Mobile navigation">
+            <div className="px-4 py-4 space-y-3">
+              <a
+                href="#ergebnisse"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Ergebnisse
+              </a>
+              <a
+                href="#live-calls"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Live-Calls
+              </a>
+              <a
+                href="#tandem-spaces"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Tandem Spaces
+              </a>
+              <a
+                href="#coaches"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Coaches
+              </a>
+              <a
+                href="#pricing"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Preise
+              </a>
+              <a
+                href="#faq"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                FAQ
+              </a>
             </div>
           </nav>
         )}

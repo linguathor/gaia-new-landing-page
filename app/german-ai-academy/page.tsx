@@ -174,7 +174,7 @@ export default function GermanAIAcademyPage() {
         {/* Slight overlap to reduce the "gap" below hero */}
         {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
 
-        <section aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
+        <section id="ergebnisse" aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <div className="mx-auto max-w-screen-xl px-4 pt-12 pb-6 text-center">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white">
@@ -183,6 +183,7 @@ export default function GermanAIAcademyPage() {
             </div>
             <Outcomes />
             {/* LearningLoop removed - too confusing and comes too early */}
+            <div id="live-calls"></div>
             <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
         </section>
@@ -193,7 +194,9 @@ export default function GermanAIAcademyPage() {
         {/* German Level Quiz removed - distraction and not necessary */}
 
         {/* === COMPREHENSIVE TANDEM SPACES SECTION === */}
-        <TandemSpaces data={academy.tandemSpaces} />
+        <div id="tandem-spaces">
+          <TandemSpaces data={academy.tandemSpaces} />
+        </div>
 
   {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
   {/* Removed per request: GermanAiAcademyAccess section */}
@@ -207,7 +210,8 @@ export default function GermanAIAcademyPage() {
         {/* Progress Calculator removed - misleading timeline information */}
 
         {/* === BAND G: BLUE GRADIENT — Instructors === */}
-        <Instructors 
+        <div id="coaches">
+          <Instructors 
           title={academy.instructors.title} 
           summary={academy.instructors.summary} 
           subtitle={academy.instructors.subtitle}
@@ -219,6 +223,7 @@ export default function GermanAIAcademyPage() {
           ctaLabel="Jetzt anmelden"
           ctaHref="https://www.copecart.com/products/4f9cc412/checkout"
         />
+        </div>
 
         {/* === BAND H: LIGHT SKY WASH — Launch bonuses + Pricing + Guarantee === */}
         {/* LaunchBonuses section removed from rendering per request. Component remains in repo. */}
@@ -227,7 +232,7 @@ export default function GermanAIAcademyPage() {
         <FourReasons />
 
         {/* === PRICING & GUARANTEE === */}
-        <section aria-label="Pricing & Garantie" style={{ backgroundColor: '#88B6CD' }}>
+        <section id="pricing" aria-label="Pricing & Garantie" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Pricing pricing={academy.pricing} />
             <Guarantee guarantee={academy.guarantee} />
@@ -241,7 +246,7 @@ export default function GermanAIAcademyPage() {
         {/* TrustBadges (stats section) removed from rendering per request. Component remains in repo. */}
 
         {/* === BAND I: CLEAN WHITE — FAQ === */}
-        <section aria-label="FAQ" className="bg-white">
+        <section id="faq" aria-label="FAQ" className="bg-white">
           <Compact>
             <FAQ faq={academy.faq} faqExtra={academy.faqExtra} />
           </Compact>
