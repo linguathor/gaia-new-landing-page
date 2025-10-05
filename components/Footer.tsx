@@ -45,10 +45,18 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="mailto:info@german-ai-academy.com"
+                  href="mailto:flemming@naturalfluentgerman.com"
                   className="text-gray-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 >
-                  info@german-ai-academy.com
+                  flemming@naturalfluentgerman.com
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="mailto:david@linguathor.com"
+                  className="text-gray-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                >
+                  david@linguathor.com
                 </Link>
               </li>
             </ul>
