@@ -57,7 +57,7 @@ export default function ProgressMetrics() {
 
             <ul className="text-sm text-neutral-600 space-y-3 leading-relaxed">
               <li><strong className="text-primary-600">Heißt:</strong> Wie viel du wirklich sprichst – nur reden zählt.</li>
-              <li><strong className="text-primary-600">Beispiel:</strong> 10 Min KI + 20 Min Tandem = 30 Min echte Sprechzeit.</li>
+              <li><strong className="text-primary-600">Beispiel:</strong> 10 Minuten KI + 20 Minuten Tandem = 30 Minuten echte Sprechzeit.</li>
               <li><strong className="text-primary-600">Warum wichtig:</strong> Mehr reden = schneller flüssig. 💪</li>
             </ul>
           </div>
