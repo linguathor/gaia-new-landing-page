@@ -201,13 +201,11 @@ export default function GermanAIAcademyPage() {
 
         {/* === VIDEO TESTIMONIAL SECTION === */}
         <VideoTestimonial
-          title="Höre ihre Geschichten"
+          title="Höre ihre Geschichte"
           name="Lupita"
           role="aus Mexiko über die German AI Academy"
           quote="Ich möchte mich bei der German AI Academy bedanken, weil ich jetzt flüssiger Deutsch sprechen kann ... Bei der Akademie gibt es viele Empfehlungen, Tipps, Aktivitäten, und Übungen, die sehr wertvoll sind, weil man seinen eigenen Rhythmus finden kann ... Danke sehr!"
           videoUrl="/videos/Lupita.mp4"
-          beforeLevel="B2"
-          afterLevel="C1"
         />
 
   {/* === GERMAN AI ACADEMY ACCESS SECTION === */}

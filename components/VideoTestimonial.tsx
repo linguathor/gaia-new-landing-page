@@ -11,7 +11,7 @@ interface VideoTestimonialProps {
 }
 
 export default function VideoTestimonial({
-  title = "Höre ihre Geschichten",
+  title = "Höre ihre Geschichte",
   name,
   role,
   quote,
@@ -26,7 +26,7 @@ export default function VideoTestimonial({
           {title}
         </h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Echte Erfolgsgeschichten von unseren Teilnehmern
+          Echte Erfolgsgeschichte von einer unserer Teilnehmer
         </p>
 
         <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -45,26 +45,15 @@ export default function VideoTestimonial({
           {/* Testimonial Content */}
           <div className="space-y-6">
             <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-blue-500">
-              <div className="flex items-start mb-4">
-                <div className="text-5xl text-blue-500 leading-none mr-3">"</div>
-                <blockquote className="text-lg text-gray-700 leading-relaxed italic flex-1">
-                  {quote}
-                </blockquote>
-              </div>
+              <blockquote className="text-lg text-gray-700 leading-relaxed italic">
+                {quote}
+              </blockquote>
               
               <div className="flex items-center justify-between mt-6 pt-6 border-t border-gray-200">
                 <div>
                   <p className="font-bold text-xl text-gray-900">{name}</p>
                   <p className="text-gray-600 text-sm">{role}</p>
                 </div>
-                
-                {beforeLevel && afterLevel && (
-                  <div className="flex items-center">
-                    <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap">
-                      {beforeLevel} → {afterLevel}
-                    </span>
-                  </div>
-                )}
               </div>
             </div>
 
