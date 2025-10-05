@@ -250,7 +250,7 @@ export default function GermanAIAcademyPage() {
           people={academy.instructors.people as any}
           showCta={true}
           ctaTitle="Lerne von den Besten"
-          ctaSubtitle="Muttersprachliche Coaches und jahrelange Erfahrung warten auf dich."
+          ctaSubtitle="Professionelle Coaches mit jahrelanger Erfahrung warten auf dich."
           ctaLabel="Jetzt anmelden"
           ctaHref="https://www.copecart.com/products/4f9cc412/checkout"
         />
