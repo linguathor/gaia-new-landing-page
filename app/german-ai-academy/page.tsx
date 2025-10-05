@@ -16,6 +16,7 @@ import Interactivity from '../../components/Interactivity';
 import Materials from '../../components/Materials';
 import TandemSpaces from '../../components/TandemSpaces';
 import VideoTestimonial from '../../components/VideoTestimonial';
+import TextTestimonials from '../../components/TextTestimonials';
 import GermanAiAcademyAccess from '../../components/GermanAiAcademyAccess';
 import CtaBand from '../../components/CtaBand';
 
@@ -206,6 +207,26 @@ export default function GermanAIAcademyPage() {
           role="aus Mexiko über die German AI Academy"
           quote="Ich möchte mich bei der German AI Academy bedanken, weil ich jetzt flüssiger Deutsch sprechen kann ... Bei der Akademie gibt es viele Empfehlungen, Tipps, Aktivitäten, und Übungen, die sehr wertvoll sind, weil man seinen eigenen Rhythmus finden kann ... Danke sehr!"
           videoUrl="https://www.youtube.com/embed/MZIZwQ5NxTE"
+        />
+
+        {/* === TEXT TESTIMONIALS SECTION === */}
+        <TextTestimonials
+          testimonials={[
+            {
+              name: "Fernando Massahiro Kubo",
+              origin: "aus Japan",
+              image: "/images/Fernando.jpg",
+              quote: "Ich komme aus Japan und habe 2019 angefangen, Deutsch zu lernen. Ich finde dieses Programm besonders gut, weil ich zu meinen Lieblingszeiten sowohl Sprech- als auch Schreibübungen machen kann. Im direkten Unterricht ist es oft schwierig, wegen meiner Arbeit die passenden Zeiten zu finden. Besonders das Sprechen konnte ich bisher nur schwer üben, aber durch die Übungen mit der KI habe ich sichtbare Fortschritte gemacht. Besonders praktisch ist auch, dass ich beim Schreiben sofort die korrigierte Version sehen kann.",
+              highlight: "Seit 2019 aktiv"
+            },
+            {
+              name: "Serhii",
+              origin: "aus der Ukraine",
+              image: "/images/Serhii.jpg",
+              quote: "Ich heiße Serhii. Ich bin aus der Ukraine gekommen. Ich lerne Deutsch schon seit drei Jahren. Mein größtes Problem beim Deutschlernen war, dass ich, obwohl ich viel Content auf Deutsch höre, doch fast keine praktische Erfahrung darin habe, fließend zu sprechen. Beruflich muss ich leider nur auf Englisch kommunizieren. Das hat mich sehr gestört, deshalb habe ich eben selbst mit KI gesprochen, aber irgendetwas ging einfach nicht. Mir hat die Academy sehr geholfen, indem ich eine nachhaltige Methode gefunden habe, damit ich jeden Tag mit KI spreche. Ich würde sagen, dass ich damit nicht nur meine mündliche Sprachfertigkeit verbessert habe, sondern auch das Schreiben, das Verstehen und das Lesen. Ich bedanke mich bei Flemming und David für die Entwicklung der Methode. Es wirkt meiner Meinung nach ziemlich effektiv.",
+              highlight: "Alle Fertigkeiten verbessert"
+            }
+          ]}
         />
 
   {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
