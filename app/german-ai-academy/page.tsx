@@ -15,6 +15,7 @@ import CallProgram from '../../components/CallProgram';
 import Interactivity from '../../components/Interactivity';
 import Materials from '../../components/Materials';
 import TandemSpaces from '../../components/TandemSpaces';
+import VideoTestimonial from '../../components/VideoTestimonial';
 import GermanAiAcademyAccess from '../../components/GermanAiAcademyAccess';
 import CtaBand from '../../components/CtaBand';
 
@@ -197,6 +198,17 @@ export default function GermanAIAcademyPage() {
         <div id="tandem-spaces">
           <TandemSpaces data={academy.tandemSpaces} />
         </div>
+
+        {/* === VIDEO TESTIMONIAL SECTION === */}
+        <VideoTestimonial
+          title="Höre ihre Geschichten"
+          name="Lupita"
+          role="aus Mexiko über die German AI Academy"
+          quote="Ich möchte mich bei der German AI Academy bedanken, weil ich jetzt flüssiger Deutsch sprechen kann ... Bei der Akademie gibt es viele Empfehlungen, Tipps, Aktivitäten, und Übungen, die sehr wertvoll sind, weil man seinen eigenen Rhythmus finden kann ... Danke sehr!"
+          videoUrl="/videos/Lupita.mp4"
+          beforeLevel="B2"
+          afterLevel="C1"
+        />
 
   {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
   {/* Removed per request: GermanAiAcademyAccess section */}
