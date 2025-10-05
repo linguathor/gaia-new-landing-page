@@ -42,7 +42,7 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
         isVisible ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
-      <div className="bg-gradient-to-t from-white via-white to-white/95 border-t-2 border-amber-400 shadow-2xl px-4 py-4 pb-safe">
+      <div className="bg-gradient-to-t from-white via-white to-white/95 border-t-2 border-amber-400 shadow-2xl px-4 py-4 pb-6" style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}>
         <div className="max-w-md mx-auto">
           <div className="flex items-center justify-between gap-3">
             <div className="flex-1 min-w-0">
