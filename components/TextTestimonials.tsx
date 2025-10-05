@@ -22,7 +22,7 @@ export default function TextTestimonials({ testimonials }: TextTestimonialsProps
           Mehr Erfolgsgeschichten
         </h2>
         <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto">
-          Höre, was unsere Teilnehmer über ihre Erfahrungen sagen
+          Höre, was andere Teilnehmer über ihre Erfahrungen sagen
         </p>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">

@@ -217,7 +217,7 @@ export default function GermanAIAcademyPage() {
               origin: "aus Japan",
               image: "/images/Fernando.jpg",
               quote: "Ich komme aus Japan und habe 2019 angefangen, Deutsch zu lernen. Ich finde dieses Programm besonders gut, weil ich zu meinen Lieblingszeiten sowohl Sprech- als auch Schreibübungen machen kann. Im direkten Unterricht ist es oft schwierig, wegen meiner Arbeit die passenden Zeiten zu finden. Besonders das Sprechen konnte ich bisher nur schwer üben, aber durch die Übungen mit der KI habe ich sichtbare Fortschritte gemacht. Besonders praktisch ist auch, dass ich beim Schreiben sofort die korrigierte Version sehen kann.",
-              highlight: "Seit 2019 aktiv"
+              highlight: "Bemerkbare Fortschritte beim Sprechen"
             },
             {
               name: "Serhii",
