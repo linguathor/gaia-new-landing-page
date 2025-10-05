@@ -32,14 +32,13 @@ export default function VideoTestimonial({
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Video Player */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-gray-900">
-            <video
-              controls
+            <iframe
               className="w-full aspect-video"
-              poster="/images/video-poster.jpg"
-            >
-              <source src={videoUrl} type="video/mp4" />
-              Dein Browser unterstützt das Video-Tag nicht.
-            </video>
+              src={videoUrl}
+              title={`${name} testimonial`}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
 
           {/* Testimonial Content */}

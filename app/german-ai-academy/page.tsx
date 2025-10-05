@@ -205,7 +205,7 @@ export default function GermanAIAcademyPage() {
           name="Lupita"
           role="aus Mexiko über die German AI Academy"
           quote="Ich möchte mich bei der German AI Academy bedanken, weil ich jetzt flüssiger Deutsch sprechen kann ... Bei der Akademie gibt es viele Empfehlungen, Tipps, Aktivitäten, und Übungen, die sehr wertvoll sind, weil man seinen eigenen Rhythmus finden kann ... Danke sehr!"
-          videoUrl="/videos/Lupita.mp4"
+          videoUrl="https://www.youtube.com/embed/MZIZwQ5NxTE"
         />
 
   {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
