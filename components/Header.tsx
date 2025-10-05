@@ -6,14 +6,14 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="bg-white border-b border-gray-200 py-4 px-4">
+    <header className="bg-white border-b border-gray-200 py-4 px-4 relative">
       <div className="max-w-screen-xl mx-auto flex justify-between items-center">
         <Link
           href="/"
           className="text-xl sm:text-2xl font-bold text-gray-900 hover:text-amber-600 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
         >
           <span className="hidden sm:inline">Natural. Fluent. German. & LinguaThor</span>
-          <span className="sm:hidden">GAIA</span>
+          <span className="sm:hidden">German AI Academy</span>
         </Link>
         
         {/* Desktop Navigation (links intentionally removed) */}

@@ -42,20 +42,23 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
         isVisible ? 'translate-y-0' : 'translate-y-full'
       }`}
     >
-      <div className="bg-white border-t border-gray-200 shadow-lg px-4 py-3">
-        <div className="flex items-center justify-between">
-          <div className="flex-1 mr-3">
-            <div className="flex items-center mb-1">
-              <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse mr-2"></div>
-              <p className="text-sm font-semibold text-red-700">
-                Nur noch {spotsLeft} Plätze
-              </p>
+      <div className="bg-gradient-to-t from-white via-white to-white/95 border-t-2 border-amber-400 shadow-2xl px-4 py-4 pb-safe">
+        <div className="max-w-md mx-auto">
+          <div className="flex items-center justify-between gap-3">
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center mb-1">
+                <div className="w-2 h-2 bg-red-500 rounded-full animate-pulse mr-2 flex-shrink-0"></div>
+                <p className="text-sm font-semibold text-red-700 whitespace-nowrap">
+                  Nur noch {spotsLeft} Plätze
+                </p>
+              </div>
+              <p className="text-xs text-gray-600 truncate">Sichere deinen Platz jetzt</p>
             </div>
-          </div>
-          <div className="flex-shrink-0">
-            <MagneticButton href={ctaHref}>
-              <span className="text-sm font-bold">Platz sichern</span>
-            </MagneticButton>
+            <div className="flex-shrink-0">
+              <MagneticButton href={ctaHref}>
+                <span className="text-sm sm:text-base font-bold px-2">Platz sichern</span>
+              </MagneticButton>
+            </div>
           </div>
         </div>
       </div>
