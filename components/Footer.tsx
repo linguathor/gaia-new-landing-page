@@ -13,7 +13,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Rechtliches</h4>
+            <h4 className="font-semibold mb-4 text-blue-300">Rechtliches</h4>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -42,7 +42,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4">Kontakt</h4>
+            <h4 className="font-semibold mb-4 text-blue-300">Kontakt</h4>
             <ul className="space-y-2">
               <li>
                 <Link
@@ -63,7 +63,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-blue-300">
           <p>&copy; 2025 German AI Academy. Alle Rechte vorbehalten.</p>
         </div>
       </div>
