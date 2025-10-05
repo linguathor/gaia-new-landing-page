@@ -47,7 +47,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="mailto:flemming@naturalfluentgerman.com"
-                  className="text-gray-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="text-gray-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 break-words block"
                 >
                   flemming@naturalfluentgerman.com
                 </Link>
@@ -55,7 +55,7 @@ export default function Footer() {
               <li>
                 <Link
                   href="mailto:david@linguathor.com"
-                  className="text-gray-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+                  className="text-gray-300 hover:text-amber-400 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 break-words block"
                 >
                   david@linguathor.com
                 </Link>
