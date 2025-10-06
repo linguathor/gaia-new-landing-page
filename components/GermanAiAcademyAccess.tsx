@@ -12,6 +12,7 @@ interface GermanAiAcademyAccessProps {
     };
     cycleSteps: readonly {
       label: string;
+      subtitle: string;
       description: string;
       icon: string;
     }[];
