@@ -52,26 +52,33 @@ export default function LearningCycle({ center, steps }: LearningCycleProps) {
                 </div>
               </div>
 
-              {/* Arrow to next step (except for last one) */}
+              {/* L-shaped (elbow) arrow to next step */}
               {index < steps.length - 1 && (
-                <div
-                  className="absolute top-1/2 left-full w-12 h-0.5 bg-gradient-to-r from-primary-400 to-primary-500 transform -translate-y-1/2"
-                  style={{
-                    transformOrigin: 'left center',
-                    transform: `rotate(${angle + 90}deg) translateY(-50%)`
-                  }}
-                >
-                  <div className="absolute right-0 top-1/2 w-0 h-0 border-l-8 border-l-primary-500 border-y-4 border-y-transparent transform -translate-y-1/2"></div>
-                </div>
+                <>
+                  {/* Horizontal part of L */}
+                  <div
+                    className="absolute top-1/2 left-full w-16 h-0.5 bg-gradient-to-r from-primary-400 to-primary-500"
+                    style={{
+                      transformOrigin: 'left center'
+                    }}
+                  />
+                  {/* Vertical part of L */}
+                  <div
+                    className="absolute top-1/2 h-16 w-0.5 bg-gradient-to-b from-primary-400 to-primary-500"
+                    style={{
+                      left: `calc(${x}% + 8rem)`,
+                      transform: index % 2 === 0 ? 'none' : 'scaleY(-1)'
+                    }}
+                  >
+                    {/* Arrow head at the end */}
+                    <div className="absolute bottom-0 left-1/2 w-0 h-0 border-t-8 border-t-primary-500 border-x-4 border-x-transparent transform -translate-x-1/2"></div>
+                  </div>
+                </>
               )}
             </div>
           );
         })}
 
-        {/* Connecting arrow from last to first */}
-        <div className="absolute top-0 left-1/2 w-0.5 h-12 bg-gradient-to-b from-primary-400 to-primary-500 transform -translate-x-1/2 -translate-y-full opacity-50">
-          <div className="absolute bottom-0 left-1/2 w-0 h-0 border-t-8 border-t-primary-500 border-x-4 border-x-transparent transform -translate-x-1/2"></div>
-        </div>
       </div>
 
       {/* Mobile-friendly stacked version */}

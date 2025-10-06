@@ -205,7 +205,7 @@ export const academy = {
         tag: "Strukturiertes & gezieltes Lernen"
       },
       {
-        icon: "�",
+        icon: "🎯",
         title: "Interaktive Challenges",
         description: "Tägliche Aufgaben und Wochenpläne sorgen für Struktur und kontinuierliche Fortschritte.",
         tag: "Motivation & Routine"
@@ -217,7 +217,7 @@ export const academy = {
         tag: "Sofortiges, individuelles Feedback"
       },
       {
-        icon: "�",
+        icon: "👥",
         title: "Live-Calls & Community",
         description: "Tausche dich in regelmäßigen Live-Sessions und in unserer aktiven Community mit anderen Lernenden aus.",
         tag: "Direkte Praxis & Interaktion"

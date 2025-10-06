@@ -40,12 +40,14 @@ export default function GermanAiAcademyAccess({ data }: GermanAiAcademyAccessPro
       {/* Learning Cycle Diagram */}
       <LearningCycle center={data.cycleCenter} steps={data.cycleSteps} />
 
-      {/* Five Pillars Grid */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12 mt-16">
+      {/* Five Pillars Grid - 2 columns with specific positioning */}
+      <div className="grid md:grid-cols-2 gap-8 mb-12 mt-16 max-w-5xl mx-auto">
         {data.features.map((feature, index) => (
           <div 
             key={index} 
-            className="bg-white rounded-xl p-8 shadow-soft border border-gray-100 hover:shadow-xl hover:border-primary-300 transition-all duration-300 hover:scale-105 group"
+            className={`bg-white rounded-xl p-8 shadow-soft border border-gray-100 hover:shadow-xl hover:border-primary-300 transition-all duration-300 hover:scale-105 group ${
+              index === 4 ? 'md:col-start-2' : ''
+            }`}
           >
             {/* Icon */}
             <div className="text-5xl mb-4 text-center transform group-hover:scale-110 transition-transform duration-300">
@@ -53,17 +55,19 @@ export default function GermanAiAcademyAccess({ data }: GermanAiAcademyAccessPro
             </div>
             
             {/* Tag */}
-            <div className="inline-block bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-              {feature.tag}
+            <div className="flex justify-center mb-3">
+              <div className="inline-block bg-primary-100 text-primary-700 text-xs font-semibold px-3 py-1 rounded-full">
+                {feature.tag}
+              </div>
             </div>
             
             {/* Title */}
-            <h3 className="font-bold text-xl mb-3 text-gray-900 group-hover:text-primary-600 transition-colors">
+            <h3 className="font-bold text-xl mb-3 text-gray-900 group-hover:text-primary-600 transition-colors text-center">
               {feature.title}
             </h3>
             
             {/* Description */}
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-center">
               {feature.description}
             </p>
           </div>
