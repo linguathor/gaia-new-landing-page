@@ -39,7 +39,7 @@ export default function Outcomes() {
 
       {/* Sichtbare Definition – kein Tooltip */}
       {'definition' in (academy.outcomes as any) ? (
-        <div className="mt-4 rounded-xl border bg-white p-4 text-sm text-gray-800">
+        <div className="mt-4 rounded-xl bg-white p-4 text-sm text-gray-800">
           <div className="font-semibold text-[#0E3258]">
             {(academy.outcomes as any).definition.heading}
           </div>
