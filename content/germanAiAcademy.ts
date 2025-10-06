@@ -77,8 +77,8 @@ export const academy = {
     summary: "FAQ, zwei Diskussionen, ein Hör-Dialog – plus Materialien.",
     items: [
       { name: "FAQ-Call", desc: "Fragen klären. Hürden abbauen." },
-      { name: "Diskussion A", desc: "Vorbereitetes Thema. Coaching-Feedback." },
-      { name: "Diskussion B", desc: "Transfer und Vertiefung." },
+  { name: "Wortschatz-Call 1", desc: "Vorbereitetes Thema. Coaching-Feedback." },
+  { name: "Wortschatz-Call 2", desc: "Transfer und Vertiefung." },
       { name: "Hör-Dialog", desc: "Duo-Dialog (Flemming und David) mit Aufgaben." }
     ],
     deliverables: ["Aufzeichnung", "Transkript", "Vokabelliste", "KI-Sprechübung"]
