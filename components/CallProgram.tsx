@@ -22,7 +22,7 @@ export default function CallProgram({
 
   const materialsList = [
     "PDF-Handout nach jedem Call",
-    "Digitale Karteikarten (Anki/Quizlet kompatibel)",
+  "Digitale Karteikarten (Anki-kompatibel)",
     "Aufgaben mit detaillierten Lösungen",
     "Komplettes Transkript der Session"
   ];
