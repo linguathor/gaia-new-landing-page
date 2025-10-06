@@ -95,9 +95,9 @@ export default function OptimizedImage({
         sizes={sizes}
         placeholder="blur"
         blurDataURL={blurDataURL}
-        className={`transition-opacity duration-500 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
-        }`}
+        // Forward the user-provided className to the actual <img /> so
+        // object-fit / object-position utilities take effect (e.g. center bottom).
+        className={`transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'} ${className}`}
         onLoad={() => setIsLoaded(true)}
         onError={() => setHasError(true)}
         {...props}
