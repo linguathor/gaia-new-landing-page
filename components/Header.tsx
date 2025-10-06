@@ -45,18 +45,39 @@ export default function Header() {
                 Ergebnisse
               </a>
               <a
-                href="#live-calls"
+                href="#programm"
                 className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Live-Calls
+                So funktioniert unser Programm
+              </a>
+              <a
+                href="#live-calls"
+                className="block py-2.5 text-gray-700 hover:text-amber-600 font-medium transition-colors pl-4 border-l-2 border-primary-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                → Live-Calls & Coaching
               </a>
               <a
                 href="#tandem-spaces"
-                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                className="block py-2.5 text-gray-700 hover:text-amber-600 font-medium transition-colors pl-4 border-l-2 border-primary-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Tandem Spaces
+                → Tandem Spaces
+              </a>
+              <a
+                href="#academy"
+                className="block py-2.5 text-gray-700 hover:text-amber-600 font-medium transition-colors pl-4 border-l-2 border-primary-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                → German AI Academy
+              </a>
+              <a
+                href="#progress"
+                className="block py-2.5 text-gray-700 hover:text-amber-600 font-medium transition-colors pl-4 border-l-2 border-primary-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                → Fortschritt messen
               </a>
               <a
                 href="#testimonials"
@@ -80,11 +101,25 @@ export default function Header() {
                 Preise
               </a>
               <a
+                href="#garantie"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                🛡️ Erfolgsgarantie
+              </a>
+              <a
                 href="#faq"
                 className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 FAQ
+              </a>
+              <a
+                href="https://www.copecart.com/products/4f9cc412/checkout"
+                className="block py-3 mt-4 text-center text-white bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 rounded-lg font-bold transition-all shadow-md"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Jetzt anmelden
               </a>
             </div>
           </nav>
