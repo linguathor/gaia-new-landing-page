@@ -48,21 +48,21 @@ export default function Hero() {
       <div className="mx-auto max-w-screen-xl px-4 section-spacing relative z-10">
         <div className="mx-auto max-w-4xl text-center content-spacing">
           {/* Enhanced Urgency Badge */}
-          <div className="mx-auto mb-6 inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-accent-100 to-accent-50 border-2 border-accent-300 px-6 py-3 text-lg font-bold text-accent-800 shadow-accent animate-fade-in">
+          <div className="mx-auto mb-6 inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-accent-100 to-accent-50 border-2 border-accent-300 px-6 py-3 text-lg font-bold text-accent-800 shadow-accent">
             <div className="w-3 h-3 bg-accent-500 rounded-full animate-pulseSoft"></div>
             {academy.hero.audienceBadge}
           </div>
 
-          <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight [text-wrap:balance] text-primary-600 animate-slide-up">
+          <h1 className="text-4xl xs:text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight [text-wrap:balance] text-primary-600">
             <Highlight>{academy.hero.h1}</Highlight>
           </h1>
 
-          <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed text-neutral-600 max-w-4xl mx-auto font-medium animate-slide-up" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl sm:text-2xl lg:text-3xl leading-relaxed text-neutral-600 max-w-4xl mx-auto font-medium">
             {academy.hero.sub}
           </p>
 
           {/* Enhanced Scarcity Notification */}
-          <div className="max-w-lg mx-auto animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <div className="max-w-lg mx-auto">
             <ScarcityNotification 
               spotsLeft={academy.hero.urgency.spotsLeft}
               enrolledToday={academy.hero.urgency.enrolledToday}
@@ -70,21 +70,21 @@ export default function Hero() {
           </div>
 
           {/* Enhanced Primary CTA */}
-          <div className="animate-slide-up" style={{ animationDelay: '0.6s' }}>
+          <div>
             <MagneticButton href={academy.hero.ctaPrimary.href}>
               {academy.hero.ctaPrimary.label}
             </MagneticButton>
           </div>
 
           {/* Enhanced Countdown Timer */}
-          <div className="max-w-lg mx-auto animate-slide-up" style={{ animationDelay: '0.8s' }}>
+          <div className="max-w-lg mx-auto">
             <CountdownTimer 
               targetDate={academy.hero.urgency.cohortStartDate}
             />
           </div>
 
           {/* Simplified Key Benefits */}
-          <ul className="flex flex-wrap justify-center gap-3 text-sm font-medium animate-slide-up" style={{ animationDelay: '1s' }}>
+          <ul className="flex flex-wrap justify-center gap-3 text-sm font-medium">
             <li className="rounded-full bg-primary-100 border border-primary-300 px-6 py-3 font-semibold text-primary-800 transition-all duration-300 hover:bg-primary-200">
               B2-C1 Programm
             </li>

@@ -6,7 +6,7 @@ export default function HeroTestimonial() {
   const heroTestimonial = testimonials.find(t => t.featured) || testimonials[0];
 
   return (
-    <div className="bg-white rounded-2xl shadow-soft border border-success-200 p-4 sm:p-6 max-w-2xl mx-auto animate-slide-up" style={{ animationDelay: '1.6s' }}>
+    <div className="bg-white rounded-2xl shadow-soft border border-success-200 p-4 sm:p-6 max-w-2xl mx-auto">
       <div className="flex flex-col sm:flex-row items-start gap-4">
         <div className="relative w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-soft flex-shrink-0">
           <OptimizedImage
