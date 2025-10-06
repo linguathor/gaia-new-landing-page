@@ -202,7 +202,7 @@ export default function GermanAIAcademyPage() {
         {/* === VIDEO TESTIMONIAL SECTION === */}
         <div id="testimonials">
         <VideoTestimonial
-          title="Höre ihre Geschichte"
+          title="So profitieren Deutschlerner von der Zusammenarbeit mit uns"
           name="Lupita"
           role="aus Mexiko über die German AI Academy"
           quote="Ich möchte mich bei der German AI Academy bedanken, weil ich jetzt flüssiger Deutsch sprechen kann ... Bei der Akademie gibt es viele Empfehlungen, Tipps, Aktivitäten, und Übungen, die sehr wertvoll sind, weil man seinen eigenen Rhythmus finden kann ... Danke sehr!"

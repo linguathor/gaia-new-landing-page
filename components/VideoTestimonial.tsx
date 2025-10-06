@@ -11,7 +11,7 @@ interface VideoTestimonialProps {
 }
 
 export default function VideoTestimonial({
-  title = "Höre ihre Geschichte",
+  title = "So profitieren Deutschlerner von der Zusammenarbeit mit uns",
   name,
   role,
   quote,
