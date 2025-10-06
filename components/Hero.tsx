@@ -38,7 +38,7 @@ export default function Hero() {
             alt="Flemming - AI Academy Instructor" 
             width={320}
             height={384}
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-[center_bottom] block"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
