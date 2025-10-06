@@ -51,30 +51,6 @@ export default function LearningCycle({ center, steps }: LearningCycleProps) {
                   {step.description}
                 </div>
               </div>
-
-              {/* L-shaped (elbow) arrow to next step */}
-              {index < steps.length - 1 && (
-                <>
-                  {/* Horizontal part of L */}
-                  <div
-                    className="absolute top-1/2 left-full w-16 h-0.5 bg-gradient-to-r from-primary-400 to-primary-500"
-                    style={{
-                      transformOrigin: 'left center'
-                    }}
-                  />
-                  {/* Vertical part of L */}
-                  <div
-                    className="absolute top-1/2 h-16 w-0.5 bg-gradient-to-b from-primary-400 to-primary-500"
-                    style={{
-                      left: `calc(${x}% + 8rem)`,
-                      transform: index % 2 === 0 ? 'none' : 'scaleY(-1)'
-                    }}
-                  >
-                    {/* Arrow head at the end */}
-                    <div className="absolute bottom-0 left-1/2 w-0 h-0 border-t-8 border-t-primary-500 border-x-4 border-x-transparent transform -translate-x-1/2"></div>
-                  </div>
-                </>
-              )}
             </div>
           );
         })}
@@ -96,11 +72,6 @@ export default function LearningCycle({ center, steps }: LearningCycleProps) {
                 </div>
               </div>
             </div>
-            {index < steps.length - 1 && (
-              <div className="flex justify-center my-4">
-                <div className="text-primary-500 text-2xl">↓</div>
-              </div>
-            )}
           </div>
         ))}
         

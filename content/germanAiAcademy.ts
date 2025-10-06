@@ -193,12 +193,6 @@ export const academy = {
     ],
     features: [
       {
-        icon: "🎬",
-        title: "Einführungsvideo",
-        description: "Erfahre, wie du den Kurs optimal nutzt und deinen Wortschatz effektiv erweiterst.",
-        tag: "Optimaler Start & Strategie"
-      },
-      {
         icon: "✍️",
         title: "Effektive Übungen",
         description: "Wähle gezielte Übungen für Sprechen, Schreiben und Grammatik – ganz nach deinem individuellen Ziel.",
