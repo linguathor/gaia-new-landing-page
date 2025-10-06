@@ -16,7 +16,7 @@ export default function Hero() {
       <FloatingShapes />
       
       {/* Left Instructor Image - David - Enhanced */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/6 hidden lg:block">
+      <div className="absolute left-0 top-[60%] -translate-y-1/2 -translate-x-1/6 hidden lg:block">
         <div className="relative w-64 h-80 xl:w-80 xl:h-96 rounded-3xl overflow-hidden shadow-hover transform -rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:-rotate-12">
           <OptimizedImage 
             src="/images/David.png" 
@@ -31,14 +31,14 @@ export default function Hero() {
       </div>
 
       {/* Right Instructor Image - Flemming - Enhanced */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/6 hidden lg:block">
+      <div className="absolute right-0 top-[60%] -translate-y-1/2 translate-x-1/6 hidden lg:block">
         <div className="relative w-64 h-80 xl:w-80 xl:h-96 rounded-3xl overflow-hidden shadow-hover transform rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:rotate-12">
           <OptimizedImage 
             src="/images/Flemming.png" 
             alt="Flemming - AI Academy Instructor" 
             width={320}
             height={384}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-center"
             priority
           />
           <div className="absolute inset-0 bg-gradient-to-t from-primary-900/20 to-transparent"></div>
