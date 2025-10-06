@@ -16,13 +16,13 @@ export default function Hero() {
       <FloatingShapes />
       
       {/* Left Instructor Image - David - Enhanced */}
-      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/4 hidden lg:block">
-        <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-hover transform -rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:-rotate-12">
+      <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/6 hidden lg:block">
+        <div className="relative w-64 h-80 xl:w-80 xl:h-96 rounded-3xl overflow-hidden shadow-hover transform -rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:-rotate-12">
           <OptimizedImage 
             src="/images/David.png" 
             alt="David - AI Academy Instructor" 
-            width={192}
-            height={256}
+            width={320}
+            height={384}
             className="w-full h-full object-cover"
             priority
           />
@@ -31,13 +31,13 @@ export default function Hero() {
       </div>
 
       {/* Right Instructor Image - Flemming - Enhanced */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/4 hidden lg:block">
-        <div className="relative w-48 h-64 rounded-3xl overflow-hidden shadow-hover transform rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:rotate-12">
+      <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/6 hidden lg:block">
+        <div className="relative w-64 h-80 xl:w-80 xl:h-96 rounded-3xl overflow-hidden shadow-hover transform rotate-6 border-4 border-white transition-all duration-500 hover:scale-105 hover:rotate-12">
           <OptimizedImage 
             src="/images/Flemming.png" 
             alt="Flemming - AI Academy Instructor" 
-            width={192}
-            height={256}
+            width={320}
+            height={384}
             className="w-full h-full object-cover"
             priority
           />
