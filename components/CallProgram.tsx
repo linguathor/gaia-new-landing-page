@@ -35,14 +35,11 @@ export default function CallProgram({
     <div>
       {/* Header */}
       <div className="text-center mb-16">
-        <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
-          {title}
+        {subtitle && (
+          <h2 className="text-2xl sm:text-3xl font-bold text-primary-700 mb-6 tracking-tight">
+            {subtitle}
           </h2>
-          {subtitle && (
-            <p className="text-2xl sm:text-3xl font-bold text-primary-700 mb-6 tracking-tight">
-              {subtitle}
-            </p>
-          )}
+        )}
           {callSchedule && (
             <div className="text-base sm:text-lg text-neutral-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               {callSchedule.split('(').map((part, index) => (

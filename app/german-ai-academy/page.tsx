@@ -185,7 +185,7 @@ export default function GermanAIAcademyPage() {
         {/* === SO FUNKTIONIERT UNSER PROGRAMM - UMBRELLA SECTION === */}
         <section className="bg-gradient-to-br from-white via-neutral-50 to-white py-16">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
+            <div className="text-center mb-0">
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-600 mb-6">
                 So funktioniert unser Programm
               </h2>
