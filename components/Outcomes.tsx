@@ -5,10 +5,10 @@ import Counter from './fx/Counter';
 export default function Outcomes() {
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-8 sm:py-10">
-      <h2 id="outcomes-title" className="text-2xl font-bold sm:text-3xl">
+      <h2 id="outcomes-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-white mb-4">
         {academy.outcomes.title}
       </h2>
-      <p className="mt-1 text-gray-700">{academy.outcomes.summary}</p>
+      <p className="text-xl lg:text-2xl text-center text-white/90 font-medium mb-8">{academy.outcomes.summary}</p>
 
       <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {academy.outcomes.items.map((it, index) => (

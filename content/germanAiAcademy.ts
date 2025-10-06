@@ -29,7 +29,7 @@ export const academy = {
   },
 
   outcomes: {
-    title: "Ergebnisse in 4 Monaten",
+    title: "Deine Transformation nach 4 Monaten",
     summary: "Unser Versprechen an dich: sichtbare, nutzbare Fortschritte.",
     items: [
       { label: "800–1.200 neue aktive Wörter", sub: "gezielt für Arbeit & Alltag" },
@@ -73,8 +73,9 @@ export const academy = {
   },
 
   calls: {
-    title: "4 Live-Calls pro Monat",
-    subtitle: "Unsere Calls finden immer dienstags um 19 Uhr deutscher Zeit statt. (Falls du mal nicht dabei sein kannst, keine Sorge - es gibt immer eine Aufnahme des Calls)",
+    title: "So funktioniert unser Programm",
+    subtitle: "4 Live-Calls pro Monat",
+    callSchedule: "Unsere Calls finden immer dienstags um 19 Uhr deutscher Zeit statt. (Falls du mal nicht dabei sein kannst, keine Sorge - es gibt immer eine Aufnahme des Calls)",
     summary: "FAQ, zwei Diskussionen, ein Hör-Dialog – plus Materialien.",
     items: [
       { name: "FAQ-Call", desc: "Fragen klären. Hürden abbauen." },

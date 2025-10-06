@@ -6,12 +6,14 @@ type CallItem = { name: string; desc: string };
 export default function CallProgram({
   title,
   subtitle,
+  callSchedule,
   summary,
   items,
   deliverables
 }: {
   title: string;
   subtitle?: string;
+  callSchedule?: string;
   summary: string;
   items: CallItem[];
   deliverables: string[];
@@ -34,12 +36,17 @@ export default function CallProgram({
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-2">
+          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-4">
             {title}
           </h2>
           {subtitle && (
-            <div className="text-lg text-neutral-500 mb-4 max-w-3xl mx-auto">
-              {subtitle.split('(').map((part, index) => (
+            <p className="text-2xl sm:text-3xl font-semibold text-primary-700 mb-4">
+              {subtitle}
+            </p>
+          )}
+          {callSchedule && (
+            <div className="text-lg text-neutral-500 mb-6 max-w-3xl mx-auto">
+              {callSchedule.split('(').map((part, index) => (
                 <p key={index} className={index === 0 ? "mb-1" : ""}>
                   {index === 0 ? part.trim() : `(${part.trim()}`}
                 </p>
