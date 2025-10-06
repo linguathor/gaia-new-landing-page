@@ -35,8 +35,11 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
     >
       {/* Glassmorphism container with subtle gradient */}
       <div 
-        className="relative backdrop-blur-xl bg-gradient-to-br from-white/80 via-amber-50/70 to-white/75 border-t border-amber-200/50 shadow-[0_-4px_24px_-8px_rgba(0,0,0,0.12)] px-4 py-4 pb-6" 
-        style={{ paddingBottom: 'max(1.5rem, env(safe-area-inset-bottom))' }}
+        className="relative backdrop-blur-xl bg-gradient-to-br from-white/80 via-amber-50/70 to-white/75 border-t border-amber-200/50 shadow-[0_-4px_24px_-8px_rgba(0,0,0,0.12)] px-4" 
+        style={{ 
+          paddingTop: '1rem',
+          paddingBottom: 'max(1rem, calc(1rem + env(safe-area-inset-bottom)))' 
+        }}
       >
         {/* Subtle top accent line */}
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-amber-400/40 to-transparent" />
