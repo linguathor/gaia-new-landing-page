@@ -32,7 +32,7 @@ export default function LearningCycle({ center, steps }: LearningCycleProps) {
           // Calculate position in circle (4 positions at 0°, 90°, 180°, 270°)
           const angle = (index * 90) - 90; // Start at top (0° = top)
           const radian = (angle * Math.PI) / 180;
-          const radius = 45; // percentage from center
+          const radius = 48; // percentage from center - increased for larger cards
           const x = 50 + radius * Math.cos(radian);
           const y = 50 + radius * Math.sin(radian);
 
@@ -46,16 +46,16 @@ export default function LearningCycle({ center, steps }: LearningCycleProps) {
               }}
             >
               {/* Step Card */}
-              <div className="bg-white rounded-xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 w-64 border-2 border-primary-200 hover:border-primary-400 hover:scale-105">
-                <div className="text-5xl mb-4 text-center">{step.icon}</div>
-                <div className="text-2xl font-bold text-gray-900 mb-2 text-center">
+              <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 w-56 border-2 border-primary-200 hover:border-primary-400 hover:scale-105">
+                <div className="text-4xl mb-3 text-center">{step.icon}</div>
+                <div className="text-xl font-bold text-gray-900 mb-2 text-center">
                   {index + 1}. {step.label}
                 </div>
-                <div className="text-lg font-semibold text-primary-600 mb-3 text-center group-hover:scale-105 transition-transform">
+                <div className="text-base font-semibold text-primary-600 mb-3 text-center group-hover:scale-105 transition-transform">
                   {step.subtitle}
                 </div>
                 <div 
-                  className="text-base text-gray-700 text-center leading-relaxed learning-cycle-description"
+                  className="text-sm text-gray-700 text-center leading-relaxed learning-cycle-description"
                   dangerouslySetInnerHTML={{ __html: step.description }}
                 />
               </div>
