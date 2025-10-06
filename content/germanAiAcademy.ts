@@ -179,30 +179,51 @@ export const academy = {
   },
 
   germanAiAcademyAccess: {
-    title: "Voller Zugang zu deinem persönlichen KI-Tutor",
-    subtitle: "In unserer GERMAN AI ACADEMY bekommst du präzises, individuelles Training – wann du möchtest, so oft du willst.",
+    title: "GERMAN AI ACADEMY: Lerne, wann und wie du willst.",
+    subtitle: "Dein digitaler Coach – flexibel, intelligent, immer verfügbar",
+    cycleCenter: {
+      goal1: "Fließend sprechen",
+      goal2: "C1 Niveau"
+    },
+    cycleSteps: [
+      { label: "Input", description: "Du übst mit Materialien/Aufgaben", icon: "📚" },
+      { label: "Output", description: "Du sprichst oder schreibst", icon: "💬" },
+      { label: "Feedback", description: "KI gibt sofortiges Feedback", icon: "✨" },
+      { label: "Verbesserung", description: "Du wirst besser", icon: "📈" }
+    ],
     features: [
       {
+        icon: "🎬",
+        title: "Einführungsvideo",
+        description: "Erfahre, wie du den Kurs optimal nutzt und deinen Wortschatz effektiv erweiterst.",
+        tag: "Optimaler Start & Strategie"
+      },
+      {
+        icon: "✍️",
+        title: "Effektive Übungen",
+        description: "Wähle gezielte Übungen für Sprechen, Schreiben und Grammatik – ganz nach deinem individuellen Ziel.",
+        tag: "Strukturiertes & gezieltes Lernen"
+      },
+      {
         icon: "�",
-        title: "Szenarien-Training",
-        description: "Realistische Gesprächssituationen für Beruf und Alltag mit sofortigem Feedback und Verbesserungsvorschlägen."
+        title: "Interaktive Challenges",
+        description: "Tägliche Aufgaben und Wochenpläne sorgen für Struktur und kontinuierliche Fortschritte.",
+        tag: "Motivation & Routine"
       },
       {
-        icon: "🎪",
-        title: "Rollenspiele",
-        description: "Interaktive Dialoge in verschiedenen Rollen – vom Bewerbungsgespräch bis zum Arztbesuch."
+        icon: "🤖",
+        title: "KI-Chatbot & Tutoring",
+        description: "Erhalte in Echtzeit Feedback und Korrekturen – so, als hättest du deinen persönlichen Lehrer immer dabei.",
+        tag: "Sofortiges, individuelles Feedback"
       },
       {
-        icon: "📚",
-        title: "Grammatikübungen für C1",
-        description: "Fortgeschrittene Strukturen, Konjunktiv, komplexe Satzbau-Übungen für perfekte Präzision."
-      },
-      {
-        icon: "💬",
-        title: "Feedback wann du möchtest",
-        description: "Sofortige Korrekturen, Aussprache-Tipps und personalisierte Lernempfehlungen – 24/7 verfügbar."
+        icon: "�",
+        title: "Live-Calls & Community",
+        description: "Tausche dich in regelmäßigen Live-Sessions und in unserer aktiven Community mit anderen Lernenden aus.",
+        tag: "Direkte Praxis & Interaktion"
       }
-    ]
+    ],
+    summary: "Die German AI Academy ist dein flexibler Lernraum. Hier kannst du jederzeit und an jedem Ort selbständig lernen, Grammatik festigen und direktes Feedback vom KI-Tutor erhalten. Sie ergänzt die Live-Calls perfekt und stellt sicher, dass du auch außerhalb der festen Termine kontinuierlich Fortschritte machst."
   },
 
   accountability: {
