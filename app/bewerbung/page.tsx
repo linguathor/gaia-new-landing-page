@@ -60,7 +60,7 @@ export default function BewerbungsPage({
           Elite-Mastermind – Bewerbung
         </h1>
         <p className="mt-3 max-w-2xl text-gray-700">
-          4 Monate. Mini-Gruppen (max. 6). 3×/Woche Konversation. Zwei 1:1-Sessions. Persönlicher Chat.
+          4 Monate. Mini-Gruppen (max. 5). 3×/Woche Konversation. Zwei 1:1-Sessions. Persönlicher Chat.
         </p>
 
         {ok ? (

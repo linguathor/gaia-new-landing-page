@@ -337,10 +337,10 @@ export const academy = {
       },
       {
         name: "Elite-Mastermind",
-        priceNote: "5.000 € / 4 Monate",
+  priceNote: "4.990 € / 4 Monate",
         period: "Bewerbung",
         features: [
-          "Mini-Gruppen (max. 6), 3×/Woche Konversation",
+          "Mini-Gruppen (max. 5), 3×/Woche Konversation",
           "Zwei 1:1-Strategie-Sessions",
           "Persönlicher Chat",
           "Sehr limitiert"
