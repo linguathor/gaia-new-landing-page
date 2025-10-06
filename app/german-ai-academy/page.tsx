@@ -200,7 +200,7 @@ export default function GermanAIAcademyPage() {
         <section id="live-calls" aria-label="Live-Calls & Coaching" className="bg-gradient-to-br from-white via-blue-50/30 to-white">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-12">
-              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+              <span className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white text-3xl font-bold rounded-full mb-4 shadow-lg shadow-primary-600/30 ring-4 ring-primary-100 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-primary-600/40">
                 1
               </span>
             </div>
@@ -219,7 +219,7 @@ export default function GermanAIAcademyPage() {
         <section id="tandem-spaces" aria-label="Tandem Spaces" className="bg-gradient-to-br from-neutral-50 to-white">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-12">
-              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+              <span className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white text-3xl font-bold rounded-full mb-4 shadow-lg shadow-primary-600/30 ring-4 ring-primary-100 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-primary-600/40">
                 2
               </span>
             </div>
@@ -231,7 +231,7 @@ export default function GermanAIAcademyPage() {
         <section id="german-ai-academy" aria-label="German AI Academy" className="bg-gradient-to-br from-white via-accent-50/30 to-white">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-12">
-              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+              <span className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white text-3xl font-bold rounded-full mb-4 shadow-lg shadow-primary-600/30 ring-4 ring-primary-100 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-primary-600/40">
                 3
               </span>
             </div>
@@ -243,7 +243,7 @@ export default function GermanAIAcademyPage() {
         <section id="progress-tracking" aria-label="Fortschrittsmessung" className="bg-gradient-to-br from-neutral-50 to-white">
           <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
             <div className="text-center mb-12">
-              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+              <span className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-primary-600 to-primary-700 text-white text-3xl font-bold rounded-full mb-4 shadow-lg shadow-primary-600/30 ring-4 ring-primary-100 transform transition-all duration-300 hover:scale-110 hover:shadow-xl hover:shadow-primary-600/40">
                 4
               </span>
             </div>
