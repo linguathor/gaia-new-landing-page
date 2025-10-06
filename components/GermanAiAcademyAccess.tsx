@@ -5,6 +5,7 @@ interface GermanAiAcademyAccessProps {
   data: {
     title: string;
     subtitle: string;
+    description?: string;
     cycleCenter: {
       goal1: string;
       goal2: string;
@@ -32,9 +33,14 @@ export default function GermanAiAcademyAccess({ data }: GermanAiAcademyAccessPro
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           {data.title}
         </h2>
-        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-2">
           {data.subtitle}
         </p>
+        {data.description && (
+          <p className="text-lg text-gray-700 max-w-4xl mx-auto font-medium">
+            {data.description}
+          </p>
+        )}
       </div>
 
       {/* Learning Cycle Diagram */}

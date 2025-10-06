@@ -181,6 +181,7 @@ export const academy = {
   germanAiAcademyAccess: {
     title: "GERMAN AI ACADEMY: Lerne, wann und wie du willst.",
     subtitle: "Dein digitaler Coach – flexibel, intelligent, immer verfügbar",
+    description: "Voller Zugang zum innovativsten C1-Deutschkurs, den es derzeit gibt.",
     cycleCenter: {
       goal1: "Fließend sprechen",
       goal2: "C1 Niveau"
