@@ -16,8 +16,8 @@ export default function CallProgram({
 }) {
   const interactivityFeatures = [
     "Hot-Seat-Coaching mit direktem Feedback",
-    "Live-Umfragen und interaktive Quiz",
-    "Hochvotete Q&A-Runden mit Community"
+  "Live-Umfragen und interaktive Quiz",
+  "Lernspiele"
   ];
 
   const materialsList = [

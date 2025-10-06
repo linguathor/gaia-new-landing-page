@@ -87,7 +87,7 @@ export const academy = {
   interactivity: {
     title: "So bleibt es interaktiv",
     summary: "Hot-Seat-Coaching, Live-Umfragen, Q&A – jeder kommt dran.",
-    bullets: ["Hot-Seat-Coaching", "Live-Umfragen und Quiz", "Hochvotete Q&A"]
+  bullets: ["Hot-Seat-Coaching", "Live-Umfragen und Quiz", "Lernspiele"]
   },
 
   materials: {
