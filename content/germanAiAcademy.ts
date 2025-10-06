@@ -391,8 +391,35 @@ export const academy = {
   },
 
   guarantee: {
-    title: "10-Tage-Garantie",
-    text: "Starte ohne Risiko. Wenn du innerhalb von 10 Tagen merkst, dass es nicht passt, erhältst du dein Geld zurück. Erreichst du deine Ziele nicht, verlängern wir kostenlos."
+    badge: "100% GARANTIE",
+    headline: {
+      line1: "Kein Risiko für dich:",
+      line2: "Deine Erfolgsgarantie"
+    },
+    promise: "Wir stehen zu unserem Programm. Solltest du nach Abschluss des 4-monatigen Fluency Sprints deine Ziele nicht erreicht haben, verlängern wir deinen Zugang kostenlos um weitere 4 Monate – ohne Wenn und Aber.",
+    conditionsTitle: "So funktioniert die Garantie:",
+    conditions: [
+      {
+        icon: "✓",
+        title: "Mindestens 14 von 16 Live-Calls",
+        description: "Du nimmst aktiv an mindestens 14 der 16 Live-Calls teil (das sind 87,5% Anwesenheit)",
+        metric: "87,5% Anwesenheit"
+      },
+      {
+        icon: "✓",
+        title: "Regelmäßige Tandem-Praxis",
+        description: "Du besuchst mindestens 3 Tandem Spaces pro Monat (ca. 1× pro Woche)",
+        metric: "3×/Monat"
+      },
+      {
+        icon: "✓",
+        title: "Kontinuierliche Plattform-Nutzung",
+        description: "Du arbeitest regelmäßig mit den Materialien in der German AI Academy und bearbeitest die Übungen",
+        metric: "Regelmäßig aktiv"
+      }
+    ],
+    ctaText: "Jetzt risikofrei starten",
+    ctaHref: "https://www.copecart.com/products/4f9cc412/checkout"
   },
 
   testimonials: {

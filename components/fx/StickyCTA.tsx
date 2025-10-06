@@ -10,6 +10,7 @@ interface StickyCTAProps {
 
 export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProps) {
   const [isVisible, setIsVisible] = useState(false);
+  const [showGuarantee, setShowGuarantee] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,6 +19,11 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
       
       // Show sticky CTA after scrolling past hero
       setIsVisible(currentScrollY > heroHeight);
+      
+      // Check if user has scrolled past the guarantee section (roughly at 70% of page)
+      const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercentage = (currentScrollY / pageHeight) * 100;
+      setShowGuarantee(scrollPercentage > 50); // Show guarantee message after 50% scroll
     };
 
     // Check initial scroll position
@@ -54,11 +60,15 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
                   <div className="absolute inset-0 w-2 h-2 bg-orange-400/30 rounded-full animate-ping" />
                 </div>
                 <p className="text-sm font-semibold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent whitespace-nowrap">
-                  Nur noch {spotsLeft} Plätze
+                  {showGuarantee ? (
+                    <>100% Garantie | Nur noch {spotsLeft} Plätze</>
+                  ) : (
+                    <>Nur noch {spotsLeft} Plätze</>
+                  )}
                 </p>
               </div>
               <p className="text-xs text-gray-500 font-medium truncate">
-                Sichere deinen Platz jetzt
+                {showGuarantee ? 'Risikofrei starten' : 'Sichere deinen Platz jetzt'}
               </p>
             </div>
             <div className="flex-shrink-0">

@@ -52,6 +52,7 @@ import Fit from '../../components/Fit';
 import Cohort from '../../components/Cohort';
 import Instructors from '../../components/Instructors';
 import Pricing from '../../components/Pricing';
+import SuccessGuarantee from '../../components/SuccessGuarantee';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
@@ -323,6 +324,17 @@ export default function GermanAIAcademyPage() {
             <Pricing pricing={academy.pricing} />
           </Compact>
         </section>
+
+        {/* === SUCCESS GUARANTEE === */}
+        <SuccessGuarantee
+          badge={academy.guarantee.badge}
+          headline={academy.guarantee.headline}
+          promise={academy.guarantee.promise}
+          conditionsTitle={academy.guarantee.conditionsTitle}
+          conditions={academy.guarantee.conditions}
+          ctaText={academy.guarantee.ctaText}
+          ctaHref={academy.guarantee.ctaHref}
+        />
 
         {/* === ENHANCED TESTIMONIALS SECTION === */}
         {/* TestimonialsSection removed from rendering per request. Component remains in repo. */}
