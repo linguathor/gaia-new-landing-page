@@ -340,6 +340,7 @@ export const academy = {
   priceNote: "4.990 € / 4 Monate",
         period: "Bewerbung",
         features: [
+          "Alle Inhalte des Premium-Programms",
           "Mini-Gruppen (max. 5), 3×/Woche Konversation",
           "Zwei 1:1-Strategie-Sessions",
           "Persönlicher Chat",
