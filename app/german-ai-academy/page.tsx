@@ -43,6 +43,7 @@ const ProgressMetrics = dynamic(
   }
 );
 import StickyCTA from '../../components/fx/StickyCTA';
+import MagneticButton from '../../components/fx/MagneticButton';
 import AccountabilityOptin from '../../components/AccountabilityOptin';
 import AiPlan from '../../components/AiPlan';
 import PlatformChecklist from '../../components/PlatformChecklist';
@@ -281,6 +282,21 @@ export default function GermanAIAcademyPage() {
           <Compact>
             <FAQ faq={academy.faq} faqExtra={academy.faqExtra} />
           </Compact>
+        </section>
+
+        {/* === FINAL CTA === */}
+        <section className="bg-gradient-to-br from-primary-50 via-white to-secondary-50 py-16">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
+              Bereit für fließendes Deutsch?
+            </h2>
+            <p className="text-xl text-neutral-600 max-w-2xl mx-auto mb-8">
+              Starte jetzt deinen 4-monatigen C1-Fluency Sprint und sichere dir deinen Platz.
+            </p>
+            <MagneticButton href="https://www.copecart.com/products/4f9cc412/checkout">
+              Jetzt anmelden
+            </MagneticButton>
+          </div>
         </section>
       </main>
       <Footer />
