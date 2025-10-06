@@ -37,22 +37,22 @@ export default function Outcomes() {
         ))}
       </div>
 
-      {/* Sichtbare Definition – kein Tooltip */}
+      {/* Sichtbare Definition – inline text (no white card) */}
       {'definition' in (academy.outcomes as any) ? (
-        <div className="mt-4 rounded-xl bg-white p-4 text-sm text-gray-800">
-          <div className="font-semibold text-[#0E3258]">
+        <div className="mt-4 text-sm text-white/90 max-w-4xl mx-auto">
+          <div className="font-semibold text-white mb-1">
             {(academy.outcomes as any).definition.heading}
           </div>
-          <p className="mt-1">{(academy.outcomes as any).definition.text}</p>
+          <p>{(academy.outcomes as any).definition.text}</p>
 
           {/* Beispiele */}
           {(academy.outcomes as any).definition.examples ? (
             <div className="mt-2">
-              <div className="font-medium text-gray-700 mb-1">Beispiele:</div>
-              <ul className="space-y-1 text-gray-600">
+              <div className="font-medium text-white/90 mb-1">Beispiele:</div>
+              <ul className="space-y-1 text-white/80">
                 {(academy.outcomes as any).definition.examples.map((example: string, index: number) => (
                   <li key={index} className="flex items-start gap-2">
-                    <span className="text-emerald-600 mt-0.5">•</span>
+                    <span className="text-emerald-200 mt-0.5">•</span>
                     <span>{example}</span>
                   </li>
                 ))}
@@ -60,8 +60,8 @@ export default function Outcomes() {
             </div>
           ) : null}
 
-          <p className="mt-2 text-gray-600">{(academy.outcomes as any).definition.counting}</p>
-          <p className="mt-1 text-gray-600">{(academy.outcomes as any).definition.practical}</p>
+          <p className="mt-2">{(academy.outcomes as any).definition.counting}</p>
+          <p className="mt-1">{(academy.outcomes as any).definition.practical}</p>
         </div>
       ) : null}
     </div>
