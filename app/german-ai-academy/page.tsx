@@ -174,26 +174,84 @@ export default function GermanAIAcademyPage() {
   <ProblemSolution />
 
         {/* Slight overlap to reduce the "gap" below hero */}
-        {/* === BAND B: LIGHT SKY WASH — Outcomes + Loop + Calls === */}
+        {/* === BAND B: LIGHT SKY WASH — Outcomes === */}
 
-        <section id="ergebnisse" aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
+        <section id="ergebnisse" aria-label="Ergebnisse" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Outcomes />
-            {/* LearningLoop removed - too confusing and comes too early */}
-            <div id="live-calls"></div>
-            <CallProgram title={academy.calls.title} subtitle={academy.calls.subtitle} callSchedule={academy.calls.callSchedule} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
         </section>
 
-        {/* === PROGRESS METRICS SECTION === */}
-        <ProgressMetrics />
+        {/* === SO FUNKTIONIERT UNSER PROGRAMM - UMBRELLA SECTION === */}
+        <section className="bg-gradient-to-br from-white via-neutral-50 to-white py-16">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-20">
+              <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-600 mb-6">
+                So funktioniert unser Programm
+              </h2>
+              <p className="text-xl text-neutral-600 max-w-3xl mx-auto leading-relaxed">
+                Vier Säulen, die zusammenwirken – für deinen Erfolg
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* === 1. LIVE-CALLS / COACHING === */}
+        <section id="live-calls" aria-label="Live-Calls & Coaching" className="bg-gradient-to-br from-white via-blue-50/30 to-white">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+                1
+              </span>
+            </div>
+            <CallProgram 
+              title={academy.calls.title} 
+              subtitle={academy.calls.subtitle} 
+              callSchedule={academy.calls.callSchedule} 
+              summary={academy.calls.summary} 
+              items={academy.calls.items as any} 
+              deliverables={academy.calls.deliverables as any} 
+            />
+          </div>
+        </section>
+
+        {/* === 2. TANDEM SPACES === */}
+        <section id="tandem-spaces" aria-label="Tandem Spaces" className="bg-gradient-to-br from-neutral-50 to-white">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+                2
+              </span>
+            </div>
+            <TandemSpaces data={academy.tandemSpaces} />
+          </div>
+        </section>
+
+        {/* === 3. DIE GERMAN AI ACADEMY === */}
+        <section id="german-ai-academy" aria-label="German AI Academy" className="bg-gradient-to-br from-white via-accent-50/30 to-white">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+                3
+              </span>
+            </div>
+            <GermanAiAcademyAccess data={academy.germanAiAcademyAccess} />
+          </div>
+        </section>
+
+        {/* === 4. SO MESSEN WIR DEINEN FORTSCHRITT === */}
+        <section id="progress-tracking" aria-label="Fortschrittsmessung" className="bg-gradient-to-br from-neutral-50 to-white">
+          <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8 py-16">
+            <div className="text-center mb-12">
+              <span className="inline-block bg-primary-600 text-white text-sm font-bold px-4 py-2 rounded-full mb-4">
+                4
+              </span>
+            </div>
+            <ProgressMetrics />
+          </div>
+        </section>
 
         {/* German Level Quiz removed - distraction and not necessary */}
-
-        {/* === COMPREHENSIVE TANDEM SPACES SECTION === */}
-        <div id="tandem-spaces">
-          <TandemSpaces data={academy.tandemSpaces} />
-        </div>
 
         {/* === VIDEO TESTIMONIAL SECTION === */}
         <div id="testimonials">

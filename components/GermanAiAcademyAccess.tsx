@@ -13,17 +13,16 @@ interface GermanAiAcademyAccessProps {
 
 export default function GermanAiAcademyAccess({ data }: GermanAiAcademyAccessProps) {
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-primary-50 via-white to-accent-50">
-      <div className="max-w-screen-xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            {data.title}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            {data.subtitle}
-          </p>
-        </div>
+    <div>
+      {/* Header */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {data.title}
+        </h2>
+        <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          {data.subtitle}
+        </p>
+      </div>
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -50,7 +49,6 @@ export default function GermanAiAcademyAccess({ data }: GermanAiAcademyAccessPro
             </button>
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   );
 }

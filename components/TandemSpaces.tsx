@@ -7,22 +7,21 @@ interface TandemSpacesProps {
 
 export default function TandemSpaces({ data }: TandemSpacesProps) {
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-gray-50 via-white to-gray-50">
-      <div className="max-w-screen-xl mx-auto">
-        {/* Header with Beta Badge */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-3 mb-4">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-              {data.title}
-            </h2>
-            <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-              {data.status}
-            </span>
-          </div>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            {data.subtitle}
-          </p>
+    <div>
+      {/* Header with Beta Badge */}
+      <div className="text-center mb-16">
+        <div className="inline-flex items-center gap-3 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+            {data.title}
+          </h2>
+          <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+            {data.status}
+          </span>
         </div>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          {data.subtitle}
+        </p>
+      </div>
 
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
@@ -88,7 +87,6 @@ export default function TandemSpaces({ data }: TandemSpacesProps) {
             })}
           </div>
         </div>
-      </div>
-    </section>
+    </div>
   );
 }

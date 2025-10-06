@@ -32,12 +32,11 @@ export default function CallProgram({
   ];
 
   return (
-    <section aria-labelledby="calls-title" className="section-spacing bg-gradient-to-br from-white via-blue-50/30 to-white">
-      <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
-            {title}
+    <div>
+      {/* Header */}
+      <div className="text-center mb-16">
+        <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
+          {title}
           </h2>
           {subtitle && (
             <p className="text-2xl sm:text-3xl font-bold text-primary-700 mb-6 tracking-tight">
@@ -142,7 +141,6 @@ export default function CallProgram({
             Jetzt anmelden
           </MagneticButton>
         </div>
-      </div>
-    </section>
+    </div>
   );
 }
