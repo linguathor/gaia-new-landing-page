@@ -179,10 +179,6 @@ export default function GermanAIAcademyPage() {
         <section id="ergebnisse" aria-label="Ergebnisse & Live-Calls" className="relative -mt-6 sm:-mt-8" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Outcomes />
-            {/* Single dividing line */}
-            <div className="mx-auto max-w-4xl my-12">
-              <div className="h-px bg-white/30"></div>
-            </div>
             {/* LearningLoop removed - too confusing and comes too early */}
             <div id="live-calls"></div>
             <CallProgram title={academy.calls.title} subtitle={academy.calls.subtitle} callSchedule={academy.calls.callSchedule} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />

@@ -32,7 +32,7 @@ export default function CallProgram({
   ];
 
   return (
-    <section aria-labelledby="calls-title" className="section-spacing bg-white">
+    <section aria-labelledby="calls-title" className="section-spacing bg-transparent">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
