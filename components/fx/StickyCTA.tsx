@@ -29,7 +29,7 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
 
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 z-50 lg:hidden transform transition-all duration-500 ease-out ${
+      className={`fixed bottom-0 left-0 right-0 z-50 transform transition-all duration-500 ease-out ${
         isVisible ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0'
       }`}
     >
