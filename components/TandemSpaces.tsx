@@ -8,16 +8,11 @@ interface TandemSpacesProps {
 export default function TandemSpaces({ data }: TandemSpacesProps) {
   return (
     <div>
-      {/* Header with Beta Badge */}
+      {/* Header */}
       <div className="text-center mb-16">
-        <div className="inline-flex items-center gap-3 mb-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            {data.title}
-          </h2>
-          <span className="bg-gradient-to-r from-amber-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            {data.status}
-          </span>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          {data.title}
+        </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           {data.subtitle}
         </p>
