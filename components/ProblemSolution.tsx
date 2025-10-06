@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import MagneticButton from './fx/MagneticButton';
 
 export default function ProblemSolution() {
@@ -44,11 +45,14 @@ export default function ProblemSolution() {
           
           {/* Frustrated Person Image */}
           <div className="flex justify-center">
-            <div className="w-80 h-80 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl flex items-center justify-center shadow-lg">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">😰</div>
-                <p className="text-red-700 font-medium">Gestresst beim Deutschsprechen</p>
-              </div>
+            <div className="w-80 h-80 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/study.jpg"
+                alt="Gestresst beim Deutschsprechen"
+                width={320}
+                height={320}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
@@ -66,11 +70,14 @@ export default function ProblemSolution() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
           {/* Success Person Image */}
           <div className="flex justify-center lg:order-1">
-            <div className="w-80 h-80 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center shadow-lg">
-              <div className="text-center p-8">
-                <div className="text-6xl mb-4">🗣️</div>
-                <p className="text-green-700 font-medium">Erfolgreich & selbstbewusst</p>
-              </div>
+            <div className="w-80 h-80 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/images/communication.jpg"
+                alt="Erfolgreich & selbstbewusst"
+                width={320}
+                height={320}
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
           
