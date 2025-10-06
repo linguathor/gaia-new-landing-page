@@ -186,7 +186,7 @@ export default function GermanAIAcademyPage() {
             <Outcomes />
             {/* LearningLoop removed - too confusing and comes too early */}
             <div id="live-calls"></div>
-            <CallProgram title={academy.calls.title} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
+            <CallProgram title={academy.calls.title} subtitle={academy.calls.subtitle} summary={academy.calls.summary} items={academy.calls.items as any} deliverables={academy.calls.deliverables as any} />
           </Compact>
         </section>
 

@@ -74,6 +74,7 @@ export const academy = {
 
   calls: {
     title: "4 Live-Calls pro Monat",
+    subtitle: "(jeweils dienstags um 19 Uhr)",
     summary: "FAQ, zwei Diskussionen, ein Hör-Dialog – plus Materialien.",
     items: [
       { name: "FAQ-Call", desc: "Fragen klären. Hürden abbauen." },

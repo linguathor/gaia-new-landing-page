@@ -5,11 +5,13 @@ type CallItem = { name: string; desc: string };
 
 export default function CallProgram({
   title,
+  subtitle,
   summary,
   items,
   deliverables
 }: {
   title: string;
+  subtitle?: string;
   summary: string;
   items: CallItem[];
   deliverables: string[];
@@ -32,9 +34,14 @@ export default function CallProgram({
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
+          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-2">
             {title}
           </h2>
+          {subtitle && (
+            <p className="text-lg text-neutral-500 mb-4">
+              {subtitle}
+            </p>
+          )}
           <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto font-medium">
             {summary}
           </p>
