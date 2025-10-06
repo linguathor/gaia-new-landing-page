@@ -32,28 +32,28 @@ export default function CallProgram({
   ];
 
   return (
-    <section aria-labelledby="calls-title" className="section-spacing bg-transparent">
+    <section aria-labelledby="calls-title" className="section-spacing bg-gradient-to-br from-white via-blue-50/30 to-white">
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-4">
+          <h2 id="calls-title" className="text-3xl sm:text-4xl lg:text-5xl font-bold text-primary-600 mb-6">
             {title}
           </h2>
           {subtitle && (
-            <p className="text-2xl sm:text-3xl font-semibold text-primary-700 mb-4">
+            <p className="text-2xl sm:text-3xl font-bold text-primary-700 mb-6 tracking-tight">
               {subtitle}
             </p>
           )}
           {callSchedule && (
-            <div className="text-lg text-neutral-500 mb-6 max-w-3xl mx-auto">
+            <div className="text-base sm:text-lg text-neutral-600 mb-8 max-w-3xl mx-auto leading-relaxed">
               {callSchedule.split('(').map((part, index) => (
-                <p key={index} className={index === 0 ? "mb-1" : ""}>
+                <p key={index} className={index === 0 ? "mb-2 font-medium" : "text-neutral-500 italic"}>
                   {index === 0 ? part.trim() : `(${part.trim()}`}
                 </p>
               ))}
             </div>
           )}
-          <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto font-medium">
+          <p className="text-xl lg:text-2xl text-neutral-700 max-w-4xl mx-auto font-medium leading-relaxed">
             {summary}
           </p>
         </div>
