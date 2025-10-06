@@ -38,9 +38,13 @@ export default function CallProgram({
             {title}
           </h2>
           {subtitle && (
-            <p className="text-lg text-neutral-500 mb-4">
-              {subtitle}
-            </p>
+            <div className="text-lg text-neutral-500 mb-4 max-w-3xl mx-auto">
+              {subtitle.split('(').map((part, index) => (
+                <p key={index} className={index === 0 ? "mb-1" : ""}>
+                  {index === 0 ? part.trim() : `(${part.trim()}`}
+                </p>
+              ))}
+            </div>
           )}
           <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto font-medium">
             {summary}
