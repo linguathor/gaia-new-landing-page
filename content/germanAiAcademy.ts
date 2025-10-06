@@ -187,10 +187,30 @@ export const academy = {
       goal2: "C1 Niveau"
     },
     cycleSteps: [
-      { label: "Input", description: "Du übst mit Materialien/Aufgaben", icon: "📚" },
-      { label: "Output", description: "Du sprichst oder schreibst", icon: "💬" },
-      { label: "Feedback", description: "KI gibt sofortiges Feedback", icon: "✨" },
-      { label: "Verbesserung", description: "Du wirst besser", icon: "📈" }
+      { 
+        label: "Input", 
+        subtitle: "Gezielte Lektionen",
+        description: "Du erhältst themenbasierte <strong>Materialien und Aufgaben</strong> (Hörtexte, Vokabeln, Grammatik) als <strong>gezielte Vorbereitung</strong>.", 
+        icon: "📚" 
+      },
+      { 
+        label: "Output", 
+        subtitle: "Aktive Anwendung",
+        description: "Wende das Gelernte sofort an: <strong>Formuliere Antworten</strong> im Chatbot-Dialog oder erstelle <strong>eigene Texte/Sprachaufnahmen</strong>.", 
+        icon: "💬" 
+      },
+      { 
+        label: "Feedback", 
+        subtitle: "Sofortige Korrektur",
+        description: "Der KI-Tutor liefert <strong>unverzügliches und detailliertes Feedback</strong> zu Grammatik, Wortwahl und Stil – <strong>24/7</strong>.", 
+        icon: "✨" 
+      },
+      { 
+        label: "Verbesserung", 
+        subtitle: "Kontinuierlicher Fortschritt",
+        description: "Basierend auf den Korrekturen <strong>trainierst du gezielt deine Schwachstellen</strong> für <strong>sichtbare und messbare Fortschritte</strong> auf <strong>C1-Niveau</strong>.", 
+        icon: "📈" 
+      }
     ],
     features: [
       {
