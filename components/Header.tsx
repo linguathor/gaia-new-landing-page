@@ -59,6 +59,13 @@ export default function Header() {
                 Tandem Spaces
               </a>
               <a
+                href="#testimonials"
+                className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Testimonials
+              </a>
+              <a
                 href="#coaches"
                 className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}

@@ -201,6 +201,7 @@ export default function GermanAIAcademyPage() {
         </div>
 
         {/* === VIDEO TESTIMONIAL SECTION === */}
+        <div id="testimonials">
         <VideoTestimonial
           title="Höre ihre Geschichte"
           name="Lupita"
@@ -228,6 +229,7 @@ export default function GermanAIAcademyPage() {
             }
           ]}
         />
+        </div>
 
   {/* === GERMAN AI ACADEMY ACCESS SECTION === */}
   {/* Removed per request: GermanAiAcademyAccess section */}
