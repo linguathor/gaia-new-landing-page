@@ -59,8 +59,8 @@ export default function ProblemSolution() {
 
         {/* Central Problem Statement */}
         <div className="text-center py-12 mb-16">
-          <div className="bg-gradient-to-r from-red-500 to-red-600 text-white py-8 px-12 rounded-2xl shadow-xl max-w-4xl mx-auto">
-            <h3 className="text-4xl lg:text-5xl font-bold leading-tight">
+          <div className="bg-gradient-to-r from-red-50 to-rose-50 border-2 border-red-200 text-gray-800 py-8 px-12 rounded-2xl shadow-md max-w-4xl mx-auto">
+            <h3 className="text-3xl lg:text-4xl font-semibold leading-tight text-red-800">
               Weil dein Deutsch einfach nicht besser wird!
             </h3>
           </div>
