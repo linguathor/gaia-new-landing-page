@@ -11,6 +11,11 @@ export default function ProgressMetrics() {
           <p className="text-xl lg:text-2xl text-neutral-600 max-w-4xl mx-auto font-medium">
             Klar, kurz, nützlich – jede Woche im Dashboard.
           </p>
+          <p className="text-lg text-neutral-500 mt-4 max-w-3xl mx-auto">
+            <strong className="text-orange-700">Bonus:</strong> Ab sofort bekommst du auch deinen{' '}
+            <span className="font-semibold text-orange-700">persönlichen wöchentlichen Übungsplan</span>{' '}
+            – perfekt abgestimmt auf deine Fortschritte! 🎁
+          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>

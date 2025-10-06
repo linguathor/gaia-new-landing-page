@@ -11,6 +11,7 @@ interface StickyCTAProps {
 export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProps) {
   const [isVisible, setIsVisible] = useState(false);
   const [showGuarantee, setShowGuarantee] = useState(false);
+  const [showBonus, setShowBonus] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,6 +25,14 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
       const pageHeight = document.documentElement.scrollHeight - window.innerHeight;
       const scrollPercentage = (currentScrollY / pageHeight) * 100;
       setShowGuarantee(scrollPercentage > 50); // Show guarantee message after 50% scroll
+      
+      // Check if bonus section is visible or passed
+      const bonusSection = document.getElementById('bonus');
+      if (bonusSection) {
+        const bonusRect = bonusSection.getBoundingClientRect();
+        // Show bonus message when section is in viewport or already passed
+        setShowBonus(bonusRect.top < window.innerHeight || bonusRect.bottom < 0);
+      }
     };
 
     // Check initial scroll position
@@ -60,7 +69,14 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
                   <div className="absolute inset-0 w-2 h-2 bg-orange-400/30 rounded-full animate-ping" />
                 </div>
                 <p className="text-sm font-semibold bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
-                  {showGuarantee ? (
+                  {showBonus ? (
+                    <>
+                      {/* Mobile: shorter text with bonus */}
+                      <span className="sm:hidden">🎁 Bonus | {spotsLeft} Plätze</span>
+                      {/* Desktop: full text with bonus */}
+                      <span className="hidden sm:inline">🎁 Bonus bis 13. Okt | Nur noch {spotsLeft} Plätze</span>
+                    </>
+                  ) : showGuarantee ? (
                     <>
                       {/* Mobile: shorter text */}
                       <span className="sm:hidden">100% Garantie | {spotsLeft} Plätze</span>
@@ -73,7 +89,7 @@ export default function StickyCTA({ ctaText, ctaHref, spotsLeft }: StickyCTAProp
                 </p>
               </div>
               <p className="text-xs text-gray-500 font-medium truncate">
-                {showGuarantee ? 'Risikofrei starten' : 'Sichere deinen Platz jetzt'}
+                {showBonus ? 'Wöchentliche Übungspläne sichern' : showGuarantee ? 'Risikofrei starten' : 'Sichere deinen Platz jetzt'}
               </p>
             </div>
             <div className="flex-shrink-0">

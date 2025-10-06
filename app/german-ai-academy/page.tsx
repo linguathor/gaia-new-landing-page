@@ -53,6 +53,7 @@ import Cohort from '../../components/Cohort';
 import Instructors from '../../components/Instructors';
 import Pricing from '../../components/Pricing';
 import SuccessGuarantee from '../../components/SuccessGuarantee';
+import LimitedTimeBonus from '../../components/LimitedTimeBonus';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
@@ -251,6 +252,9 @@ export default function GermanAIAcademyPage() {
             <ProgressMetrics />
           </div>
         </section>
+
+        {/* === LIMITED TIME BONUS === */}
+        <LimitedTimeBonus data={academy.limitedTimeBonus} />
 
         {/* German Level Quiz removed - distraction and not necessary */}
 

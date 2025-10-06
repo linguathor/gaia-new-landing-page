@@ -411,6 +411,22 @@ export const academy = {
     ]
   },
 
+  limitedTimeBonus: {
+    badge: "🎁 Exklusiver Bonus",
+    headline: "Sichere dir jetzt deinen Bonus!",
+    deadline: "13. Oktober",
+    deadlineDate: "2025-10-13T23:59:59",
+    title: "Wöchentliche Übungspläne für mehr Effizienz & Struktur",
+    description: "Wir erstellen dir persönliche, <strong class=\"font-semibold text-orange-700\">wöchentliche Lernpfade</strong>, die deine Fortschritte maximieren und genau auf deine Ziele abgestimmt sind. So weißt du immer, welche Übungen und Calls <strong class=\"font-semibold text-orange-700\">Priorität haben</strong>.",
+    ctaText: "🎁 JETZT ANMELDEN UND BONUS SICHERN!",
+    ctaHref: "https://www.copecart.com/products/4f9cc412/checkout",
+    features: [
+      "Personalisierte Lernpfade basierend auf deinen Fortschritten",
+      "Klare Priorisierung von Übungen und Calls",
+      "Optimale Zeiteinteilung für maximalen Lerneffekt"
+    ]
+  },
+
   guarantee: {
     badge: "100% GARANTIE",
     headline: {
