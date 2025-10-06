@@ -51,7 +51,6 @@ import Fit from '../../components/Fit';
 import Cohort from '../../components/Cohort';
 import Instructors from '../../components/Instructors';
 import Pricing from '../../components/Pricing';
-import Guarantee from '../../components/Guarantee';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
@@ -268,7 +267,6 @@ export default function GermanAIAcademyPage() {
         <section id="pricing" aria-label="Pricing & Garantie" style={{ backgroundColor: '#88B6CD' }}>
           <Compact>
             <Pricing pricing={academy.pricing} />
-            <Guarantee guarantee={academy.guarantee} />
           </Compact>
         </section>
 
