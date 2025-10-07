@@ -115,7 +115,7 @@ export default function SuccessGuarantee({
 
             {/* Fine Print */}
             <p className="text-center text-xs text-neutral-500 mt-4 md:mt-6 max-w-2xl mx-auto px-2">
-              * Die Garantie gilt für beide Programmvarianten (Premium & Elite-Mastermind)
+              * Die Garantie gilt für beide Programmvarianten (C1 Fluency Sprint & C1-Masterclass)
             </p>
           </div>
         </div>

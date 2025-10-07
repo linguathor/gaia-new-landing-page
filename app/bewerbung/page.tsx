@@ -4,18 +4,18 @@ import EliteApplyForm from "@/components/EliteApplyForm";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Elite-Mastermind Bewerbung – German AI Academy",
-  description: "Bewirb dich für die Elite-Mastermind (4 Monate). Kleine Gruppen, 3×/Woche Konversation, 1:1-Strategie.",
-  keywords: ["Elite-Mastermind", "Deutsch lernen", "KI Sprachlernen", "German AI Academy"],
+  title: "C1-Masterclass Bewerbung – German AI Academy",
+  description: "Bewirb dich für die C1-Masterclass (4 Monate). Kleine Gruppen, 3×/Woche Konversation, 1:1-Strategie.",
+  keywords: ["C1-Masterclass", "Deutsch lernen", "KI Sprachlernen", "German AI Academy"],
   openGraph: {
-    title: "Elite-Mastermind Bewerbung – German AI Academy",
-    description: "Bewirb dich für die Elite-Mastermind (4 Monate). Kleine Gruppen, 3×/Woche Konversation, 1:1-Strategie.",
+    title: "C1-Masterclass Bewerbung – German AI Academy",
+    description: "Bewirb dich für die C1-Masterclass (4 Monate). Kleine Gruppen, 3×/Woche Konversation, 1:1-Strategie.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elite-Mastermind Bewerbung – German AI Academy",
-    description: "Bewirb dich für die Elite-Mastermind (4 Monate). Kleine Gruppen, 3×/Woche Konversation, 1:1-Strategie.",
+    title: "C1-Masterclass Bewerbung – German AI Academy",
+    description: "Bewirb dich für die C1-Masterclass (4 Monate). Kleine Gruppen, 3×/Woche Konversation, 1:1-Strategie.",
   },
 };
 
@@ -57,7 +57,7 @@ export default function BewerbungsPage({
     <main className="bg-white">
       <section className="mx-auto max-w-screen-md px-4 py-12 sm:py-16">
         <h1 className="text-3xl font-bold tracking-tight sm:text-4xl">
-          Elite-Mastermind – Bewerbung
+          C1-Masterclass – Bewerbung
         </h1>
         <p className="mt-3 max-w-2xl text-gray-700">
           4 Monate. Mini-Gruppen (max. 5). 3×/Woche Konversation. Zwei 1:1-Sessions. Persönlicher Chat.

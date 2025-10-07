@@ -105,7 +105,7 @@ export default function Header() {
                 className="block py-2.5 text-gray-700 hover:text-amber-600 font-medium transition-colors pl-4 border-l-2 border-purple-200"
                 onClick={() => setIsMenuOpen(false)}
               >
-                → 💎 Elite-Mastermind
+                → 💎 C1-Masterclass
               </a>
               <a
                 href="#garantie"

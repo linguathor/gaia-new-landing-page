@@ -323,7 +323,7 @@ export default function GermanAIAcademyPage() {
         {/* === FINAL CONVERSION PUSH - 4 REASONS === */}
         <FourReasons />
 
-        {/* === ELITE-MASTERMIND EXPLAINER === */}
+        {/* === C1-MASTERCLASS EXPLAINER === */}
         <EliteMastermindExplainer data={academy.eliteMastermindExplainer} />
 
         {/* === PRICING & GUARANTEE === */}

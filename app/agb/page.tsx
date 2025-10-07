@@ -39,7 +39,7 @@ export default function AGBPage() {
             Auftragsbestätigung per E-Mail oder durch Bereitstellung des Kurszugangs.
           </p>
           <p className="text-gray-700 mb-4">
-            2.4 Bei Kursen, die ein Bewerbungsverfahren erfordern (z.B. Elite-Mastermind), kommt der Vertrag erst 
+            2.4 Bei Kursen, die ein Bewerbungsverfahren erfordern (z.B. C1-Masterclass), kommt der Vertrag erst 
             nach erfolgreicher Bewerbung und Bestätigung durch den Anbieter zustande.
           </p>
         </section>

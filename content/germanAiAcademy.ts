@@ -351,14 +351,14 @@ export const academy = {
     ]
   },
 
-  // Elite-Mastermind Explainer Section
+  // C1-Masterclass Explainer Section
   eliteMastermindExplainer: {
-    badge: "💎 Elite-Mastermind",
+    badge: "💎 C1-Masterclass",
     headline: {
-      line1: "C1 Elite-Mastermind:",
+      line1: "C1-Masterclass:",
       line2: "Maximale Transformation, minimale Zeit."
     },
-    description: "Der C1 Elite-Mastermind bietet dir die <strong>intensivste Begleitung auf dem Markt</strong>. Dieses exklusive Programm richtet sich an alle, die das C1-Niveau in kürzester Zeit und mit maximaler Sicherheit erreichen müssen. Du erhältst intensive 1:1 Strategie-Sessions und wöchentliche Konversationstraining in sehr kleinen Mini-Gruppen (max. 5 Personen). Der <strong>angestrebte Erfolg (fließendes C1-Niveau) ist identisch mit dem Premium-Sprint</strong>, doch die zusätzliche, persönliche Betreuung sorgt für einen <strong>schnelleren, maßgeschneiderten Weg</strong> und <strong>maximale Effizienz</strong>.",
+    description: "Die C1-Masterclass bietet dir die <strong>intensivste Begleitung auf dem Markt</strong>. Dieses exklusive Programm richtet sich an alle, die das C1-Niveau in kürzester Zeit und mit maximaler Sicherheit erreichen müssen. Du erhältst intensive 1:1 Strategie-Sessions und wöchentliche Konversationstraining in sehr kleinen Mini-Gruppen (max. 5 Personen). Der <strong>angestrebte Erfolg (fließendes C1-Niveau) ist identisch mit dem 4-monatigen C1 Fluency Sprint</strong>, doch die zusätzliche, persönliche Betreuung sorgt für einen <strong>maßgeschneiderten Weg</strong> und <strong>maximale Effizienz</strong>.",
     features: [
       {
         icon: "🎯",
@@ -379,7 +379,7 @@ export const academy = {
     outcomeComparison: {
       icon: "🎓",
       title: "Gleiches Ziel, maximale Effizienz:",
-      description: "Sowohl das <strong>Premium-Programm</strong> als auch der <strong>Elite-Mastermind</strong> führen dich zum <strong>fließenden C1-Niveau</strong>. Der Unterschied? Im Elite-Mastermind kommst du durch die intensive 1:1-Betreuung und kleinere Gruppen <strong>schneller und sicherer</strong> ans Ziel."
+      description: "Sowohl der <strong>4-monatige C1 Fluency Sprint</strong> als auch die <strong>C1-Masterclass</strong> führen dich zum <strong>fließenden C1-Niveau</strong>. Der Unterschied? In der C1-Masterclass erhältst du <strong>intensive 1:1-Betreuung und kleinere Gruppen</strong> für maximale Individualität und Effizienz."
     }
   },
 
@@ -389,7 +389,7 @@ export const academy = {
     note: "inkl. MwSt. | klare Kündigungsbedingungen | transparente Laufzeiten",
     plans: [
       {
-        name: "Premium",
+        name: "4-monatiger C1 Fluency Sprint",
         priceNote: "990 € / 4 Monate",
         period: "einmalig",
         features: [
@@ -406,11 +406,11 @@ export const academy = {
         legal: "inkl. MwSt. • Einmalzahlung"
       },
       {
-        name: "Elite-Mastermind",
-  priceNote: "4.990 € / 4 Monate",
+        name: "C1-Masterclass",
+        priceNote: "4.990 € / 4 Monate",
         period: "Bewerbung",
         features: [
-          "Alle Inhalte des Premium-Programms",
+          "Alle Inhalte des 4-monatigen C1 Fluency Sprint",
           "Mini-Gruppen (max. 5), 3×/Woche Konversation",
           "Zwei 1:1-Strategie-Sessions",
           "Persönlicher Chat",
