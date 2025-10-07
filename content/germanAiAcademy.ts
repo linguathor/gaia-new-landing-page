@@ -395,7 +395,7 @@ export const academy = {
         features: [
           "16 Live-Calls mit Coaching",
           "KI-Übungen mit Feedback",
-          "Tandem-Spaces (Beta)",
+          "Tandem-Spaces",
           "Community-Zugang",
           "Fortschritts-Messung",
           "Materialien nach jedem Call",
