@@ -54,6 +54,7 @@ import Instructors from '../../components/Instructors';
 import Pricing from '../../components/Pricing';
 import SuccessGuarantee from '../../components/SuccessGuarantee';
 import LimitedTimeBonus from '../../components/LimitedTimeBonus';
+import EliteMastermindExplainer from '../../components/EliteMastermindExplainer';
 import TestimonialsFaces from '../../components/TestimonialsFaces';
 import HeroTestimonial from '../../components/HeroTestimonial';
 import FAQ from '../../components/FAQ';
@@ -321,6 +322,9 @@ export default function GermanAIAcademyPage() {
 
         {/* === FINAL CONVERSION PUSH - 4 REASONS === */}
         <FourReasons />
+
+        {/* === ELITE-MASTERMIND EXPLAINER === */}
+        <EliteMastermindExplainer data={academy.eliteMastermindExplainer} />
 
         {/* === PRICING & GUARANTEE === */}
         <section id="pricing" aria-label="Pricing & Garantie" style={{ backgroundColor: '#88B6CD' }}>

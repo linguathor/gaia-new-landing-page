@@ -247,3 +247,12 @@ html {
 .learning-cycle-description strong {
   @apply font-semibold text-primary-700;
 }
+
+/* Bold styling for Elite-Mastermind descriptions */
+.elite-mastermind-description strong {
+  @apply font-semibold text-purple-700;
+}
+
+.elite-mastermind-comparison strong {
+  @apply font-semibold text-purple-700;
+}

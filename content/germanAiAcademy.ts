@@ -351,6 +351,38 @@ export const academy = {
     ]
   },
 
+  // Elite-Mastermind Explainer Section
+  eliteMastermindExplainer: {
+    badge: "💎 Elite-Mastermind",
+    headline: {
+      line1: "C1 Elite-Mastermind:",
+      line2: "Maximale Transformation, minimale Zeit."
+    },
+    description: "Der C1 Elite-Mastermind bietet dir die <strong>intensivste Begleitung auf dem Markt</strong>. Dieses exklusive Programm richtet sich an alle, die das C1-Niveau in kürzester Zeit und mit maximaler Sicherheit erreichen müssen. Du erhältst intensive 1:1 Strategie-Sessions und wöchentliche Konversationstraining in sehr kleinen Mini-Gruppen (max. 5 Personen). Der <strong>angestrebte Erfolg (fließendes C1-Niveau) ist identisch mit dem Premium-Sprint</strong>, doch die zusätzliche, persönliche Betreuung sorgt für einen <strong>schnelleren, maßgeschneiderten Weg</strong> und <strong>maximale Effizienz</strong>.",
+    features: [
+      {
+        icon: "🎯",
+        title: "Intensiver Fokus",
+        description: "1:1 Strategie-Sessions und persönlicher Chat für maximale Individualität"
+      },
+      {
+        icon: "👥",
+        title: "Exklusives Training",
+        description: "Konversation in Mini-Gruppen mit maximal 5 Personen"
+      },
+      {
+        icon: "⚡",
+        title: "Zeitersparnis",
+        description: "Der schnellste und sicherste Weg zum C1-Niveau"
+      }
+    ],
+    outcomeComparison: {
+      icon: "🎓",
+      title: "Gleiches Ziel, maximale Effizienz:",
+      description: "Sowohl das <strong>Premium-Programm</strong> als auch der <strong>Elite-Mastermind</strong> führen dich zum <strong>fließenden C1-Niveau</strong>. Der Unterschied? Im Elite-Mastermind kommst du durch die intensive 1:1-Betreuung und kleinere Gruppen <strong>schneller und sicherer</strong> ans Ziel."
+    }
+  },
+
   // Existing pricing (ignore number debates; replace links as needed)
   pricing: {
     title: "Preise",

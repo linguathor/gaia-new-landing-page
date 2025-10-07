@@ -101,6 +101,13 @@ export default function Header() {
                 Preise
               </a>
               <a
+                href="#elite-mastermind"
+                className="block py-2.5 text-gray-700 hover:text-amber-600 font-medium transition-colors pl-4 border-l-2 border-purple-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                → 💎 Elite-Mastermind
+              </a>
+              <a
                 href="#garantie"
                 className="block py-2 text-gray-700 hover:text-amber-600 font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
