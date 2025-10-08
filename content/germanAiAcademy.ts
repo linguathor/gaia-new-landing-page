@@ -15,9 +15,9 @@ export const academy = {
     badges: ["Für Deutschlernende ab B2-Niveau", "Ohne Risiko starten", "Kurze, klare Aufgaben"],
     audienceBadge: "Für Deutschlernende ab B2-Niveau",
     urgency: {
-      spotsLeft: 25,
+      spotsLeft: 22,
       cohortStartDate: "2025-10-15",
-      enrolledToday: 5
+      enrolledToday: 8
     }
   },
 
